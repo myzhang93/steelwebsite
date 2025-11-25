@@ -1,0 +1,236 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/quote",
+      "regex": "^/api/quote(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/quote(?:/)?$"
+    },
+    {
+      "page": "/api/send-quote",
+      "regex": "^/api/send\\-quote(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/send\\-quote(?:/)?$"
+    },
+    {
+      "page": "/industry/automotive",
+      "regex": "^/industry/automotive(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/industry/automotive(?:/)?$"
+    },
+    {
+      "page": "/industry/chemical",
+      "regex": "^/industry/chemical(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/industry/chemical(?:/)?$"
+    },
+    {
+      "page": "/industry/construction",
+      "regex": "^/industry/construction(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/industry/construction(?:/)?$"
+    },
+    {
+      "page": "/industry/food-and-catering",
+      "regex": "^/industry/food\\-and\\-catering(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/industry/food\\-and\\-catering(?:/)?$"
+    },
+    {
+      "page": "/industry/kitchen",
+      "regex": "^/industry/kitchen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/industry/kitchen(?:/)?$"
+    },
+    {
+      "page": "/industry/medical",
+      "regex": "^/industry/medical(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/industry/medical(?:/)?$"
+    },
+    {
+      "page": "/products/200-series",
+      "regex": "^/products/200\\-series(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/200\\-series(?:/)?$"
+    },
+    {
+      "page": "/products/300-series",
+      "regex": "^/products/300\\-series(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/300\\-series(?:/)?$"
+    },
+    {
+      "page": "/products/400-series",
+      "regex": "^/products/400\\-series(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/400\\-series(?:/)?$"
+    },
+    {
+      "page": "/products/500-series",
+      "regex": "^/products/500\\-series(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/500\\-series(?:/)?$"
+    },
+    {
+      "page": "/products/600-series",
+      "regex": "^/products/600\\-series(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/600\\-series(?:/)?$"
+    },
+    {
+      "page": "/products/stainless-steel-pipes",
+      "regex": "^/products/stainless\\-steel\\-pipes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products/stainless\\-steel\\-pipes(?:/)?$"
+    },
+    {
+      "page": "/services/cutting",
+      "regex": "^/services/cutting(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/cutting(?:/)?$"
+    },
+    {
+      "page": "/services/engineering",
+      "regex": "^/services/engineering(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/engineering(?:/)?$"
+    },
+    {
+      "page": "/services/finishing",
+      "regex": "^/services/finishing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/finishing(?:/)?$"
+    },
+    {
+      "page": "/services/logistics",
+      "regex": "^/services/logistics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/logistics(?:/)?$"
+    },
+    {
+      "page": "/services/treating",
+      "regex": "^/services/treating(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/treating(?:/)?$"
+    },
+    {
+      "page": "/services/welding",
+      "regex": "^/services/welding(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/welding(?:/)?$"
+    },
+    {
+      "page": "/support/blog",
+      "regex": "^/support/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/support/blog(?:/)?$"
+    },
+    {
+      "page": "/support/contact-us",
+      "regex": "^/support/contact\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/support/contact\\-us(?:/)?$"
+    },
+    {
+      "page": "/support/faqs",
+      "regex": "^/support/faqs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/support/faqs(?:/)?$"
+    },
+    {
+      "page": "/thankyou",
+      "regex": "^/thankyou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/thankyou(?:/)?$"
+    },
+    {
+      "page": "/treatment/brushing",
+      "regex": "^/treatment/brushing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment/brushing(?:/)?$"
+    },
+    {
+      "page": "/treatment/coating",
+      "regex": "^/treatment/coating(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment/coating(?:/)?$"
+    },
+    {
+      "page": "/treatment/electropolishing",
+      "regex": "^/treatment/electropolishing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment/electropolishing(?:/)?$"
+    },
+    {
+      "page": "/treatment/etching",
+      "regex": "^/treatment/etching(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment/etching(?:/)?$"
+    },
+    {
+      "page": "/treatment/passivation",
+      "regex": "^/treatment/passivation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment/passivation(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

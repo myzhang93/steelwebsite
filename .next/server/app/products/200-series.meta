@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/products/layout,_N_T_/products/200-series/layout,_N_T_/products/200-series/page,_N_T_/products/200-series"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/products/200-series/__PAGE__",
+    "/products/200-series",
+    "/products",
+    "/_index",
+    "/_head"
+  ]
+}

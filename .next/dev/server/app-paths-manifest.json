@@ -1,0 +1,21 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/capabilities/cutting/page": "app/capabilities/cutting/page.js",
+  "/capabilities/engineering/page": "app/capabilities/engineering/page.js",
+  "/capabilities/finishing/page": "app/capabilities/finishing/page.js",
+  "/capabilities/logistics/page": "app/capabilities/logistics/page.js",
+  "/capabilities/treating/page": "app/capabilities/treating/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/industry/automotive/page": "app/industry/automotive/page.js",
+  "/industry/construction/page": "app/industry/construction/page.js",
+  "/industry/food-and-catering/page": "app/industry/food-and-catering/page.js",
+  "/industry/kitchen/page": "app/industry/kitchen/page.js",
+  "/page": "app/page.js",
+  "/products/200-series/page": "app/products/200-series/page.js",
+  "/products/300-series/page": "app/products/300-series/page.js",
+  "/support/blog/page": "app/support/blog/page.js",
+  "/support/contact-us/page": "app/support/contact-us/page.js",
+  "/support/faqs/page": "app/support/faqs/page.js",
+  "/treatment/brushing/page": "app/treatment/brushing/page.js",
+  "/treatment/etching/page": "app/treatment/etching/page.js"
+}

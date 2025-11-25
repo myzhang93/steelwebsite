@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/products/layout,_N_T_/products/stainless-steel-pipes/layout,_N_T_/products/stainless-steel-pipes/page,_N_T_/products/stainless-steel-pipes"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/products/stainless-steel-pipes/__PAGE__",
+    "/products/stainless-steel-pipes",
+    "/products",
+    "/_index",
+    "/_head"
+  ]
+}

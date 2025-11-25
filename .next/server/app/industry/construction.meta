@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/industry/layout,_N_T_/industry/construction/layout,_N_T_/industry/construction/page,_N_T_/industry/construction"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/industry/construction/__PAGE__",
+    "/industry/construction",
+    "/industry",
+    "/_index",
+    "/_head"
+  ]
+}

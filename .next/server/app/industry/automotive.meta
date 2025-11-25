@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/industry/layout,_N_T_/industry/automotive/layout,_N_T_/industry/automotive/page,_N_T_/industry/automotive"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/industry/automotive/__PAGE__",
+    "/industry/automotive",
+    "/industry",
+    "/_index",
+    "/_head"
+  ]
+}

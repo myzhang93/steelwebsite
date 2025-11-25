@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/treatment/layout,_N_T_/treatment/electropolishing/layout,_N_T_/treatment/electropolishing/page,_N_T_/treatment/electropolishing"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/treatment/electropolishing/__PAGE__",
+    "/treatment/electropolishing",
+    "/treatment",
+    "/_index",
+    "/_head"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 20, "column": 0}, "map": {"version":3,"sources":["file:///D:/111work/steel-website-clone%20%281%29/app/page.tsx"],"sourcesContent":["import fs from \"fs\"\nimport path from \"path\"\n\nconst pageMarkup = fs.readFileSync(path.join(process.cwd(), \"target-body.html\"), \"utf-8\")\n\nexport default function Home() {\n  return <div dangerouslySetInnerHTML={{ __html: pageMarkup }} suppressHydrationWarning />\n}\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAEA,MAAM,aAAa,wGAAE,CAAC,YAAY,CAAC,4GAAI,CAAC,IAAI,CAAC,QAAQ,GAAG,IAAI,qBAAqB;AAElE,SAAS;IACtB,qBAAO,8OAAC;QAAI,yBAAyB;YAAE,QAAQ;QAAW;QAAG,wBAAwB;;;;;;AACvF"}}]
+}
