@@ -1,15 +1,21 @@
-[00:00:04.562] Server  LOG      ✓ Ready in 2.8s
-[00:00:07.683] Server  LOG      ○ Compiling / ...
-[00:00:10.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:54.822] Server  LOG      ✓ Compiled in 266ms
-[00:02:27.703] Browser WARN    Image with src "/manufacturing-facility-sparks-metal-cutting.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:02:42.544] Server  LOG      ✓ Compiled in 408ms
-[01:07:00.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:07:02.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:07:03.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:07:04.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:07:05.868] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:07:07.210] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:07:08.862] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:07:10.845] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.852] Server  LOG      ✓ Ready in 1312ms
+[00:00:04.912] Server  LOG      ○ Compiling / ...
+[00:00:06.668] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:24.617] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:45.004] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:47.092] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:21.970] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:34.881] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:30.087] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:15.226] Server  LOG      ✓ Compiled in 329ms
+[00:11:46.498] Server  LOG      ✓ Compiled in 333ms
+[00:13:55.790] Server  LOG      ✓ Compiled in 264ms
+[00:14:19.119] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:12.584] Server  LOG      ✓ Compiled in 346ms
+[00:17:41.008] Server  LOG      ✓ Compiled in 289ms
+[00:18:26.684] Server  LOG      ✓ Compiled in 252ms
+[00:20:03.033] Server  LOG      ✓ Compiled in 283ms
+[00:21:32.547] Server  LOG      ✓ Compiled in 299ms
+[00:21:54.433] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:33.826] Server  LOG      ✓ Compiled in 273ms
+[00:27:08.737] Server  LOG      ✓ Compiled in 161ms

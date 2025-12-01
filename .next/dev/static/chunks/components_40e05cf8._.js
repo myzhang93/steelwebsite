@@ -323,7 +323,7 @@ function Header() {
         className: "sticky top-0 z-50 bg-white border-b border-gray-200",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full mx-auto px-16 lg:px-32",
+                className: "w-full mx-auto px-12 lg:px-24",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "py-7 flex items-center justify-between text-base",
@@ -344,7 +344,7 @@ function Header() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-xl text-gray-900",
+                                        className: "font-semibold text-2xl text-gray-900",
                                         style: {
                                             fontFamily: 'sans-serif'
                                         },
@@ -364,7 +364,7 @@ function Header() {
                                 className: "flex items-center gap-20",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-start gap-2.5",
+                                        className: "flex items-start gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
                                                 className: "w-10 h-10 text-blue-600 flex-shrink-0 mt-0.5 stroke-1"
@@ -377,7 +377,7 @@ function Header() {
                                                 className: "flex flex-col",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-gray-400 text-base whitespace-nowrap",
+                                                        className: "text-gray-400 text-sm whitespace-nowrap",
                                                         children: "Call Us 24/7"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/header.tsx",
@@ -385,7 +385,7 @@ function Header() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-gray-900 text-base whitespace-nowrap",
+                                                        className: "text-gray-900 text-sm whitespace-nowrap",
                                                         children: "+8618662678180"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/header.tsx",
@@ -405,7 +405,7 @@ function Header() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-start gap-2.5",
+                                        className: "flex items-start gap-2",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
                                                 className: "w-10 h-10 text-blue-600 flex-shrink-0 mt-0.5 stroke-1"
@@ -418,7 +418,7 @@ function Header() {
                                                 className: "flex flex-col",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-gray-400 text-base whitespace-nowrap",
+                                                        className: "text-gray-400 text-sm whitespace-nowrap",
                                                         children: "Send Us Mail"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/header.tsx",
@@ -426,7 +426,7 @@ function Header() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-gray-900 text-base whitespace-nowrap",
+                                                        className: "text-gray-900 text-sm whitespace-nowrap",
                                                         children: "sales@lynsteel.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/header.tsx",
@@ -449,7 +449,7 @@ function Header() {
                                         className: "flex flex-col",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-400 text-base whitespace-nowrap",
+                                                className: "text-gray-400 text-sm whitespace-nowrap",
                                                 children: "Our Location"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header.tsx",
@@ -457,7 +457,7 @@ function Header() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-900 text-base whitespace-nowrap",
+                                                className: "text-gray-900 text-sm whitespace-nowrap",
                                                 children: "Shengan Road, Wuxi City, Jiangsu Province, China"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header.tsx",
@@ -486,7 +486,7 @@ function Header() {
                         className: "py-6 flex items-center justify-between border-t border-gray-200",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                                className: "hidden md:flex items-center gap-7 text-xl font-medium",
+                                className: "hidden md:flex items-center gap-8 text-lg font-medium",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/",
@@ -740,7 +740,7 @@ function Header() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "p-2 hover:bg-gray-100 rounded transition-colors",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                            className: "w-8 h-8 text-gray-900 stroke-1"
+                                            className: "w-6 h-6 text-gray-900 stroke-1"
                                         }, void 0, false, {
                                             fileName: "[project]/components/header.tsx",
                                             lineNumber: 207,
@@ -753,14 +753,14 @@ function Header() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setIsQuoteModalOpen(true),
-                                        className: "bg-blue-600 hover:bg-blue-700 text-white px-10 py-2.5 rounded font-semibold transition-colors flex items-center gap-3 text-lg",
+                                        className: "bg-blue-600 hover:bg-blue-700 text-white px-8 py-2.5 rounded font-semibold transition-colors flex items-center gap-2 text-base",
                                         style: {
                                             fontFamily: 'sans-serif'
                                         },
                                         children: [
                                             "GET A QUOTE",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
-                                                className: "w-6 h-6"
+                                                className: "w-5 h-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header.tsx",
                                                 lineNumber: 215,

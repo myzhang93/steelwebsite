@@ -810,10 +810,6 @@
     min-width: 180px;
   }
 
-  .min-w-\[200px\] {
-    min-width: 200px;
-  }
-
   .min-w-\[250px\] {
     min-width: 250px;
   }
@@ -924,6 +920,10 @@
     gap: calc(var(--spacing) * 4);
   }
 
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -940,8 +940,16 @@
     gap: calc(var(--spacing) * 12);
   }
 
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
+
   .gap-20 {
     gap: calc(var(--spacing) * 20);
+  }
+
+  .gap-\[4\.5rem\] {
+    gap: 4.5rem;
   }
 
   :where(.space-y-1 > :not(:last-child)) {
@@ -1331,6 +1339,10 @@
 
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
   }
 
   .px-16 {
@@ -2066,6 +2078,12 @@
   @media (min-width: 64rem) {
     .lg\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:px-24 {
+      padding-inline: calc(var(--spacing) * 24);
     }
   }
 

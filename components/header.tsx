@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
-      <div className="w-full mx-auto px-16 lg:px-32">
+      <div className="w-full mx-auto px-12 lg:px-24">
         {/* Top Bar - Logo and Contact Info */}
         <div className="py-7 flex items-center justify-between text-base">
           {/* Logo */}
@@ -25,28 +25,28 @@ export default function Header() {
             <div className="w-11 h-11 bg-blue-600 flex items-center justify-center font-bold text-white text-xl" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)' }}>
               S
             </div>
-            <span className="font-semibold text-xl text-gray-900" style={{ fontFamily: 'sans-serif' }}>Steel</span>
+            <span className="font-semibold text-2xl text-gray-900" style={{ fontFamily: 'sans-serif' }}>Steel</span>
           </Link>
 
           {/* Contact Info - Top Right */}
           <div className="flex items-center gap-20">
-            <div className="flex items-start gap-2.5">
+            <div className="flex items-start gap-2">
               <Phone className="w-10 h-10 text-blue-600 flex-shrink-0 mt-0.5 stroke-1" />
               <div className="flex flex-col">
-                <span className="text-gray-400 text-base whitespace-nowrap">Call Us 24/7</span>
-                <span className="text-gray-900 text-base whitespace-nowrap">+8618662678180</span>
+                <span className="text-gray-400 text-sm whitespace-nowrap">Call Us 24/7</span>
+                <span className="text-gray-900 text-sm whitespace-nowrap">+8618662678180</span>
               </div>
             </div>
-            <div className="flex items-start gap-2.5">
+            <div className="flex items-start gap-2">
               <Mail className="w-10 h-10 text-blue-600 flex-shrink-0 mt-0.5 stroke-1" />
               <div className="flex flex-col">
-                <span className="text-gray-400 text-base whitespace-nowrap">Send Us Mail</span>
-                <span className="text-gray-900 text-base whitespace-nowrap">sales@lynsteel.com</span>
+                <span className="text-gray-400 text-sm whitespace-nowrap">Send Us Mail</span>
+                <span className="text-gray-900 text-sm whitespace-nowrap">sales@lynsteel.com</span>
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="text-gray-400 text-base whitespace-nowrap">Our Location</span>
-              <span className="text-gray-900 text-base whitespace-nowrap">Shengan Road, Wuxi City, Jiangsu Province, China</span>
+              <span className="text-gray-400 text-sm whitespace-nowrap">Our Location</span>
+              <span className="text-gray-900 text-sm whitespace-nowrap">Shengan Road, Wuxi City, Jiangsu Province, China</span>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Header() {
         {/* Main Navigation */}
         <div className="py-6 flex items-center justify-between border-t border-gray-200">
           {/* Navigation Links */}
-          <nav className="hidden md:flex items-center gap-7 text-xl font-medium">
+          <nav className="hidden md:flex items-center gap-8 text-lg font-medium">
             <Link 
               href="/" 
               className="text-blue-600 hover:text-blue-700 transition-colors"
@@ -204,15 +204,15 @@ export default function Header() {
           {/* Right Side - Search and Quote */}
           <div className="flex items-center gap-8">
             <button className="p-2 hover:bg-gray-100 rounded transition-colors">
-              <Search className="w-8 h-8 text-gray-900 stroke-1" />
+              <Search className="w-6 h-6 text-gray-900 stroke-1" />
             </button>
             <button 
               onClick={() => setIsQuoteModalOpen(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-2.5 rounded font-semibold transition-colors flex items-center gap-3 text-lg"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-2.5 rounded font-semibold transition-colors flex items-center gap-2 text-base"
               style={{ fontFamily: 'sans-serif' }}
             >
               GET A QUOTE
-              <ArrowRight className="w-6 h-6" />
+              <ArrowRight className="w-5 h-5" />
             </button>
           </div>
         </div>
