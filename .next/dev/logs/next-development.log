@@ -1,11 +1,15 @@
-[00:00:01.605] Server  LOG      ✓ Ready in 1074ms
-[00:00:07.802] Server  LOG      ○ Compiling /products/300-series ...
-[00:00:08.878] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:21.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:23.364] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:25:45.057] Server  LOG      ✓ Compiled in 193ms
-[00:25:49.729] Server  LOG      ✓ Compiled in 252ms
-[00:25:54.456] Server  LOG      ✓ Compiled in 162ms
-[00:26:04.057] Server  LOG      ✓ Compiled in 154ms
-[00:26:04.366] Server  LOG      ✓ Compiled in 271ms
-[00:28:03.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.562] Server  LOG      ✓ Ready in 2.8s
+[00:00:07.683] Server  LOG      ○ Compiling / ...
+[00:00:10.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:54.822] Server  LOG      ✓ Compiled in 266ms
+[00:02:27.703] Browser WARN    Image with src "/manufacturing-facility-sparks-metal-cutting.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:42.544] Server  LOG      ✓ Compiled in 408ms
+[01:07:00.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:02.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:03.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:04.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:05.868] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:07.210] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:08.862] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:10.845] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

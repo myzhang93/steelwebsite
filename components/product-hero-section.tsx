@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function ProductHeroSection() {
   return (
     <section className="relative w-full h-[500px] bg-slate-900 flex items-center justify-center overflow-hidden">
@@ -19,9 +21,12 @@ export default function ProductHeroSection() {
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
           200 Series Stainless Steel: Affordable Strength, Timeless Elegance
         </h1>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition">
-          Learn More
-        </button>
+        <Link
+          href="/contact"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition"
+        >
+          Get A Quote
+        </Link>
       </div>
     </section>
   )

@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function ProductCTABanner() {
   return (
     <section className="relative py-24 bg-slate-900 overflow-hidden">
@@ -19,9 +21,12 @@ export default function ProductCTABanner() {
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">
           Empower Your Creations with Shanxi Steel's 200 Series: Affordable Strength, Timeless Elegance
         </h2>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded font-semibold text-lg transition">
-          Learn More
-        </button>
+        <Link
+          href="/contact"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded font-semibold text-lg transition"
+        >
+          Get A Quote
+        </Link>
       </div>
     </section>
   )

@@ -32,7 +32,7 @@ export default function Product400GlobalReachSection() {
           href="/contact"
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold text-lg transition"
         >
-          Learn More
+          Get A Quote
         </Link>
       </div>
     </section>

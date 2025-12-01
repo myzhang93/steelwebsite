@@ -30,10 +30,10 @@ export default function Product400HeroSection() {
           and superior machinability, this material provides exceptional value for demanding projects.
         </p>
         <Link
-          href="#advantages"
+          href="/contact"
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold text-lg transition"
         >
-          Learn More
+          Get A Quote
         </Link>
       </div>
     </section>

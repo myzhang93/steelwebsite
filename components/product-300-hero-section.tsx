@@ -29,10 +29,10 @@ export default function Product300HeroSection() {
           A leading manufacturer of high-quality stainless steel products, committed to excellence and customer satisfaction.
         </p>
         <Link
-          href="#material-properties"
+          href="/contact"
           className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold text-lg transition"
         >
-          Learn More
+          Get A Quote
           <ArrowRight className="w-5 h-5" />
         </Link>
       </div>

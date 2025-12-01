@@ -104,10 +104,10 @@ export default function Product300TypesSection() {
                   {type.description}
                 </p>
                 <Link
-                  href={`/products/300-series/${type.id}`}
-                  className="text-blue-600 hover:text-blue-700 font-semibold"
+                  href="/contact"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition"
                 >
-                  View Details →
+                  Get A Quote
                 </Link>
               </div>
             </div>

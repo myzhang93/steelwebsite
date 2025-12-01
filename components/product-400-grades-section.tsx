@@ -1,7 +1,7 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
+import Image from "next/image"
 
 interface GradeCardProps {
   grade: string
@@ -9,9 +9,11 @@ interface GradeCardProps {
   description: string
   properties: string[]
   applications: string[]
+  wordpressId?: string | null
 }
 
 function GradeCard({ grade, image, description, properties, applications }: GradeCardProps) {
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
       <div className="relative h-48 w-full">
@@ -42,10 +44,10 @@ function GradeCard({ grade, image, description, properties, applications }: Grad
           </ul>
         </div>
         <Link
-          href="#contact"
-          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition"
+          href="/contact"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center"
         >
-          Learn More
+          Get A Quote
         </Link>
       </div>
     </div>
@@ -58,7 +60,8 @@ const grades = [
     image: "/stainless-steel-sheet.png",
     description: "High strength and good corrosion resistance make 408 ideal for various industrial applications.",
     properties: ["High strength", "Good corrosion resistance", "Magnetic properties", "Good machinability"],
-    applications: ["Automotive components", "Industrial equipment", "Kitchen appliances"]
+    applications: ["Automotive components", "Industrial equipment", "Kitchen appliances"],
+    wordpressId: "423" // 从图片描述中看到的 WordPress post ID
   },
   {
     grade: "409 Stainless Steel Sheet",
@@ -156,7 +159,10 @@ export default function Product400GradesSection() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {grades.map((grade, idx) => (
-            <GradeCard key={idx} {...grade} />
+            <GradeCard
+              key={idx}
+              {...grade}
+            />
           ))}
         </div>
       </div>

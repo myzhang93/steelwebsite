@@ -57,10 +57,10 @@ export default function Product300ApplicationsSection() {
                   {app.description}
                 </p>
                 <Link
-                  href={`/industry/${app.id}`}
+                  href="/contact"
                   className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition"
                 >
-                  View Details
+                  Get A Quote
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>

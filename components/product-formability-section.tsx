@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "next/image"
 
 export default function ProductFormabilitySection() {
@@ -15,9 +16,12 @@ export default function ProductFormabilitySection() {
               in manufacturing processes, making it an ideal choice for custom applications and industrial 
               fabrication projects.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition">
-              Learn More
-            </button>
+            <Link
+              href="/contact"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition"
+            >
+              Get A Quote
+            </Link>
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden">
             <Image

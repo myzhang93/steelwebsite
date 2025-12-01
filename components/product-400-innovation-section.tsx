@@ -28,7 +28,7 @@ export default function Product400InnovationSection() {
               href="/contact"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition"
             >
-              Learn More
+              Get A Quote
             </Link>
           </div>
 

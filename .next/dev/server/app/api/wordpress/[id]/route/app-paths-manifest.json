@@ -1,0 +1,3 @@
+{
+  "/api/wordpress/[id]/route": "app/api/wordpress/[id]/route.js"
+}
