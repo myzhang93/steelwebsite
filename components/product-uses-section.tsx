@@ -9,49 +9,24 @@ export default function ProductUsesSection() {
 
   const uses = [
     {
-      title: "Commercial Kitchen Counters",
-      description: "Perfect for commercial kitchen applications requiring durability and hygiene.",
-      image: "/kitchen-stainless-steel.jpg"
+      title: "Kitchenware & Appliances",
+      description: "Cookware, kitchen sinks, and home appliances.",
+      image: "/stainless-steel-cutlery-cookware.jpg"
     },
     {
-      title: "Chemical Processing Tanks",
-      description: "Ideal for chemical processing equipment requiring corrosion resistance.",
-      image: "/chemical-stainless-steel.jpg"
+      title: "Automotive",
+      description: "Exhaust systems, body parts, and engine components.",
+      image: "/automotive-stainless-steel-parts.jpg"
     },
     {
-      title: "Bulk Food Storage Containers",
-      description: "Excellent for food storage applications meeting safety standards.",
-      image: "/food-processing-stainless-steel.jpg"
-    },
-    {
-      title: "Automotive Trims",
-      description: "Used in automotive applications for decorative and functional trims.",
-      image: "/automotive-stainless-steel.jpg"
-    },
-    {
-      title: "Architectural Cladding",
-      description: "Perfect for modern architectural applications and building facades.",
+      title: "Architecture",
+      description: "Structural components, cladding, and building facades.",
       image: "/architectural-stainless-steel-building.jpg"
     },
     {
-      title: "Hospital Surgical Equipment",
-      description: "Meets medical standards for surgical equipment and hospital fixtures.",
-      image: "/medical-stainless-steel.jpg"
-    },
-    {
-      title: "Railway Coaches Interior Panels",
-      description: "Used in railway applications for interior paneling and fixtures.",
-      image: "/stainless-steel-sheet.png"
-    },
-    {
-      title: "Electronic Enclosures",
-      description: "Ideal for electronic equipment enclosures requiring durability.",
-      image: "/industrial-steel-machinery-equipment.jpg"
-    },
-    {
-      title: "Conveyor Belts in Food Processing",
-      description: "Perfect for food processing conveyor systems requiring hygiene.",
-      image: "/food-catering-stainless-steel.jpg"
+      title: "Industrial Equipment",
+      description: "Pipes, fittings, and components for machinery and equipment.",
+      image: "/industrial-machinery-fabrication.jpg"
     }
   ]
 
@@ -61,10 +36,10 @@ export default function ProductUsesSection() {
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center">
           200 Series Stainless Steel Uses
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {uses.map((use, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-              <div className="relative h-48">
+            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 flex flex-col">
+              <div className="relative h-64 lg:h-72">
                 <Image
                   src={use.image}
                   alt={use.title}
@@ -72,12 +47,12 @@ export default function ProductUsesSection() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{use.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{use.description}</p>
+              <div className="p-8 flex flex-col flex-grow">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">{use.title}</h3>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed flex-grow">{use.description}</p>
                 <button
                   onClick={() => setIsQuoteModalOpen(true)}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition"
+                  className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold transition-colors text-base"
                 >
                   Get a Quote
                 </button>

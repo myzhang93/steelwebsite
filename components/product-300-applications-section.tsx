@@ -1,8 +1,9 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 const applications = [
   {
@@ -32,6 +33,8 @@ const applications = [
 ]
 
 export default function Product300ApplicationsSection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
+  
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,7 +43,7 @@ export default function Product300ApplicationsSection() {
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {applications.map((app) => (
-            <div key={app.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+            <div key={app.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition flex flex-col">
               <div className="relative h-64">
                 <Image
                   src={app.image}
@@ -49,25 +52,30 @@ export default function Product300ApplicationsSection() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   {app.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 leading-relaxed mb-6 flex-grow">
                   {app.description}
                 </p>
-                <Link
-                  href="/contact"
+                <button
+                  onClick={() => setIsQuoteModalOpen(true)}
                   className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition"
                 >
                   Get A Quote
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </button>
               </div>
             </div>
           ))}
         </div>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="300 Series Applications"
+      />
     </section>
   )
 }

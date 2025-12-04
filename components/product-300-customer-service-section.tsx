@@ -8,7 +8,7 @@ export default function Product300CustomerServiceSection() {
           Exceptional Customer Service and Support
         </h2>
         <p className="text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto text-center">
-          At Shanxi Steel, we pride ourselves on our customer-centric approach. Our dedicated team is committed to 
+          We pride ourselves on our customer-centric approach. Our dedicated team is committed to 
           providing exceptional service, timely delivery, and comprehensive support throughout your entire project. 
           From initial consultation to final delivery, we work closely with our clients to understand their specific 
           requirements and deliver solutions that exceed expectations. Our responsive customer service ensures that 

@@ -1,10 +1,12 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 export default function Product300HeroSection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   return (
     <section className="relative h-[500px] flex items-center justify-center">
       {/* Background Image */}
@@ -28,14 +30,19 @@ export default function Product300HeroSection() {
         <p className="text-xl md:text-2xl mb-8 leading-relaxed">
           A leading manufacturer of high-quality stainless steel products, committed to excellence and customer satisfaction.
         </p>
-        <Link
-          href="/contact"
+        <button
+          onClick={() => setIsQuoteModalOpen(true)}
           className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold text-lg transition"
         >
           Get A Quote
           <ArrowRight className="w-5 h-5" />
-        </Link>
+        </button>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="300 Series Hero"
+      />
     </section>
   )
 }

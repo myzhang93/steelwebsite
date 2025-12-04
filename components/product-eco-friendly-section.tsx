@@ -13,25 +13,24 @@ export default function ProductEcoFriendlySection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 rounded-lg overflow-hidden order-2 md:order-1">
             <Image
-              src="/stainless-steel-sheets-manufacturing.jpg"
-              alt="Eco-Friendly Manufacturing"
+              src="/custom-steel-solutions.jpg"
+              alt="Transparent Communication"
               fill
               className="object-cover"
             />
           </div>
           <div className="order-1 md:order-2">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Eco-Friendly Manufacturing
+              Transparent Communication
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Shanxi Steel is committed to sustainable manufacturing practices. Our 200 Series Stainless 
-              Steel is produced using eco-friendly processes that minimize environmental impact while 
-              maintaining the highest quality standards. We prioritize recycling and energy efficiency 
-              in our manufacturing operations.
+              We prioritize open and transparent communication with our clients at every step of the process. 
+              From the initial inquiry to delivery and beyond, we ensure that our customers are well-informed 
+              and involved in every stage of their project.
             </p>
             <button
               onClick={() => setIsQuoteModalOpen(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition"
+              className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 rounded font-semibold transition"
             >
               Get a Quote Now
             </button>
@@ -41,7 +40,7 @@ export default function ProductEcoFriendlySection() {
       <QuoteModal 
         open={isQuoteModalOpen} 
         onClose={() => setIsQuoteModalOpen(false)}
-        source="Eco-Friendly Section"
+        source="Transparent Communication Section"
       />
     </section>
   )

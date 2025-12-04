@@ -15,8 +15,8 @@ export default function Product400SeriesPage() {
     <>
       <Header />
       <Product400HeroSection />
-      <Product400AdvantagesSection />
       <Product400DimensionSection />
+      <Product400AdvantagesSection />
       <Product400SustainabilitySection />
       <Product400GradesSection />
       <Product400GlobalReachSection />
@@ -27,6 +27,7 @@ export default function Product400SeriesPage() {
     </>
   )
 }
+
 
 
 

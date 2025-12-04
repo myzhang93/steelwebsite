@@ -1,9 +1,11 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 export default function Product400HeroSection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   return (
     <section className="relative h-[600px] flex items-center justify-center">
       {/* Background Image */}
@@ -29,13 +31,18 @@ export default function Product400HeroSection() {
           making it ideal for a wide range of industrial and commercial applications. With its magnetic properties 
           and superior machinability, this material provides exceptional value for demanding projects.
         </p>
-        <Link
-          href="/contact"
+        <button
+          onClick={() => setIsQuoteModalOpen(true)}
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold text-lg transition"
         >
           Get A Quote
-        </Link>
+        </button>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="400 Series Hero"
+      />
     </section>
   )
 }

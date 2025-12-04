@@ -1,6 +1,10 @@
-import Link from "next/link"
+"use client"
+
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 export default function ProductCTABanner() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   return (
     <section className="relative py-24 bg-slate-900 overflow-hidden">
       {/* Background Image */}
@@ -19,15 +23,20 @@ export default function ProductCTABanner() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-8">
-          Empower Your Creations with Shanxi Steel's 200 Series: Affordable Strength, Timeless Elegance
+          Empower Your Creations with Steel's 200 Series: Affordable Strength, Timeless Elegance
         </h2>
-        <Link
-          href="/contact"
+        <button
+          onClick={() => setIsQuoteModalOpen(true)}
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded font-semibold text-lg transition"
         >
           Get A Quote
-        </Link>
+        </button>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="200 Series CTA"
+      />
     </section>
   )
 }

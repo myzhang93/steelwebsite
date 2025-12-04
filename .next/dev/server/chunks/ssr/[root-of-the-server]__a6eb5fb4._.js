@@ -99,7 +99,7 @@ function Product300MaterialProperties() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: "text-4xl font-bold text-gray-900 mb-6",
-                    children: "300 Series Stainless Steel Material Properties"
+                    children: "300 Series Stainless Steel Products"
                 }, void 0, false, {
                     fileName: "[project]/components/product-300-material-properties.tsx",
                     lineNumber: 5,
@@ -107,7 +107,7 @@ function Product300MaterialProperties() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-gray-600 leading-relaxed mb-8 max-w-3xl",
-                    children: "Shanxi Steel is committed to delivering exceptional quality stainless steel products through advanced technology, rigorous quality control, and a skilled workforce. Our 300 series stainless steel materials are manufactured to meet the highest industry standards, ensuring durability, corrosion resistance, and superior performance in diverse applications."
+                    children: "The 300 series stainless steels are austenitic alloys with superior corrosion resistance, high strength, and excellent weldability. The most commonly used grades in the 300 series are 304, 316, and 321, known for their versatility and durability in a wide range of applications. These alloys are highly resistant to oxidation, making them ideal for environments with higher corrosive elements."
                 }, void 0, false, {
                     fileName: "[project]/components/product-300-material-properties.tsx",
                     lineNumber: 8,
@@ -127,7 +127,7 @@ function Product300MaterialProperties() {
                                             children: "Type"
                                         }, void 0, false, {
                                             fileName: "[project]/components/product-300-material-properties.tsx",
-                                            lineNumber: 20,
+                                            lineNumber: 17,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -135,7 +135,15 @@ function Product300MaterialProperties() {
                                             children: "Size"
                                         }, void 0, false, {
                                             fileName: "[project]/components/product-300-material-properties.tsx",
-                                            lineNumber: 21,
+                                            lineNumber: 18,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                            className: "border border-gray-300 px-6 py-4 text-left font-semibold text-gray-900",
+                                            children: "Thickness Range"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/product-300-material-properties.tsx",
+                                            lineNumber: 19,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -143,18 +151,18 @@ function Product300MaterialProperties() {
                                             children: "Description"
                                         }, void 0, false, {
                                             fileName: "[project]/components/product-300-material-properties.tsx",
-                                            lineNumber: 22,
+                                            lineNumber: 20,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/product-300-material-properties.tsx",
-                                    lineNumber: 19,
+                                    lineNumber: 16,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/product-300-material-properties.tsx",
-                                lineNumber: 18,
+                                lineNumber: 15,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -163,8 +171,24 @@ function Product300MaterialProperties() {
                                         className: "bg-white",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                className: "border border-gray-300 px-6 py-4 text-gray-700",
-                                                children: "Sheet"
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 font-semibold",
+                                                children: "304"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 25,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "1000mm * 2000mm"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 26,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "0.3mm - 120mm"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/product-300-material-properties.tsx",
                                                 lineNumber: 27,
@@ -172,40 +196,40 @@ function Product300MaterialProperties() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 className: "border border-gray-300 px-6 py-4 text-gray-700",
-                                                children: "1000mm*2000mm"
+                                                children: "Most commonly used, excellent corrosion resistance, versatile."
                                             }, void 0, false, {
                                                 fileName: "[project]/components/product-300-material-properties.tsx",
                                                 lineNumber: 28,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                className: "border border-gray-300 px-6 py-4 text-gray-700",
-                                                children: "Thickness: 0.3mm-120mm"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/product-300-material-properties.tsx",
-                                                lineNumber: 29,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/product-300-material-properties.tsx",
-                                        lineNumber: 26,
+                                        lineNumber: 24,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                         className: "bg-gray-50",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                className: "border border-gray-300 px-6 py-4 text-gray-700",
-                                                children: "Coil"
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 font-semibold",
+                                                children: "316"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 31,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "1000mm * 2000mm"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/product-300-material-properties.tsx",
                                                 lineNumber: 32,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
-                                                className: "border border-gray-300 px-6 py-4 text-gray-700",
-                                                children: "1000mm-2000mm"
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "0.3mm - 120mm"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/product-300-material-properties.tsx",
                                                 lineNumber: 33,
@@ -213,7 +237,7 @@ function Product300MaterialProperties() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                                 className: "border border-gray-300 px-6 py-4 text-gray-700",
-                                                children: "Thickness: 0.3mm-120mm"
+                                                children: "Superior resistance to pitting and crevice corrosion, ideal for marine and chemical environments."
                                             }, void 0, false, {
                                                 fileName: "[project]/components/product-300-material-properties.tsx",
                                                 lineNumber: 34,
@@ -222,24 +246,147 @@ function Product300MaterialProperties() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/product-300-material-properties.tsx",
-                                        lineNumber: 31,
+                                        lineNumber: 30,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                        className: "bg-white",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 font-semibold",
+                                                children: "321"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 37,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "1000mm * 2000mm"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 38,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "0.3mm - 120mm"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 39,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700",
+                                                children: "Good oxidation resistance at higher temperatures, stabilized with titanium."
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 40,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/product-300-material-properties.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                        className: "bg-gray-50",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 font-semibold",
+                                                children: "303"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 43,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "1000mm * 2000mm"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 44,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "0.3mm - 120mm"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 45,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700",
+                                                children: "Excellent machinability, high strength, good corrosion resistance."
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 46,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/product-300-material-properties.tsx",
+                                        lineNumber: 42,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                        className: "bg-white",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 font-semibold",
+                                                children: "310"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 49,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "1000mm * 2000mm"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 50,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700 whitespace-nowrap",
+                                                children: "0.3mm - 120mm"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 51,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                className: "border border-gray-300 px-6 py-4 text-gray-700",
+                                                children: "High resistance to oxidation at elevated temperatures, ideal for high-heat environments."
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/product-300-material-properties.tsx",
+                                                lineNumber: 52,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/product-300-material-properties.tsx",
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/product-300-material-properties.tsx",
-                                lineNumber: 25,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/product-300-material-properties.tsx",
-                        lineNumber: 17,
+                        lineNumber: 14,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/product-300-material-properties.tsx",
-                    lineNumber: 16,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this)
             ]
@@ -354,7 +501,7 @@ function Product300CustomerServiceSection() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                     className: "text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto text-center",
-                    children: "At Shanxi Steel, we pride ourselves on our customer-centric approach. Our dedicated team is committed to providing exceptional service, timely delivery, and comprehensive support throughout your entire project. From initial consultation to final delivery, we work closely with our clients to understand their specific requirements and deliver solutions that exceed expectations. Our responsive customer service ensures that your questions are answered promptly and your needs are met with professionalism and expertise."
+                    children: "We pride ourselves on our customer-centric approach. Our dedicated team is committed to providing exceptional service, timely delivery, and comprehensive support throughout your entire project. From initial consultation to final delivery, we work closely with our clients to understand their specific requirements and deliver solutions that exceed expectations. Our responsive customer service ensures that your questions are answered promptly and your needs are met with professionalism and expertise."
                 }, void 0, false, {
                     fileName: "[project]/components/product-300-customer-service-section.tsx",
                     lineNumber: 10,

@@ -1,11 +1,8 @@
 "use client"
 
-import { useState } from "react"
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
-import QuoteModal from "./quote-modal"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function HeroSection() {
-  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
 
   return (
     <section className="relative w-full h-[600px] md:h-[700px] bg-slate-900 flex items-center overflow-hidden">
@@ -32,13 +29,6 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl text-white mb-8 leading-relaxed max-w-xl">
             Choose Shanxi Steel for the best quality steel—engineered with precision, trusted for durability, and built to exceed expectations.
           </p>
-          <button 
-            onClick={() => setIsQuoteModalOpen(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold flex items-center gap-2 transition"
-          >
-            GET A QUOTE
-            <ArrowRight className="w-5 h-5" />
-          </button>
         </div>
       </div>
 
@@ -51,11 +41,6 @@ export default function HeroSection() {
           <ChevronRight className="w-5 h-5" />
         </button>
       </div>
-      <QuoteModal 
-        open={isQuoteModalOpen} 
-        onClose={() => setIsQuoteModalOpen(false)}
-        source="Hero Section"
-      />
     </section>
   )
 }

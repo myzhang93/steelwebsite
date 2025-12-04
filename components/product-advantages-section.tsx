@@ -1,21 +1,21 @@
-import { DollarSign, Zap, Sparkles } from "lucide-react"
+import { DollarSign, Shield, Settings } from "lucide-react"
 
 export default function ProductAdvantagesSection() {
   const advantages = [
     {
       icon: DollarSign,
-      title: "Cost-Effectiveness",
-      description: "200 Series Stainless Steel provides excellent value for money, offering superior performance at a competitive price point."
+      title: "Cost-Effective",
+      description: "The 200 series offers a lower-cost alternative to 300 series stainless steel without sacrificing too much in terms of performance."
     },
     {
-      icon: Zap,
+      icon: Shield,
       title: "High Strength",
-      description: "Exceptional tensile and yield strength properties ensure durability and reliability in demanding applications."
+      description: "Excellent tensile strength, making it suitable for heavy-duty applications."
     },
     {
-      icon: Sparkles,
-      title: "Aesthetic Appeal",
-      description: "Beautiful polished finish and timeless elegance make it perfect for both functional and decorative applications."
+      icon: Settings,
+      title: "Formability",
+      description: "Easy to process and fabricate, ideal for various manufacturing processes such as stamping, bending, and welding."
     }
   ]
 
@@ -29,7 +29,7 @@ export default function ProductAdvantagesSection() {
           {advantages.map((advantage, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-md text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <advantage.icon className="w-8 h-8 text-blue-600" />
+                <advantage.icon className="w-8 h-8 text-blue-800" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{advantage.title}</h3>
               <p className="text-gray-600 leading-relaxed">{advantage.description}</p>

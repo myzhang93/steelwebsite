@@ -1,6 +1,11 @@
+"use client"
+
 import Image from "next/image"
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 export default function RecognitionSection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,13 +71,21 @@ export default function RecognitionSection() {
               <div className="w-full bg-gray-200 rounded-full h-3 mb-4">
                 <div className="bg-blue-600 h-3 rounded-full" style={{ width: '80%' }}></div>
               </div>
-              <button className="text-blue-600 font-semibold hover:text-blue-700 transition">
-                READ MORE →
+              <button 
+                onClick={() => setIsQuoteModalOpen(true)}
+                className="text-blue-600 font-semibold hover:text-blue-700 transition"
+              >
+                GET A QUOTE →
               </button>
             </div>
           </div>
         </div>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="Recognition Section"
+      />
     </section>
   )
 }

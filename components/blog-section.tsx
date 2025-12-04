@@ -1,7 +1,12 @@
+"use client"
+
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 export default function BlogSection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   const posts = [
     {
       image: "/manufacturing-facility-sparks-metal-cutting.jpg",
@@ -38,7 +43,7 @@ export default function BlogSection() {
         
         <div className="grid md:grid-cols-3 gap-8">
           {posts.map((post, index) => (
-            <article key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+            <article key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition flex flex-col">
               <div className="relative h-48">
                 <Image
                   src={post.image}
@@ -47,19 +52,27 @@ export default function BlogSection() {
                   className="object-cover"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <div className="text-sm text-gray-500 mb-2">{post.date}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{post.title}</h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">{post.description}</p>
-                <a href={post.link} className="text-blue-600 font-semibold flex items-center gap-2 hover:text-blue-700 transition">
-                  READ MORE
+                <p className="text-gray-600 mb-4 leading-relaxed flex-grow">{post.description}</p>
+                <button 
+                  onClick={() => setIsQuoteModalOpen(true)}
+                  className="text-blue-600 font-semibold flex items-center gap-2 hover:text-blue-700 transition"
+                >
+                  GET A QUOTE
                   <ArrowRight className="w-4 h-4" />
-                </a>
+                </button>
               </div>
             </article>
           ))}
         </div>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="Blog Section"
+      />
     </section>
   )
 }

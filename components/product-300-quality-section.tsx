@@ -15,7 +15,7 @@ export default function Product300QualitySection() {
               Superior Quality and Durability
             </h2>
             <p className="text-gray-600 leading-relaxed mb-8">
-              At Shanxi Steel, we are committed to delivering exceptional quality stainless steel products through 
+              We are committed to delivering exceptional quality stainless steel products through 
               advanced manufacturing technology, rigorous quality control processes, and a highly skilled workforce. 
               Our 300 series stainless steel materials undergo comprehensive testing and inspection to ensure they 
               meet the highest industry standards. With superior corrosion resistance, excellent mechanical properties, 

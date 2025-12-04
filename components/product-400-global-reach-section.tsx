@@ -1,9 +1,11 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 export default function Product400GlobalReachSection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   return (
     <section className="relative py-20 flex items-center justify-center">
       {/* Background Image */}
@@ -28,13 +30,18 @@ export default function Product400GlobalReachSection() {
           stainless steel sheets reach customers worldwide. Our global logistics capabilities enable us to deliver 
           high-quality products efficiently and reliably, meeting the demands of international markets.
         </p>
-        <Link
-          href="/contact"
+        <button
+          onClick={() => setIsQuoteModalOpen(true)}
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold text-lg transition"
         >
           Get A Quote
-        </Link>
+        </button>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="400 Series Global Reach"
+      />
     </section>
   )
 }

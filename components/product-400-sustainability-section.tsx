@@ -10,7 +10,7 @@ export default function Product400SustainabilitySection() {
           Sustainability Commitment
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Left Image */}
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
@@ -30,6 +30,13 @@ export default function Product400SustainabilitySection() {
               className="object-cover"
             />
           </div>
+        </div>
+
+        {/* Description Text */}
+        <div className="max-w-4xl mx-auto">
+          <p className="text-gray-600 leading-relaxed text-center">
+            We are dedicated to sustainable manufacturing practices. We continually seek ways to minimize our environmental impact by reducing waste, recycling materials, and employing energy-efficient technologies in our production processes. Choosing us as your manufacturer means supporting a partner who prioritizes environmental responsibility alongside high-quality production.
+          </p>
         </div>
       </div>
     </section>

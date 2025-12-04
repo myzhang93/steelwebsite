@@ -5,6 +5,7 @@ import Product300TypesSection from "@/components/product-300-types-section"
 import Product300QualitySection from "@/components/product-300-quality-section"
 import Product300CustomerServiceSection from "@/components/product-300-customer-service-section"
 import Product300ApplicationsSection from "@/components/product-300-applications-section"
+import Product300RelatedSection from "@/components/product-300-related-section"
 import Footer from "@/components/footer"
 
 export default function Product300SeriesPage() {
@@ -17,6 +18,7 @@ export default function Product300SeriesPage() {
       <Product300QualitySection />
       <Product300CustomerServiceSection />
       <Product300ApplicationsSection />
+      <Product300RelatedSection />
       <Footer />
     </>
   )

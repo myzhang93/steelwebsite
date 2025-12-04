@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 import QuoteModal from "./quote-modal"
 
@@ -9,28 +10,28 @@ export default function ProductCommonProductsSection() {
 
   const products = [
     {
-      name: "201 Stainless Steel Sheet",
-      description: "201 stainless steel sheet offers excellent corrosion resistance and formability, making it ideal for a wide range of applications including kitchen equipment, architectural panels, and automotive trim.",
-      image: "/stainless-steel-sheets-manufacturing.jpg"
-    },
-    {
-      name: "202 Stainless Steel Sheet",
-      description: "202 stainless steel sheet provides superior strength and durability, perfect for structural applications, food processing equipment, and industrial machinery components.",
+      name: "201 Stainless Steel",
+      description: "201 stainless steel offers high strength and low nickel content, providing good weldability and cost-effectiveness. It is widely used in kitchenware, automotive parts, and various industrial components, making it a practical and economical choice.",
       image: "/stainless-steel-sheet.png"
     },
     {
-      name: "203 Austenitic Stainless Steel",
-      description: "203 austenitic stainless steel offers excellent weldability and formability, ideal for fabrication projects requiring complex shapes and strong welded joints.",
+      name: "202 Stainless Steel",
+      description: "With enhanced corrosion resistance and slightly higher manganese content compared to 201, 202 stainless steel excels in architectural materials, building facades, and automotive components. It offers great durability at a cost-effective price.",
+      image: "/stainless-steel-sheet.png"
+    },
+    {
+      name: "201L Stainless Steel (Low Carbon)",
+      description: "Thanks to its low carbon content, 201L stainless steel provides improved corrosion resistance after welding, making it ideal for applications that require high-quality welding. It is commonly used in kitchen appliances, industrial equipment, and products that demand superior welding performance.",
       image: "/stainless-steel-sheet.png"
     },
     {
       name: "204 Stainless Steel",
-      description: "204 stainless steel provides exceptional surface finish and aesthetic appeal, perfect for decorative applications, architectural elements, and consumer products.",
+      description: "204 stainless steel features good strength and moderate corrosion resistance, offering a cost-effective and reliable option for various industrial applications. It is frequently used in automotive parts, building materials, and other sectors where cost efficiency is important.",
       image: "/stainless-steel-sheet.png"
     },
     {
-      name: "205 Stainless Steel",
-      description: "205 stainless steel offers balanced properties of strength, corrosion resistance, and cost-effectiveness, suitable for general-purpose applications across various industries.",
+      name: "209 Stainless Steel",
+      description: "With its high manganese content, 209 stainless steel delivers increased strength, making it ideal for heavy-duty applications. It is commonly used in industrial components and automotive parts that require extra strength and durability.",
       image: "/stainless-steel-sheet.png"
     }
   ]
@@ -56,12 +57,20 @@ export default function ProductCommonProductsSection() {
                 <div className="p-8 flex flex-col justify-center">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">{product.name}</h3>
                   <p className="text-gray-600 leading-relaxed mb-6">{product.description}</p>
-                  <button
-                    onClick={() => setIsQuoteModalOpen(true)}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition self-start"
-                  >
-                    Get a Quote
-                  </button>
+                  <div className="flex gap-4">
+                    <button
+                      onClick={() => setIsQuoteModalOpen(true)}
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition"
+                    >
+                      Get a Quote
+                    </button>
+                    <Link
+                      href="/products/stainless-steel-sheet"
+                      className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center"
+                    >
+                      Learn More
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

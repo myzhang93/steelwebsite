@@ -1,6 +1,12 @@
+"use client"
+
+import { useState } from "react"
 import { ArrowRight } from "lucide-react"
+import QuoteModal from "./quote-modal"
 
 export default function CompanySection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
+
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,8 +32,11 @@ export default function CompanySection() {
               With state-of-the-art facilities and a relentless focus on innovation, Shanxi Steel 
               continues to set new benchmarks in quality, sustainability, and customer satisfaction.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold flex items-center gap-2 transition">
-              READ MORE ABOUT US
+            <button 
+              onClick={() => setIsQuoteModalOpen(true)}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold flex items-center gap-2 transition"
+            >
+              GET A QUOTE
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -48,13 +57,21 @@ export default function CompanySection() {
               Our dedication to continuous improvement and innovation positions us as a premier global 
               supplier, ready to meet the evolving needs of industries worldwide.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold flex items-center gap-2 transition">
-              READ MORE ABOUT US
+            <button 
+              onClick={() => setIsQuoteModalOpen(true)}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold flex items-center gap-2 transition"
+            >
+              GET A QUOTE
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="Company Section"
+      />
     </section>
   )
 }

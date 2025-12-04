@@ -1,7 +1,11 @@
-import Link from "next/link"
+"use client"
+
 import Image from "next/image"
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 export default function ProductFormabilitySection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,12 +20,12 @@ export default function ProductFormabilitySection() {
               in manufacturing processes, making it an ideal choice for custom applications and industrial 
               fabrication projects.
             </p>
-            <Link
-              href="/contact"
+            <button
+              onClick={() => setIsQuoteModalOpen(true)}
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition"
             >
               Get A Quote
-            </Link>
+            </button>
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden">
             <Image
@@ -33,6 +37,11 @@ export default function ProductFormabilitySection() {
           </div>
         </div>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="200 Series Formability"
+      />
     </section>
   )
 }

@@ -1,9 +1,11 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
+import { useState } from "react"
+import QuoteModal from "./quote-modal"
 
 export default function Product400InnovationSection() {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,12 +26,12 @@ export default function Product400InnovationSection() {
               technologies and methodologies that can enhance the performance and sustainability of our 400 series 
               stainless steel sheets.
             </p>
-            <Link
-              href="/contact"
+            <button
+              onClick={() => setIsQuoteModalOpen(true)}
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition"
             >
               Get A Quote
-            </Link>
+            </button>
           </div>
 
           {/* Right Image */}
@@ -43,6 +45,11 @@ export default function Product400InnovationSection() {
           </div>
         </div>
       </div>
+      <QuoteModal 
+        open={isQuoteModalOpen} 
+        onClose={() => setIsQuoteModalOpen(false)}
+        source="400 Series Innovation"
+      />
     </section>
   )
 }
