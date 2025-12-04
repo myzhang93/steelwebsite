@@ -1,1107 +1,464 @@
-[00:00:01.694] Server  LOG      ✓ Ready in 1123ms
-[00:00:04.759] Server  LOG      ○ Compiling / ...
-[00:00:05.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:16.753] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <div> p 
-
-  ...
-    <LoadingBoundary name="201/" loading={Promise}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/products/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="products/s...">
-                <SegmentTrieNode>
-                <StainlessSteel201Page>
-                  <Header>
-                  <StainlessSteel201Page>
-                    <div className="min-h-scre...">
-                      <div className="max-w-4xl ...">
-                        <article className="prose pros...">
-                          <MarkdownContent content={"# 201 St..."}>
-                            <Markdown remarkPlugins={[...]} components={{h1:function h1, ...}}>
-                              <h1>
-                              <h2>
-                              <p>
-                              <ul>
-                              <p>
-                              <p node={{type:"element", ...}}>
->                               <p className="text-gray-700 leading-relaxed mb-4">
-                                  <img src="https://vi..." alt="Image 1" title="Photo of 2..." ...>
->                                   <div className="my-6">
-                                  ...
-                              ...
-                  ...
-              ...
-            ...
-
-[00:00:16.753] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. p <div>
-[00:04:30.938] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:31.311] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <div> p 
-
-  ...
-    <LoadingBoundary name="201/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/products/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="products/s...">
-                <SegmentTrieNode>
-                <StainlessSteel201Page>
-                  <Header>
-                  <StainlessSteel201Page>
-                    <div className="min-h-scre...">
-                      <div className="max-w-4xl ...">
-                        <article className="prose pros...">
-                          <MarkdownContent content={"# 201 St..."}>
-                            <Markdown remarkPlugins={[...]} components={{h1:function h1, ...}}>
-                              <h1>
-                              <h2>
-                              <p>
-                              <ul>
-                              <p>
-                              <p node={{type:"element", ...}}>
->                               <p className="text-gray-700 leading-relaxed mb-4">
-                                  <img src="/stainless..." alt="Image 1" title="Photo of 2..." ...>
->                                   <div className="my-6">
-                                  ...
-                              ...
-                  ...
-              ...
-            ...
-
-[00:04:31.311] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. p <div>
-[00:04:31.312] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-[00:08:37.736] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:38.094] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <div> p 
-
-  ...
-    <LoadingBoundary name="201/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/products/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="products/s...">
-                <SegmentTrieNode>
-                <StainlessSteel201Page>
-                  <Header>
-                  <StainlessSteel201Page>
-                    <div className="min-h-scre...">
-                      <div className="max-w-4xl ...">
-                        <article className="prose pros...">
-                          <MarkdownContent content={"# 201 St..."}>
-                            <Markdown remarkPlugins={[...]} components={{h1:function h1, ...}}>
-                              <h1>
-                              <h2>
-                              <p>
-                              <ul>
-                              <p>
-                              <p node={{type:"element", ...}}>
->                               <p className="text-gray-700 leading-relaxed mb-4">
-                                  <img src="/201-ba-fi..." alt="Image 1" title="Photo of 2..." ...>
->                                   <div className="my-6">
-                                  ...
-                              ...
-                  ...
-              ...
-            ...
-
-[00:08:38.094] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. p <div>
-[00:08:38.094] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-[00:12:56.995] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:57.336] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <div> p 
-
-  ...
-    <LoadingBoundary name="201/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/products/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="products/s...">
-                <SegmentTrieNode>
-                <StainlessSteel201Page>
-                  <Header>
-                  <StainlessSteel201Page>
-                    <div className="min-h-scre...">
-                      <div className="max-w-4xl ...">
-                        <article className="prose pros...">
-                          <MarkdownContent content={"# 201 St..."}>
-                            <Markdown remarkPlugins={[...]} components={{h1:function h1, ...}}>
-                              <h1>
-                              <h2>
-                              <p>
-                              <ul>
-                              <p>
-                              <p node={{type:"element", ...}}>
->                               <p className="text-gray-700 leading-relaxed mb-4">
-                                  <img src={"https://..."} alt="Image 1" title="Photo of 2..." ...>
->                                   <div className="my-6">
-                                  ...
-                              ...
-                  ...
-              ...
-            ...
-
-[00:12:57.336] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. p <div>
-[00:12:57.336] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-[00:13:36.290] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:36.613] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <div> p 
-
-  ...
-    <LoadingBoundary name="201/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/products/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="products/s...">
-                <SegmentTrieNode>
-                <StainlessSteel201Page>
-                  <Header>
-                  <StainlessSteel201Page>
-                    <div className="min-h-scre...">
-                      <div className="max-w-4xl ...">
-                        <article className="prose pros...">
-                          <MarkdownContent content={"# 201 St..."}>
-                            <Markdown remarkPlugins={[...]} components={{h1:function h1, ...}}>
-                              <h1>
-                              <h2>
-                              <p>
-                              <ul>
-                              <p>
-                              <p node={{type:"element", ...}}>
->                               <p className="text-gray-700 leading-relaxed mb-4">
-                                  <img src={"https://..."} alt="Image 1" title="Photo of 2..." ...>
->                                   <div className="my-6">
-                                  ...
-                              ...
-                  ...
-              ...
-            ...
-
-[00:13:36.613] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. p <div>
-[00:13:36.613] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-[00:15:44.325] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:00:01.676] Server  LOG      ✓ Ready in 1084ms
+[00:00:09.198] Server  LOG      ○ Compiling / ...
+[00:00:11.075] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:41.344] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
 
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:15:44.327] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:03:41.350] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
 
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:15:44.328] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:15:44.340] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:03:41.655] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
 
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:15:44.345] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:15:44.352] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:03:41.656] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
 
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:15:44.356] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:15:44.357] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:03:41.658] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
 
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:15:44.360] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:15:44.362] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:03:41.659] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
 
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:15:44.372] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:15:44.374] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:03:41.690] Server  LOG      ✓ Compiled in 696ms
+[00:03:42.602] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
+
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:03:44.594] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
+
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:16.589] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
+
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.602] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
+
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:23.595] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
+
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:32.385] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
 
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:15:44.377] Server  LOG      ✓ Compiled in 173ms
-[00:15:44.919] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:04:32.505] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-https://nextjs.org/docs/messages/module-not-found
-[00:15:57.923] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
-[00:15:57.923] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:04:33.328] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-https://nextjs.org/docs/messages/module-not-found
-[00:16:06.241] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:04:33.466] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
+
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:34.339] Browser ERROR   uncaughtError: Error: ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
 
-[00:16:06.243] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
 
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
 
 
-[00:16:06.250] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:04:34.549] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:16:06.252] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:04:34.549] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-[00:16:06.254] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:16:06.256] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:04:43.595] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-[00:16:06.259] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:16:06.261] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
+[00:05:25.600] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-[00:16:06.284] Server  LOG      ✓ Compiled in 280ms
-[00:16:06.910] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:08.919] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
-[00:16:17.911] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:05:27.593] Browser ERROR   ./lib/markdown.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from 'fs'
+    | ^^^^^^^^^^^^^^^^^^^
+  2 | import path from 'path'
+  3 | import matter from 'gray-matter'
+  4 |
 
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+Import traces:
+  Client Component Browser:
+    ./lib/markdown.ts [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
-https://nextjs.org/docs/messages/module-not-found
-[00:16:18.916] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
+  Client Component SSR:
+    ./lib/markdown.ts [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
+    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
 
 https://nextjs.org/docs/messages/module-not-found
-[00:16:21.765] Server  ERROR    ⨯ ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
+[00:05:42.824] Server  LOG      ✓ Compiled in 238ms
+[00:05:44.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:45.593] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
 
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:16:21.885] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:22.875] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:22.875] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:23.589] Browser ERROR   uncaughtError: Error: ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:16:23.792] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:23.792] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:16:31.923] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:17:14.921] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:17:17.917] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:17:19.917] Browser ERROR   ./components/markdown-content.tsx:5:1
-Module not found: Can't resolve 'rehype-raw'
-  3 | import ReactMarkdown from 'react-markdown'
-  4 | import remarkGfm from 'remark-gfm'
-> 5 | import rehypeRaw from 'rehype-raw'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import Image from 'next/image'
-  7 |
-  8 | export default function MarkdownContent({ content }: { content: string }) {
-
-Import trace:
-  Server Component:
-    ./components/markdown-content.tsx
-    ./app/products/stainless-steel-sheet/201/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-[00:17:21.626] Server  LOG      ✓ Compiled in 122ms
-[00:17:22.985] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:25.916] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <div> p 
-
-  ...
-    <LoadingBoundary name="201/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/products/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="products/s...">
-                <SegmentTrieNode>
-                <StainlessSteel201Page>
-                  <Header>
-                  <StainlessSteel201Page>
-                    <div className="min-h-scre...">
-                      <div className="max-w-4xl ...">
-                        <article className="prose pros...">
-                          <MarkdownContent content={"# 201 St..."}>
-                            <Markdown remarkPlugins={[...]} components={{h1:function h1, ...}}>
-                              <h1>
-                              <h2>
-                              <p>
-                              <ul>
-                              <p>
-                              <p node={{type:"element", ...}}>
->                               <p className="text-gray-700 leading-relaxed mb-4">
-                                  <img src={"https://..."} alt="Image 1" title="Photo of 2..." ...>
->                                   <div className="my-6">
-                                  ...
-                              ...
-                  ...
-              ...
-            ...
-
-[00:17:25.916] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. p <div>
-[00:17:25.916] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-[00:34:07.629] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:34:07.991] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <div> p 
-
-  ...
-    <LoadingBoundary name="201/" loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/products/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="products/s...">
-                <SegmentTrieNode>
-                <StainlessSteel201Page>
-                  <Header>
-                  <StainlessSteel201Page>
-                    <div className="min-h-scre...">
-                      <div className="max-w-4xl ...">
-                        <article className="prose pros...">
-                          <MarkdownContent content={"# 201 St..."}>
-                            <Markdown remarkPlugins={[...]} components={{h1:function h1, ...}}>
-                              <h1>
-                              <h2>
-                              <p>
-                              <ul>
-                              <p>
-                              <p node={{type:"element", ...}}>
->                               <p className="text-gray-700 leading-relaxed mb-4">
-                                  <img src={"https://..."} alt="Image 1" title="Photo of 2..." ...>
->                                   <div className="my-6">
-                                  ...
-                              ...
-                  ...
-              ...
-            ...
-
-[00:34:07.991] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. p <div>
-[00:34:07.991] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-https://react.dev/link/hydration-mismatch
-[00:35:12.144] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:35:24.493] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <div> p 
-
-  ...
-    <LoadingBoundary name="201/" loading={Promise}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/products/..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="products/s...">
-                <SegmentTrieNode>
-                <StainlessSteel201Page>
-                  <Header>
-                  <StainlessSteel201Page>
-                    <div className="min-h-scre...">
-                      <div className="max-w-4xl ...">
-                        <article className="prose pros...">
-                          <MarkdownContent content={"# 201 St..."}>
-                            <Markdown remarkPlugins={[...]} components={{h1:function h1, ...}}>
-                              <h1>
-                              <h2>
-                              <p>
-                              <ul>
-                              <p>
-                              <p node={{type:"element", ...}}>
->                               <p className="text-gray-700 leading-relaxed mb-4">
-                                  <img src={"https://..."} alt="Image 1" title="Photo of 2..." ...>
->                                   <div className="my-6">
-                                  ...
-                              ...
-                  ...
-              ...
-            ...
-
-[00:35:24.493] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. p <div>
-[00:35:29.508] Server  LOG      ✓ Compiled in 132ms
-[00:35:29.732] Browser ERROR   uncaughtError: ReferenceError: React is not defined
-[00:35:37.834] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:35:38.800] Server  LOG      ✓ Compiled in 127ms
-[00:35:39.017] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:35:43.016] Server  LOG      ✓ Compiled in 134ms
-[00:49:32.897] Server  LOG      ✓ Compiled in 126ms
-[01:09:52.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:10:24.995] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:22:57.660] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:26:49.098] Server  LOG      ✓ Compiled in 181ms
-[01:33:40.178] Server  LOG      ✓ Compiled in 151ms
-[01:33:41.458] Server  LOG      ✓ Compiled in 184ms
-[01:33:43.728] Server  ERROR   D:\111work\steel-website-clone (1)\.next\dev\server\chunks\ssr\[root-of-the-server]__428fc63e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[01:33:43.731] Server  ERROR    ⨯ ReferenceError: ProductPipeTubeRelatedSection is not defined
-[01:33:43.883] Browser ERROR   uncaughtError: ReferenceError: ProductPipeTubeRelatedSection is not defined
-[01:33:45.848] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:37:14.785] Server  LOG      ✓ Compiled in 227ms
-[01:37:17.651] Server  LOG      ✓ Compiled in 349ms
-[01:40:01.650] Server  LOG      ✓ Compiled in 156ms
-[01:40:04.475] Server  LOG      ✓ Compiled in 138ms
-[01:40:05.633] Server  LOG      ✓ Compiled in 166ms
-[01:40:08.105] Server  LOG      ✓ Compiled in 175ms
-[02:08:04.289] Server  LOG      ✓ Compiled in 156ms
-[02:08:06.646] Server  LOG      ✓ Compiled in 180ms
-[02:27:21.382] Server  LOG      ✓ Compiled in 289ms
-[06:57:14.231] Server  LOG      ✓ Compiled in 185ms
-[06:57:22.881] Server  LOG      ✓ Compiled in 167ms
-[07:24:40.579] Server  LOG      ✓ Compiled in 110ms
-[07:26:38.567] Server  LOG      ✓ Compiled in 134ms
-[10:02:28.687] Server  LOG      ✓ Compiled in 307ms
-[10:02:39.098] Server  LOG      ✓ Compiled in 194ms
-[10:19:53.197] Server  LOG      ✓ Compiled in 184ms
-[10:26:14.276] Server  LOG      ✓ Compiled in 271ms
-[10:26:36.306] Server  LOG      ✓ Compiled in 229ms
-[10:47:02.323] Server  LOG      ✓ Compiled in 245ms
-[10:52:44.872] Server  LOG      ✓ Compiled in 423ms
-[10:52:50.328] Server  LOG      ✓ Compiled in 178ms
-[18:51:41.949] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[18:53:38.829] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[18:59:38.978] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[19:06:10.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[19:19:20.429] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[19:28:01.443] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Check the render method of `ArticleNavigation`.  It was passed a child from StainlessSteel201Page.
+[00:08:40.316] Server  LOG      ✓ Compiled in 305ms
+[00:10:20.217] Server  LOG      ✓ Compiled in 254ms
+[00:13:53.402] Server  LOG      ✓ Compiled in 222ms

@@ -1,15 +1,8 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
   "/products/200-series/page": "app/products/200-series/page.js",
-  "/products/300-series/page": "app/products/300-series/page.js",
-  "/products/stainless-steel-coil/201/page": "app/products/stainless-steel-coil/201/page.js",
-  "/products/stainless-steel-coil/202/page": "app/products/stainless-steel-coil/202/page.js",
-  "/products/stainless-steel-coil/page": "app/products/stainless-steel-coil/page.js",
   "/products/stainless-steel-pipe-tube/201/page": "app/products/stainless-steel-pipe-tube/201/page.js",
-  "/products/stainless-steel-pipe-tube/202/page": "app/products/stainless-steel-pipe-tube/202/page.js",
   "/products/stainless-steel-pipe-tube/page": "app/products/stainless-steel-pipe-tube/page.js",
   "/products/stainless-steel-sheet/201/page": "app/products/stainless-steel-sheet/201/page.js",
-  "/products/stainless-steel-sheet/202/page": "app/products/stainless-steel-sheet/202/page.js",
   "/products/stainless-steel-sheet/page": "app/products/stainless-steel-sheet/page.js"
 }
