@@ -1465,13 +1465,37 @@ function GradeCard({ grade, image, description, properties, applications }) {
                         fileName: "[project]/components/product-sheet-200-grades-section.tsx",
                         lineNumber: 37,
                         columnNumber: 11
+                    }, this) : grade === "201L Stainless Steel" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/products/stainless-steel-sheet/201L",
+                        className: "inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto",
+                        children: "Learn More"
+                    }, void 0, false, {
+                        fileName: "[project]/components/product-sheet-200-grades-section.tsx",
+                        lineNumber: 44,
+                        columnNumber: 11
+                    }, this) : grade === "204 Stainless Steel" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/products/stainless-steel-sheet/204",
+                        className: "inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto",
+                        children: "Learn More"
+                    }, void 0, false, {
+                        fileName: "[project]/components/product-sheet-200-grades-section.tsx",
+                        lineNumber: 51,
+                        columnNumber: 11
+                    }, this) : grade === "209 Stainless Steel" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/products/stainless-steel-sheet/209",
+                        className: "inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto",
+                        children: "Learn More"
+                    }, void 0, false, {
+                        fileName: "[project]/components/product-sheet-200-grades-section.tsx",
+                        lineNumber: 58,
+                        columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         href: "/products/200-series",
                         className: "inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto",
                         children: "Learn More"
                     }, void 0, false, {
                         fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-                        lineNumber: 44,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1598,7 +1622,7 @@ function ProductSheet200GradesSection() {
                             children: "200 Series Grades"
                         }, void 0, false, {
                             fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-                            lineNumber: 159,
+                            lineNumber: 180,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1606,13 +1630,13 @@ function ProductSheet200GradesSection() {
                             children: "Explore our comprehensive selection of 200 series stainless steel sheets and plates. Each grade offers unique properties tailored to specific applications and requirements."
                         }, void 0, false, {
                             fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-                            lineNumber: 162,
+                            lineNumber: 183,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-                    lineNumber: 158,
+                    lineNumber: 179,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1621,12 +1645,12 @@ function ProductSheet200GradesSection() {
                             ...grade
                         }, idx, false, {
                             fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-                            lineNumber: 169,
+                            lineNumber: 190,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-                    lineNumber: 167,
+                    lineNumber: 188,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1637,23 +1661,23 @@ function ProductSheet200GradesSection() {
                         children: "Learn more about 200 Series →"
                     }, void 0, false, {
                         fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-                        lineNumber: 177,
+                        lineNumber: 198,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-                    lineNumber: 176,
+                    lineNumber: 197,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-            lineNumber: 157,
+            lineNumber: 178,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/product-sheet-200-grades-section.tsx",
-        lineNumber: 156,
+        lineNumber: 177,
         columnNumber: 5
     }, this);
 }

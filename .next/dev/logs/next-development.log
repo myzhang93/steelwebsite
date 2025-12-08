@@ -1,464 +1,52 @@
-[00:00:01.676] Server  LOG      ✓ Ready in 1084ms
-[00:00:09.198] Server  LOG      ○ Compiling / ...
-[00:00:11.075] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:41.344] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:41.350] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:41.655] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:41.656] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:41.658] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:41.659] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:03:41.690] Server  LOG      ✓ Compiled in 696ms
-[00:03:42.602] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:03:44.594] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:16.589] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:18.602] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:23.595] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:32.385] Server  ERROR    ⨯ ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:32.505] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:33.328] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:33.466] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:34.339] Browser ERROR   uncaughtError: Error: ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-[00:04:34.549] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:34.549] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:04:43.595] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:05:25.600] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:05:27.593] Browser ERROR   ./lib/markdown.ts:1:1
-Module not found: Can't resolve 'fs'
-> 1 | import fs from 'fs'
-    | ^^^^^^^^^^^^^^^^^^^
-  2 | import path from 'path'
-  3 | import matter from 'gray-matter'
-  4 |
-
-Import traces:
-  Client Component Browser:
-    ./lib/markdown.ts [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component Browser]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/markdown.ts [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Client Component SSR]
-    ./app/products/stainless-steel-sheet/201/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-[00:05:42.824] Server  LOG      ✓ Compiled in 238ms
-[00:05:44.402] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:45.593] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:00.931] Server  LOG      ✓ Ready in 596ms
+[00:00:04.340] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.718] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
 
 Check the render method of `ArticleNavigation`.  It was passed a child from StainlessSteel201Page.
-[00:08:40.316] Server  LOG      ✓ Compiled in 305ms
-[00:10:20.217] Server  LOG      ✓ Compiled in 254ms
-[00:13:53.402] Server  LOG      ✓ Compiled in 222ms
+[00:01:08.597] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:08.869] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `ArticleNavigation`.  It was passed a child from StainlessSteel201Page.
+[00:04:46.220] Server  LOG      ✓ Compiled in 286ms
+[00:05:02.182] Server  LOG      ✓ Compiled in 264ms
+[00:05:04.846] Server  LOG      ✓ Compiled in 153ms
+[00:05:36.855] Server  LOG      ✓ Compiled in 204ms
+[01:01:24.942] Server  LOG      ✓ Compiled in 195ms
+[01:01:28.686] Server  LOG      ✓ Compiled in 201ms
+[01:07:00.829] Server  LOG      ✓ Compiled in 272ms
+[01:07:01.145] Server  LOG      ✓ Compiled in 225ms
+[01:07:01.989] Server  LOG      ✓ Compiled in 254ms
+[01:07:03.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:10:13.551] Server  LOG      ✓ Compiled in 316ms
+[01:10:16.414] Server  LOG      ✓ Compiled in 318ms
+[01:11:37.362] Server  LOG      ✓ Compiled in 173ms
+[01:13:11.689] Server  LOG      ✓ Compiled in 173ms
+[01:33:33.556] Server  LOG      ✓ Compiled in 195ms
+[01:36:18.893] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:44:39.938] Server  LOG      ✓ Compiled in 533ms
+[03:02:53.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:14:38.606] Server  LOG      ✓ Compiled in 181ms
+[03:35:25.042] Server  LOG      ✓ Compiled in 196ms
+[03:52:38.685] Server  LOG      ✓ Compiled in 237ms
+[03:53:17.529] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:57:41.521] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:22:42.667] Server  LOG      ✓ Compiled in 152ms
+[04:31:21.499] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:32:47.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:42:06.066] Server  LOG      ✓ Compiled in 168ms
+[04:44:23.234] Server  LOG      ✓ Compiled in 334ms
+[04:44:27.185] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:44:58.876] Server  LOG      ✓ Compiled in 246ms
+[04:57:02.055] Server  LOG      ✓ Compiled in 172ms
+[05:07:17.166] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:09:39.434] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:23:52.607] Server  LOG      ✓ Compiled in 177ms
+[05:23:55.378] Server  LOG      ✓ Compiled in 220ms
+[05:28:30.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:41:00.273] Server  LOG      ✓ Compiled in 168ms
+[05:47:14.636] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:04:52.113] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:05:23.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:24:53.809] Server  LOG      ✓ Compiled in 166ms
+[07:02:38.252] Server  LOG      ✓ Compiled in 192ms
+[07:06:15.138] Server  LOG      ✓ Compiled in 172ms

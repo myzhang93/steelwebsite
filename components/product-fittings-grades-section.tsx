@@ -7,9 +7,10 @@ interface GradeCardProps {
   grade: string
   image: string
   description: string
+  link?: string
 }
 
-function GradeCard({ grade, image, description }: GradeCardProps) {
+function GradeCard({ grade, image, description, link = "/products/200-series" }: GradeCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
       <div className="relative h-48 w-full">
@@ -24,7 +25,7 @@ function GradeCard({ grade, image, description }: GradeCardProps) {
         <h3 className="text-2xl font-bold text-gray-900 mb-3">{grade}</h3>
         <p className="text-gray-600 mb-4 leading-relaxed flex-grow">{description}</p>
         <Link
-          href="/products/200-series"
+          href={link}
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
         >
           Learn More
@@ -38,27 +39,32 @@ const grades = [
   {
     grade: "201 Stainless Steel Fittings",
     image: "/stainless-steel-sheet.png",
-    description: "201 stainless steel fittings offer cost-effective solutions with good corrosion resistance and excellent weldability. Perfect for general plumbing, industrial piping, and decorative applications requiring reliable connections."
+    description: "201 stainless steel fittings offer cost-effective solutions with good corrosion resistance and excellent weldability. Perfect for general plumbing, industrial piping, and decorative applications requiring reliable connections.",
+    link: "/products/stainless-steel-fittings/201"
   },
   {
     grade: "202 Stainless Steel Fittings",
     image: "/stainless-steel-sheet.png",
-    description: "202 stainless steel fittings provide enhanced corrosion resistance suitable for mildly corrosive environments. Ideal for architectural systems, automotive applications, and decorative installations requiring durability and aesthetic appeal."
+    description: "202 stainless steel fittings provide enhanced corrosion resistance suitable for mildly corrosive environments. Ideal for architectural systems, automotive applications, and decorative installations requiring durability and aesthetic appeal.",
+    link: "/products/stainless-steel-fittings/202"
   },
   {
     grade: "201L Stainless Steel Fittings",
     image: "/stainless-steel-sheet.png",
-    description: "201L fittings feature low carbon content for superior weldability and reduced intergranular corrosion risk. Perfect for welded piping systems, tanks, and applications requiring enhanced corrosion resistance in welded areas."
+    description: "201L fittings feature low carbon content for superior weldability and reduced intergranular corrosion risk. Perfect for welded piping systems, tanks, and applications requiring enhanced corrosion resistance in welded areas.",
+    link: "/products/stainless-steel-fittings/201L"
   },
   {
     grade: "204 Stainless Steel Fittings",
     image: "/stainless-steel-sheet.png",
-    description: "204 stainless steel fittings deliver enhanced performance with superior corrosion resistance and higher strength. Designed for chemical processing, marine environments, and industrial applications demanding superior durability."
+    description: "204 stainless steel fittings deliver enhanced performance with superior corrosion resistance and higher strength. Designed for chemical processing, marine environments, and industrial applications demanding superior durability.",
+    link: "/products/stainless-steel-fittings/204"
   },
   {
     grade: "209 Stainless Steel Fittings",
     image: "/stainless-steel-sheet.png",
-    description: "209 fittings represent premium-grade quality with exceptional corrosion resistance and high-temperature performance. Ideal for critical applications in power generation, aerospace, and high-performance industrial systems requiring maximum reliability."
+    description: "209 fittings represent premium-grade quality with exceptional corrosion resistance and high-temperature performance. Ideal for critical applications in power generation, aerospace, and high-performance industrial systems requiring maximum reliability.",
+    link: "/products/stainless-steel-fittings/209"
   }
 ]
 

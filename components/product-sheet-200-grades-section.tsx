@@ -40,6 +40,27 @@ function GradeCard({ grade, image, description, properties, applications }: Grad
           >
             Learn More
           </Link>
+        ) : grade === "201L Stainless Steel" ? (
+          <Link
+            href="/products/stainless-steel-sheet/201L"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+          >
+            Learn More
+          </Link>
+        ) : grade === "204 Stainless Steel" ? (
+          <Link
+            href="/products/stainless-steel-sheet/204"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+          >
+            Learn More
+          </Link>
+        ) : grade === "209 Stainless Steel" ? (
+          <Link
+            href="/products/stainless-steel-sheet/209"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+          >
+            Learn More
+          </Link>
         ) : (
           <Link
             href="/products/200-series"

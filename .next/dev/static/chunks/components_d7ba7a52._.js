@@ -1507,17 +1507,20 @@ const grades = [
     {
         grade: "201L Stainless Steel Coil",
         image: "/stainless-steel-sheet.png",
-        description: "201L is the low-carbon version of 201, offering superior weldability and reduced intergranular corrosion. Perfect for welded fabrications and applications requiring enhanced corrosion resistance in welded areas."
+        description: "201L is the low-carbon version of 201, offering superior weldability and reduced intergranular corrosion. Perfect for welded fabrications and applications requiring enhanced corrosion resistance in welded areas.",
+        link: "/products/stainless-steel-coil/201L"
     },
     {
         grade: "204 Stainless Steel Coil",
         image: "/stainless-steel-sheet.png",
-        description: "204 stainless steel coil delivers enhanced corrosion resistance and higher strength. Designed for demanding applications in chemical processing, marine environments, and industrial equipment requiring superior performance."
+        description: "204 stainless steel coil delivers enhanced corrosion resistance and higher strength. Designed for demanding applications in chemical processing, marine environments, and industrial equipment requiring superior performance.",
+        link: "/products/stainless-steel-coil/204"
     },
     {
         grade: "209 Stainless Steel Coil",
         image: "/stainless-steel-sheet.png",
-        description: "209 stainless steel coil offers premium-grade quality with superior corrosion resistance and high-temperature performance. Ideal for critical applications in power generation, aerospace, and high-performance industrial systems."
+        description: "209 stainless steel coil offers premium-grade quality with superior corrosion resistance and high-temperature performance. Ideal for critical applications in power generation, aerospace, and high-performance industrial systems.",
+        link: "/products/stainless-steel-coil/209"
     }
 ];
 function ProductCoilGradesSection() {
@@ -1534,7 +1537,7 @@ function ProductCoilGradesSection() {
                             children: "200 Series Grades Available"
                         }, void 0, false, {
                             fileName: "[project]/components/product-coil-grades-section.tsx",
-                            lineNumber: 73,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1542,13 +1545,13 @@ function ProductCoilGradesSection() {
                             children: "Explore our comprehensive selection of 200 series stainless steel coils. Each grade offers unique properties tailored to specific manufacturing and application requirements."
                         }, void 0, false, {
                             fileName: "[project]/components/product-coil-grades-section.tsx",
-                            lineNumber: 76,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/product-coil-grades-section.tsx",
-                    lineNumber: 72,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1557,23 +1560,23 @@ function ProductCoilGradesSection() {
                             ...grade
                         }, idx, false, {
                             fileName: "[project]/components/product-coil-grades-section.tsx",
-                            lineNumber: 83,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/product-coil-grades-section.tsx",
-                    lineNumber: 81,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/product-coil-grades-section.tsx",
-            lineNumber: 71,
+            lineNumber: 74,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/product-coil-grades-section.tsx",
-        lineNumber: 70,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 }

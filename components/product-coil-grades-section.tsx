@@ -51,17 +51,20 @@ const grades = [
   {
     grade: "201L Stainless Steel Coil",
     image: "/stainless-steel-sheet.png",
-    description: "201L is the low-carbon version of 201, offering superior weldability and reduced intergranular corrosion. Perfect for welded fabrications and applications requiring enhanced corrosion resistance in welded areas."
+    description: "201L is the low-carbon version of 201, offering superior weldability and reduced intergranular corrosion. Perfect for welded fabrications and applications requiring enhanced corrosion resistance in welded areas.",
+    link: "/products/stainless-steel-coil/201L"
   },
   {
     grade: "204 Stainless Steel Coil",
     image: "/stainless-steel-sheet.png",
-    description: "204 stainless steel coil delivers enhanced corrosion resistance and higher strength. Designed for demanding applications in chemical processing, marine environments, and industrial equipment requiring superior performance."
+    description: "204 stainless steel coil delivers enhanced corrosion resistance and higher strength. Designed for demanding applications in chemical processing, marine environments, and industrial equipment requiring superior performance.",
+    link: "/products/stainless-steel-coil/204"
   },
   {
     grade: "209 Stainless Steel Coil",
     image: "/stainless-steel-sheet.png",
-    description: "209 stainless steel coil offers premium-grade quality with superior corrosion resistance and high-temperature performance. Ideal for critical applications in power generation, aerospace, and high-performance industrial systems."
+    description: "209 stainless steel coil offers premium-grade quality with superior corrosion resistance and high-temperature performance. Ideal for critical applications in power generation, aerospace, and high-performance industrial systems.",
+    link: "/products/stainless-steel-coil/209"
   }
 ]
 

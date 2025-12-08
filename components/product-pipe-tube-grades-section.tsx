@@ -51,17 +51,20 @@ const grades = [
   {
     grade: "201L Stainless Steel Pipe & Tube",
     image: "/stainless-steel-sheet.png",
-    description: "201L pipes and tubes feature low carbon content for superior weldability and reduced susceptibility to intergranular corrosion. Ideal for welded piping systems, heat exchangers, and critical welded structures."
+    description: "201L pipes and tubes feature low carbon content for superior weldability and reduced susceptibility to intergranular corrosion. Ideal for welded piping systems, heat exchangers, and critical welded structures.",
+    link: "/products/stainless-steel-pipe-tube/201L"
   },
   {
     grade: "204 Stainless Steel Pipe & Tube",
     image: "/stainless-steel-sheet.png",
-    description: "204 stainless steel pipes and tubes deliver enhanced performance with superior corrosion resistance and higher strength. Designed for chemical processing, marine applications, and demanding industrial environments."
+    description: "204 stainless steel pipes and tubes deliver enhanced performance with superior corrosion resistance and higher strength. Designed for chemical processing, marine applications, and demanding industrial environments.",
+    link: "/products/stainless-steel-pipe-tube/204"
   },
   {
     grade: "209 Stainless Steel Pipe & Tube",
     image: "/stainless-steel-sheet.png",
-    description: "209 pipes and tubes represent premium-grade quality with exceptional corrosion resistance and high-temperature performance. Perfect for power generation, aerospace components, and critical industrial applications requiring superior reliability."
+    description: "209 pipes and tubes represent premium-grade quality with exceptional corrosion resistance and high-temperature performance. Perfect for power generation, aerospace components, and critical industrial applications requiring superior reliability.",
+    link: "/products/stainless-steel-pipe-tube/209"
   }
 ]
 

@@ -1507,17 +1507,20 @@ const grades = [
     {
         grade: "201L Stainless Steel Pipe & Tube",
         image: "/stainless-steel-sheet.png",
-        description: "201L pipes and tubes feature low carbon content for superior weldability and reduced susceptibility to intergranular corrosion. Ideal for welded piping systems, heat exchangers, and critical welded structures."
+        description: "201L pipes and tubes feature low carbon content for superior weldability and reduced susceptibility to intergranular corrosion. Ideal for welded piping systems, heat exchangers, and critical welded structures.",
+        link: "/products/stainless-steel-pipe-tube/201L"
     },
     {
         grade: "204 Stainless Steel Pipe & Tube",
         image: "/stainless-steel-sheet.png",
-        description: "204 stainless steel pipes and tubes deliver enhanced performance with superior corrosion resistance and higher strength. Designed for chemical processing, marine applications, and demanding industrial environments."
+        description: "204 stainless steel pipes and tubes deliver enhanced performance with superior corrosion resistance and higher strength. Designed for chemical processing, marine applications, and demanding industrial environments.",
+        link: "/products/stainless-steel-pipe-tube/204"
     },
     {
         grade: "209 Stainless Steel Pipe & Tube",
         image: "/stainless-steel-sheet.png",
-        description: "209 pipes and tubes represent premium-grade quality with exceptional corrosion resistance and high-temperature performance. Perfect for power generation, aerospace components, and critical industrial applications requiring superior reliability."
+        description: "209 pipes and tubes represent premium-grade quality with exceptional corrosion resistance and high-temperature performance. Perfect for power generation, aerospace components, and critical industrial applications requiring superior reliability.",
+        link: "/products/stainless-steel-pipe-tube/209"
     }
 ];
 function ProductPipeTubeGradesSection() {
@@ -1534,7 +1537,7 @@ function ProductPipeTubeGradesSection() {
                             children: "200 Series Grades Available"
                         }, void 0, false, {
                             fileName: "[project]/components/product-pipe-tube-grades-section.tsx",
-                            lineNumber: 73,
+                            lineNumber: 76,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1542,13 +1545,13 @@ function ProductPipeTubeGradesSection() {
                             children: "Explore our comprehensive selection of 200 series stainless steel pipes and tubes. Each grade offers unique properties tailored to specific piping and structural requirements."
                         }, void 0, false, {
                             fileName: "[project]/components/product-pipe-tube-grades-section.tsx",
-                            lineNumber: 76,
+                            lineNumber: 79,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/product-pipe-tube-grades-section.tsx",
-                    lineNumber: 72,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1557,23 +1560,23 @@ function ProductPipeTubeGradesSection() {
                             ...grade
                         }, idx, false, {
                             fileName: "[project]/components/product-pipe-tube-grades-section.tsx",
-                            lineNumber: 83,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/product-pipe-tube-grades-section.tsx",
-                    lineNumber: 81,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/product-pipe-tube-grades-section.tsx",
-            lineNumber: 71,
+            lineNumber: 74,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/product-pipe-tube-grades-section.tsx",
-        lineNumber: 70,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 }
