@@ -1,52 +1,274 @@
-[00:00:00.931] Server  LOG      ✓ Ready in 596ms
-[00:00:04.340] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.718] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:01.399] Server  LOG      ✓ Ready in 937ms
+[00:00:04.476] Server  LOG      ○ Compiling /products/200-series ...
+[00:00:07.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:19.449] Server  LOG      ✓ Compiled in 105ms
+[00:06:36.557] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:05.990] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:19.356] Server  LOG      ✓ Compiled in 99ms
+[00:11:35.387] Server  LOG      ✓ Compiled in 156ms
+[00:17:35.794] Server  LOG      ✓ Compiled in 280ms
+[00:18:25.422] Server  LOG      ✓ Compiled in 174ms
+[00:18:43.190] Server  LOG      ✓ Compiled in 245ms
+[00:18:49.490] Server  LOG      ✓ Compiled in 242ms
+[00:26:43.581] Server  LOG      ✓ Compiled in 209ms
+[00:29:12.253] Server  LOG      ✓ Compiled in 225ms
+[00:31:30.884] Server  LOG      ✓ Compiled in 216ms
+[00:32:04.593] Server  LOG      ✓ Compiled in 321ms
+[00:34:18.874] Server  LOG      ✓ Compiled in 221ms
+[00:34:26.714] Server  LOG      ✓ Compiled in 177ms
+[00:37:55.723] Server  LOG      ✓ Compiled in 265ms
+[00:38:08.786] Server  LOG      ✓ Compiled in 212ms
+[00:40:56.622] Server  LOG      ✓ Compiled in 288ms
+[00:40:57.070] Browser ERROR   uncaughtError: ReferenceError: GradeCard is not defined
+[00:41:08.772] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:41:08.799] Server  LOG      ✓ Compiled in 220ms
+[00:41:09.801] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:12.272] Server  LOG      ✓ Compiled in 221ms
+[00:42:22.381] Server  LOG      ✓ Compiled in 198ms
+[00:42:34.918] Browser WARN    Image with src "/stainless-steel-sheet.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:49:20.405] Server  LOG      ✓ Compiled in 249ms
+[00:49:24.280] Server  LOG      ✓ Compiled in 297ms
+[00:49:27.722] Server  LOG      ✓ Compiled in 175ms
+[00:49:31.083] Server  LOG      ✓ Compiled in 327ms
+[00:49:34.259] Server  LOG      ✓ Compiled in 282ms
+[00:49:41.913] Server  LOG      ✓ Compiled in 213ms
+[00:49:45.269] Server  LOG      ✓ Compiled in 212ms
+[00:49:47.632] Server  LOG      ✓ Compiled in 235ms
+[00:50:26.281] Server  LOG      ✓ Compiled in 229ms
+[01:15:03.684] Server  LOG      ✓ Compiled in 289ms
+[01:15:18.817] Server  LOG      ✓ Compiled in 199ms
+[01:15:42.357] Server  LOG      ✓ Compiled in 200ms
+[01:21:16.541] Server  LOG      ✓ Compiled in 130ms
+[01:23:34.570] Server  LOG      ✓ Compiled in 312ms
+[01:23:38.518] Server  LOG      ✓ Compiled in 329ms
+[01:32:28.955] Server  LOG      ✓ Compiled in 243ms
+[01:32:34.296] Server  LOG      ✓ Compiled in 351ms
+[01:40:42.192] Server  LOG      ✓ Compiled in 313ms
+[01:40:47.441] Server  LOG      ✓ Compiled in 360ms
+[01:48:15.450] Server  LOG      ✓ Compiled in 294ms
+[01:48:20.074] Server  LOG      ✓ Compiled in 328ms
+[01:48:21.072] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
 
-Check the render method of `ArticleNavigation`.  It was passed a child from StainlessSteel201Page.
-[00:01:08.597] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:08.869] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+Expected '</', got ':'
 
-Check the render method of `ArticleNavigation`.  It was passed a child from StainlessSteel201Page.
-[00:04:46.220] Server  LOG      ✓ Compiled in 286ms
-[00:05:02.182] Server  LOG      ✓ Compiled in 264ms
-[00:05:04.846] Server  LOG      ✓ Compiled in 153ms
-[00:05:36.855] Server  LOG      ✓ Compiled in 204ms
-[01:01:24.942] Server  LOG      ✓ Compiled in 195ms
-[01:01:28.686] Server  LOG      ✓ Compiled in 201ms
-[01:07:00.829] Server  LOG      ✓ Compiled in 272ms
-[01:07:01.145] Server  LOG      ✓ Compiled in 225ms
-[01:07:01.989] Server  LOG      ✓ Compiled in 254ms
-[01:07:03.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:10:13.551] Server  LOG      ✓ Compiled in 316ms
-[01:10:16.414] Server  LOG      ✓ Compiled in 318ms
-[01:11:37.362] Server  LOG      ✓ Compiled in 173ms
-[01:13:11.689] Server  LOG      ✓ Compiled in 173ms
-[01:33:33.556] Server  LOG      ✓ Compiled in 195ms
-[01:36:18.893] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:44:39.938] Server  LOG      ✓ Compiled in 533ms
-[03:02:53.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:14:38.606] Server  LOG      ✓ Compiled in 181ms
-[03:35:25.042] Server  LOG      ✓ Compiled in 196ms
-[03:52:38.685] Server  LOG      ✓ Compiled in 237ms
-[03:53:17.529] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:57:41.521] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[04:22:42.667] Server  LOG      ✓ Compiled in 152ms
-[04:31:21.499] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[04:32:47.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[04:42:06.066] Server  LOG      ✓ Compiled in 168ms
-[04:44:23.234] Server  LOG      ✓ Compiled in 334ms
-[04:44:27.185] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[04:44:58.876] Server  LOG      ✓ Compiled in 246ms
-[04:57:02.055] Server  LOG      ✓ Compiled in 172ms
-[05:07:17.166] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:09:39.434] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:23:52.607] Server  LOG      ✓ Compiled in 177ms
-[05:23:55.378] Server  LOG      ✓ Compiled in 220ms
-[05:28:30.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[05:41:00.273] Server  LOG      ✓ Compiled in 168ms
-[05:47:14.636] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[06:04:52.113] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[06:05:23.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[06:24:53.809] Server  LOG      ✓ Compiled in 166ms
-[07:02:38.252] Server  LOG      ✓ Compiled in 192ms
-[07:06:15.138] Server  LOG      ✓ Compiled in 172ms
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:48:38.078] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:48:46.334] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:48:47.097] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:48:47.097] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:50:12.703] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:50:13.957] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:50:14.190] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:50:15.326] Browser ERROR   uncaughtError: Error: ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+
+
+[01:50:15.522] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:50:15.522] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:50:48.075] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:50:48.075] Browser ERROR   ./components/product-sheet-200-grades-section.tsx:106:11
+Parsing ecmascript source code failed
+  104 |             Learn More
+  105 |           </Link>
+> 106 |         ) : grade === "410 Stainless Steel" || grade === "420 Stainless Steel" || grade === "430 Stainless Steel" || grade === "446 Stainless Steel" || grade === "409 Stainless Steel" || grade === "410S Stainless Steel" ? (
+      |           ^
+  107 |           <Link
+  108 |             href="/products/stainless-steel-sheet#400-series-grades"
+  109 |             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
+
+Expected '</', got ':'
+
+Import trace:
+  Server Component:
+    ./components/product-sheet-200-grades-section.tsx
+    ./app/products/stainless-steel-sheet/page.tsx
+[01:51:43.083] Server  LOG      ✓ Compiled in 358ms
+[01:51:43.996] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:55:07.155] Server  LOG      ✓ Compiled in 596ms
+[01:55:59.753] Server  LOG      ✓ Compiled in 604ms
+[01:56:48.531] Server  LOG      ✓ Compiled in 260ms
+[02:03:01.679] Server  LOG      ✓ Compiled in 251ms
+[02:13:50.833] Server  LOG      ✓ Compiled in 417ms
+[02:27:20.153] Server  LOG      ✓ Compiled in 476ms
+[02:34:20.304] Server  LOG      ✓ Compiled in 800ms
+[02:44:57.673] Server  LOG      ✓ Compiled in 359ms
+[02:47:08.166] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:47:10.313] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:47:10.455] Browser WARN    Image with src "/stainless-steel-sheet.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading

@@ -19,7 +19,7 @@ export default function QuoteModal({ open, onClose, source }: QuoteModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-gray-900">Get A Quote</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Send Your Inquiry Today</h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded-full transition"

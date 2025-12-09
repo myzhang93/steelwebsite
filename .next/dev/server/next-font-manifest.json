@@ -3,22 +3,25 @@
     "[project]/app/_not-found/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
+    "[project]/app/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
     "[project]/app/products/200-series/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-coil/201/page": [
+    "[project]/app/products/300-series/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-coil/201L/page": [
+    "[project]/app/products/400-series/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-coil/202/page": [
+    "[project]/app/products/500-series/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-coil/204/page": [
+    "[project]/app/products/600-series/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-coil/209/page": [
+    "[project]/app/products/stainless-steel-coil/316/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
     "[project]/app/products/stainless-steel-coil/page": [
@@ -27,28 +30,7 @@
     "[project]/app/products/stainless-steel-fittings/201/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-fittings/201L/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-fittings/202/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-fittings/204/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
     "[project]/app/products/stainless-steel-fittings/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-pipe-tube/201L/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-pipe-tube/202/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-pipe-tube/204/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-pipe-tube/209/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
     "[project]/app/products/stainless-steel-pipe-tube/page": [
@@ -57,16 +39,7 @@
     "[project]/app/products/stainless-steel-sheet/201/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-sheet/201L/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-sheet/202/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-sheet/204/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/products/stainless-steel-sheet/209/page": [
+    "[project]/app/products/stainless-steel-sheet/304/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
     "[project]/app/products/stainless-steel-sheet/page": [

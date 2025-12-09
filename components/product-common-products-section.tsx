@@ -65,7 +65,7 @@ export default function ProductCommonProductsSection() {
                       Get a Quote
                     </button>
                     <Link
-                      href="/products/stainless-steel-sheet"
+                      href="/products/stainless-steel-sheet#200-series-grades"
                       className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center"
                     >
                       Learn More
