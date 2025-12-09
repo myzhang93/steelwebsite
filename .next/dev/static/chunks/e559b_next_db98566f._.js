@@ -4010,6 +4010,101 @@ const configEnv = ("TURBOPACK compile-time value", {
             "protocol": ("TURBOPACK compile-time value", "http"),
             "hostname": ("TURBOPACK compile-time value", "lynsteel.com"),
             "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.aceraceparts.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "clintonaluminum.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.steelpipesfactory.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.trupply.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "pipedreamfittings.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "static.grainger.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "cdn11.bigcommerce.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "5.imimg.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.kencotubes.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "hkimg.bjyyb.net"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.jigneshsteel.in"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.navstarsteel.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.metline-pipefittings.in"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.asiadsteels.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "steeltubes.co.in"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.dmmetals.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "nerop-nero-gob2b.b-cdn.net"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.polyconn.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.rextonsteelalloys.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
         })
     ]),
     "localPatterns": ("TURBOPACK compile-time value", [
@@ -4375,6 +4470,101 @@ function getImageProps(imgProps) {
                 ("TURBOPACK compile-time value", {
                     "protocol": ("TURBOPACK compile-time value", "http"),
                     "hostname": ("TURBOPACK compile-time value", "lynsteel.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.aceraceparts.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "clintonaluminum.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.steelpipesfactory.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.trupply.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "pipedreamfittings.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "static.grainger.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "cdn11.bigcommerce.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "5.imimg.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.kencotubes.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "hkimg.bjyyb.net"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.jigneshsteel.in"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.navstarsteel.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.metline-pipefittings.in"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.asiadsteels.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "steeltubes.co.in"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.dmmetals.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "nerop-nero-gob2b.b-cdn.net"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.polyconn.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.rextonsteelalloys.com"),
                     "pathname": ("TURBOPACK compile-time value", "/**")
                 })
             ]),

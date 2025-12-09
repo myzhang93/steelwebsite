@@ -787,10 +787,6 @@
     max-height: 90vh;
   }
 
-  .min-h-\[568px\] {
-    min-height: 568px;
-  }
-
   .min-h-screen {
     min-height: 100vh;
   }

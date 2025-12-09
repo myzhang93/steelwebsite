@@ -115,31 +115,31 @@ export default function ProductPipeTubeGradesSection() {
               grade="304 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="304 stainless steel pipes and tubes are one of the most widely used types, known for excellent corrosion resistance and good machinability. Perfect for food processing equipment, kitchenware, and general-purpose piping applications."
-              link="/products/stainless-steel-pipe-tube#300-series-grades"
+              link="/products/stainless-steel-pipe-tube/304"
             />
             <GradeCard
               grade="316 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="316 stainless steel pipes and tubes offer superior corrosion resistance compared to 304, particularly in marine environments and chemical processing. Ideal for applications requiring high corrosion resistance and high-temperature properties."
-              link="/products/stainless-steel-pipe-tube#300-series-grades"
+              link="/products/stainless-steel-pipe-tube/316"
             />
             <GradeCard
               grade="321 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="321 stainless steel pipes and tubes are titanium-stabilized austenitic alloys with excellent oxidation resistance in high-temperature environments. Perfect for aerospace, heat exchangers, and high-temperature furnace applications."
-              link="/products/stainless-steel-pipe-tube#300-series-grades"
+              link="/products/stainless-steel-pipe-tube/321"
             />
             <GradeCard
               grade="303 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="303 stainless steel pipes and tubes are known for excellent machinability, making them ideal for precision machining applications. Perfect for aircraft parts, automotive components, and threaded parts requiring precise manufacturing."
-              link="/products/stainless-steel-pipe-tube#300-series-grades"
+              link="/products/stainless-steel-pipe-tube/303"
             />
             <GradeCard
               grade="310 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="310 stainless steel pipes and tubes are high-temperature alloys that can withstand extremely high temperatures. Ideal for furnace parts, heat exchangers, and industrial equipment requiring resistance to oxidation at elevated temperatures."
-              link="/products/stainless-steel-pipe-tube#300-series-grades"
+              link="/products/stainless-steel-pipe-tube/310"
             />
           </div>
         </div>

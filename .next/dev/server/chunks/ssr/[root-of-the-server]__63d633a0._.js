@@ -1683,7 +1683,7 @@ function ProductFittingsGradesSection() {
                                     grade: "304 Stainless Steel Fittings",
                                     image: "/stainless-steel-sheet.png",
                                     description: "304 stainless steel fittings are one of the most widely used types, known for excellent corrosion resistance and good machinability. Perfect for food processing equipment, kitchenware, and general-purpose piping connections.",
-                                    link: "/products/stainless-steel-fittings#300-series-grades"
+                                    link: "/products/stainless-steel-fittings/304"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-fittings-grades-section.tsx",
                                     lineNumber: 114,
@@ -1693,7 +1693,7 @@ function ProductFittingsGradesSection() {
                                     grade: "316 Stainless Steel Fittings",
                                     image: "/stainless-steel-sheet.png",
                                     description: "316 stainless steel fittings offer superior corrosion resistance compared to 304, particularly in marine environments and chemical processing. Ideal for applications requiring high corrosion resistance and high-temperature properties.",
-                                    link: "/products/stainless-steel-fittings#300-series-grades"
+                                    link: "/products/stainless-steel-fittings/316"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-fittings-grades-section.tsx",
                                     lineNumber: 120,
@@ -1703,7 +1703,7 @@ function ProductFittingsGradesSection() {
                                     grade: "321 Stainless Steel Fittings",
                                     image: "/stainless-steel-sheet.png",
                                     description: "321 stainless steel fittings are titanium-stabilized austenitic alloys with excellent oxidation resistance in high-temperature environments. Perfect for aerospace, heat exchangers, and high-temperature furnace applications.",
-                                    link: "/products/stainless-steel-fittings#300-series-grades"
+                                    link: "/products/stainless-steel-fittings/321"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-fittings-grades-section.tsx",
                                     lineNumber: 126,
@@ -1713,7 +1713,7 @@ function ProductFittingsGradesSection() {
                                     grade: "303 Stainless Steel Fittings",
                                     image: "/stainless-steel-sheet.png",
                                     description: "303 stainless steel fittings are known for excellent machinability, making them ideal for precision machining applications. Perfect for aircraft parts, automotive components, and threaded parts requiring precise manufacturing.",
-                                    link: "/products/stainless-steel-fittings#300-series-grades"
+                                    link: "/products/stainless-steel-fittings/303"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-fittings-grades-section.tsx",
                                     lineNumber: 132,
@@ -1723,7 +1723,7 @@ function ProductFittingsGradesSection() {
                                     grade: "310 Stainless Steel Fittings",
                                     image: "/stainless-steel-sheet.png",
                                     description: "310 stainless steel fittings are high-temperature alloys that can withstand extremely high temperatures. Ideal for furnace parts, heat exchangers, and industrial equipment requiring resistance to oxidation at elevated temperatures.",
-                                    link: "/products/stainless-steel-fittings#300-series-grades"
+                                    link: "/products/stainless-steel-fittings/310"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-fittings-grades-section.tsx",
                                     lineNumber: 138,
