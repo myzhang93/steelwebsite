@@ -1,0 +1,121 @@
+/* [project]/components/quote-form.module.css [app-client] (css) */
+.quote-form-module__z2qM-W__quoteFormContainer {
+  background: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: auto;
+  padding: 0;
+  display: flex;
+}
+
+.quote-form-module__z2qM-W__formTitle {
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.quote-form-module__z2qM-W__quoteForm {
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.quote-form-module__z2qM-W__formField {
+  margin-bottom: 24px;
+}
+
+.quote-form-module__z2qM-W__formLabel {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.quote-form-module__z2qM-W__formInput, .quote-form-module__z2qM-W__formTextarea {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color .2s;
+}
+
+.quote-form-module__z2qM-W__formInput:focus, .quote-form-module__z2qM-W__formTextarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.quote-form-module__z2qM-W__formTextarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.quote-form-module__z2qM-W__fileUploadContainer {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.quote-form-module__z2qM-W__fileButton {
+  cursor: pointer;
+  color: #333;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: background-color .2s;
+}
+
+.quote-form-module__z2qM-W__fileButton:hover {
+  background: #e0e0e0;
+}
+
+.quote-form-module__z2qM-W__fileInput {
+  display: none;
+}
+
+.quote-form-module__z2qM-W__fileStatus {
+  color: #666;
+  font-size: 14px;
+}
+
+.quote-form-module__z2qM-W__submitContainer {
+  justify-content: center;
+  margin-top: 32px;
+  display: flex;
+}
+
+.quote-form-module__z2qM-W__submitButton {
+  color: #fff;
+  cursor: pointer;
+  background: #4a90e2;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color .2s;
+}
+
+.quote-form-module__z2qM-W__submitButton:hover:not(:disabled) {
+  background: #357abd;
+}
+
+.quote-form-module__z2qM-W__submitButton:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=components_quote-form_module_css_bad6b30c._.single.css.map*/

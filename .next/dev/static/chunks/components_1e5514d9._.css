@@ -1,0 +1,188 @@
+/* [project]/components/quote-form.module.css [app-client] (css) */
+.quote-form-module__z2qM-W__quoteFormContainer {
+  background: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: auto;
+  padding: 0;
+  display: flex;
+}
+
+.quote-form-module__z2qM-W__formTitle {
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.quote-form-module__z2qM-W__quoteForm {
+  background: #fff;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.quote-form-module__z2qM-W__formField {
+  margin-bottom: 24px;
+}
+
+.quote-form-module__z2qM-W__formLabel {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+.quote-form-module__z2qM-W__formInput, .quote-form-module__z2qM-W__formTextarea {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color .2s;
+}
+
+.quote-form-module__z2qM-W__formInput:focus, .quote-form-module__z2qM-W__formTextarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.quote-form-module__z2qM-W__formTextarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.quote-form-module__z2qM-W__fileUploadContainer {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.quote-form-module__z2qM-W__fileButton {
+  cursor: pointer;
+  color: #333;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: background-color .2s;
+}
+
+.quote-form-module__z2qM-W__fileButton:hover {
+  background: #e0e0e0;
+}
+
+.quote-form-module__z2qM-W__fileInput {
+  display: none;
+}
+
+.quote-form-module__z2qM-W__fileStatus {
+  color: #666;
+  font-size: 14px;
+}
+
+.quote-form-module__z2qM-W__submitContainer {
+  justify-content: center;
+  margin-top: 32px;
+  display: flex;
+}
+
+.quote-form-module__z2qM-W__submitButton {
+  color: #fff;
+  cursor: pointer;
+  background: #4a90e2;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color .2s;
+}
+
+.quote-form-module__z2qM-W__submitButton:hover:not(:disabled) {
+  background: #357abd;
+}
+
+.quote-form-module__z2qM-W__submitButton:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* [project]/components/quote-modal.module.css [app-client] (css) */
+.quote-modal-module__dkDoLG__modalOverlay {
+  z-index: 50;
+  background: #00000080;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.quote-modal-module__dkDoLG__modalContent {
+  background: #f5f5f5;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  position: relative;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px #0000004d;
+}
+
+.quote-modal-module__dkDoLG__modalHeader {
+  z-index: 10;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: flex-end;
+  padding: 16px 20px;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+.quote-modal-module__dkDoLG__closeButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  transition: background-color .2s;
+  display: flex;
+}
+
+.quote-modal-module__dkDoLG__closeButton:hover {
+  background: #0000000d;
+}
+
+.quote-modal-module__dkDoLG__closeIcon {
+  color: #666;
+  width: 20px;
+  height: 20px;
+}
+
+.quote-modal-module__dkDoLG__modalBody {
+  background: #f5f5f5;
+  padding: 0;
+}
+
+.quote-modal-module__dkDoLG__modalFormWrapper {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  display: flex;
+}
+
+/*# sourceMappingURL=components_1e5514d9._.css.map*/

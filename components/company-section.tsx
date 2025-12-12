@@ -55,7 +55,8 @@ export default function CompanySection() {
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Our dedication to continuous improvement and innovation positions us as a premier global 
-              supplier, ready to meet the evolving needs of industries worldwide.
+              supplier, ready to meet the evolving needs of industries worldwide. We are building a future 
+              where Shanxi Steel remains at the forefront of the global steel industry.
             </p>
             <button 
               onClick={() => setIsQuoteModalOpen(true)}

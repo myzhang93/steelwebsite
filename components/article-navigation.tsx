@@ -86,7 +86,7 @@ export default function ArticleNavigation({ sheetContent, plateContent }: Articl
               onClick={() => scrollToSection('plate-section')}
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition shadow-md hover:shadow-lg"
             >
-              <span>查看 Plate 信息</span>
+              <span>View Plate Information</span>
               <ArrowDown className="w-5 h-5" />
             </button>
           </div>
@@ -102,7 +102,7 @@ export default function ArticleNavigation({ sheetContent, plateContent }: Articl
               className="flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-semibold transition shadow-md hover:shadow-lg"
             >
               <ArrowDown className="w-5 h-5 rotate-180" />
-              <span>返回 Sheet 信息</span>
+              <span>Back to Sheet Information</span>
             </button>
           </div>
         </article>

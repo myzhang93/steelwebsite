@@ -1,33 +1,54 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import QuoteModal from "./quote-modal"
 
 export default function ProductHeroSection() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
   return (
     <section className="relative w-full h-[500px] bg-slate-900 flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url(/stainless-steel-sheet.png)",
+          backgroundImage: "url(/gettyimages-2171770970.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          opacity: isVisible ? 1 : 0,
+          transform: isVisible ? 'scale(1)' : 'scale(1.1)',
+          transition: 'opacity 1.2s ease-out, transform 1.2s ease-out'
         }}
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+        <h1 
+          className="text-4xl md:text-6xl font-bold text-white mb-6"
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+            transition: 'opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s'
+          }}
+        >
           200 Series Stainless Steel: Affordable Strength, Timeless Elegance
         </h1>
         <button
           onClick={() => setIsQuoteModalOpen(true)}
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition"
+          style={{
+            opacity: isVisible ? 1 : 0,
+            transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+            transition: 'opacity 0.8s ease-out 0.4s, transform 0.8s ease-out 0.4s'
+          }}
         >
           Get A Quote
         </button>

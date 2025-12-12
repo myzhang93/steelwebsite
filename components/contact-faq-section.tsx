@@ -37,7 +37,9 @@ export default function ContactFaqSection() {
           {/* Left Column - Contact Form */}
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-            <QuoteForm />
+            <div className="border border-gray-300 rounded-lg p-6 shadow-sm">
+              <QuoteForm />
+            </div>
           </div>
 
           {/* Right Column - FAQ */}

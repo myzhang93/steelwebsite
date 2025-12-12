@@ -160,37 +160,37 @@ export default function ProductPipeTubeGradesSection() {
               grade="410 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="410 stainless steel pipes and tubes are martensitic steel with good corrosion resistance and high strength. Perfect for applications requiring moderate corrosion resistance and high hardness, such as pumps, valves, and shafts."
-              link="/products/stainless-steel-pipe-tube#400-series-grades"
+              link="/products/stainless-steel-pipe-tube/410"
             />
             <GradeCard
               grade="420 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="420 stainless steel pipes and tubes are known for high hardness and excellent wear resistance. Ideal for applications requiring sharp edges or high hardness, such as knives, surgical instruments, and cutting tools."
-              link="/products/stainless-steel-pipe-tube#400-series-grades"
+              link="/products/stainless-steel-pipe-tube/420"
             />
             <GradeCard
               grade="430 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="430 stainless steel pipes and tubes are ferritic alloys with good corrosion resistance to atmospheric and mildly corrosive environments. Perfect for decorative applications, automotive trim, and kitchen appliances."
-              link="/products/stainless-steel-pipe-tube#400-series-grades"
+              link="/products/stainless-steel-pipe-tube/430"
             />
             <GradeCard
               grade="446 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="446 stainless steel pipes and tubes are high-chromium ferritic alloys offering excellent resistance to high-temperature oxidation and corrosion. Ideal for furnace components and heat exchangers requiring high heat resistance."
-              link="/products/stainless-steel-pipe-tube#400-series-grades"
+              link="/products/stainless-steel-pipe-tube/446"
             />
             <GradeCard
               grade="409 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="409 stainless steel pipes and tubes are ferritic alloys often used for automotive exhaust systems due to resistance to corrosion in high-temperature environments. Perfect for exhaust manifolds and catalytic converters."
-              link="/products/stainless-steel-pipe-tube#400-series-grades"
+              link="/products/stainless-steel-pipe-tube/409"
             />
             <GradeCard
               grade="410S Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="410S stainless steel pipes and tubes are low-carbon versions offering enhanced weldability and resistance to stress corrosion cracking. Ideal for heat exchangers, pressure vessels, and welded structures."
-              link="/products/stainless-steel-pipe-tube#400-series-grades"
+              link="/products/stainless-steel-pipe-tube/410S"
             />
           </div>
         </div>
@@ -211,19 +211,19 @@ export default function ProductPipeTubeGradesSection() {
               grade="502 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="502 stainless steel pipes and tubes are high-chromium alloys offering excellent high-temperature oxidation resistance. Perfect for high-temperature energy conversion systems and industrial furnaces requiring superior heat resistance."
-              link="/products/stainless-steel-pipe-tube#500-series-grades"
+              link="/products/stainless-steel-pipe-tube/502"
             />
             <GradeCard
               grade="503 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="503 stainless steel pipes and tubes provide good oxidation resistance and are ideal for high-temperature applications. Excellent for energy systems and industrial equipment where heat resistance and durability are critical."
-              link="/products/stainless-steel-pipe-tube#500-series-grades"
+              link="/products/stainless-steel-pipe-tube/503"
             />
             <GradeCard
               grade="504 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
-              description="504 stainless steel pipes and tubes resist scaling and oxidation, making them ideal for furnace parts and high-temperature industrial applications. Maintains structural integrity at elevated temperatures."
-              link="/products/stainless-steel-pipe-tube#500-series-grades"
+              description="504 stainless steel pipes and tubes resists scaling and oxidation, making it ideal for use in furnace parts and high-temperature industrial applications. It maintains structural integrity at elevated temperatures, ensuring reliable performance in demanding thermal environments."
+              link="/products/stainless-steel-pipe-tube/504"
             />
           </div>
         </div>
@@ -244,13 +244,13 @@ export default function ProductPipeTubeGradesSection() {
               grade="630 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="630 stainless steel pipes and tubes are precipitation-hardening alloys offering high strength and good corrosion resistance. Perfect for high-stress components, aerospace applications, and critical industrial equipment."
-              link="/products/stainless-steel-pipe-tube#600-series-grades"
+              link="/products/stainless-steel-pipe-tube/630"
             />
             <GradeCard
               grade="631 Stainless Steel Pipe & Tube"
               image="/stainless-steel-sheet.png"
               description="631 stainless steel pipes and tubes offer excellent fatigue resistance, making them suitable for high-stress applications where reliability and durability are paramount. Ideal for oil and gas equipment and power generation."
-              link="/products/stainless-steel-pipe-tube#600-series-grades"
+              link="/products/stainless-steel-pipe-tube/631"
             />
             <GradeCard
               grade="640 Stainless Steel Pipe & Tube"

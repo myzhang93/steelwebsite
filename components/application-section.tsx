@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function ApplicationSection() {
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -16,9 +18,12 @@ export default function ApplicationSection() {
           quality makes us the ideal choice for your steel needs.
         </p>
         <div className="text-center">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition">
+          <Link 
+            href="/applications/kitchen-equipment"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition"
+          >
             ABOUT OUR APPLICATION
-          </button>
+          </Link>
         </div>
       </div>
     </section>

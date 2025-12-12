@@ -12,11 +12,6 @@ const nextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'http',
-        hostname: 'lynsteel.com',
-        pathname: '/**',
-      },
-      {
         protocol: 'https',
         hostname: 'www.aceraceparts.com',
         pathname: '/**',
@@ -154,6 +149,111 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'www.bhawalsteelagency.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'image.made-in-china.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.vicsteelpipe.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.kamalsteels.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.jdmagicbox.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ar.galvanized-sheets.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.baosteelpipes.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.coremarkmetals.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.octalmetals.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'textronsteelalloys.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.savoypipinginc.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.steelplatesforsale.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.amardeepsteel.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'steelplates.in',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'it.cortensteels.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.chinacorten.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.panchdeepmetal.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.sangeetametal.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.smithsadvanced.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'fastmetals.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.dciron.co.uk',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.boatfittings.co.uk',
         pathname: '/**',
       },
     ],

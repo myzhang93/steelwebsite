@@ -33,7 +33,7 @@ export default function Header() {
             <div className="w-11 h-11 bg-blue-800 flex items-center justify-center font-bold text-white text-xl" style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)' }}>
               S
             </div>
-            <span className="font-semibold text-2xl text-gray-900" style={{ fontFamily: 'sans-serif' }}>Steel</span>
+            <span className="font-semibold text-3xl text-gray-900" style={{ fontFamily: 'sans-serif' }}>Steel</span>
           </Link>
 
           {/* Contact Info - Top Right */}

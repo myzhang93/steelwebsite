@@ -1,144 +1,28 @@
 "use client"
 
-import { useState, useRef } from "react"
 import { MapPin, Mail, Phone, Clock, Facebook, Twitter, Linkedin } from "lucide-react"
+import { useRouter } from "next/navigation"
+import WufooForm from "./wufoo-form"
 
 export default function ContactFormSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  })
-  const [file, setFile] = useState<File | null>(null)
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const fileInputRef = useRef<HTMLInputElement>(null)
+  const router = useRouter()
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setFile(e.target.files[0])
-    }
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    setIsSubmitting(false)
-    // Reset form
-    setFormData({ name: "", phone: "", email: "", message: "" })
-    setFile(null)
-    if (fileInputRef.current) {
-      fileInputRef.current.value = ""
-    }
-  }
+  // CSS loading is handled by WufooForm component
 
   return (
-    <section className="py-16 bg-gray-800 text-white">
+    <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-0">
           {/* Left Column - Drop A Line */}
-          <div>
-            <h2 className="text-3xl font-bold mb-2">Drop A Line</h2>
-            <p className="text-gray-400 mb-8">Your email address will not be published.</p>
+          <div className="bg-white py-16 px-8 text-gray-900">
+            <h2 className="text-3xl font-bold mb-2 text-gray-900">Drop A Line</h2>
+            <p className="text-gray-600 mb-8">Your email address will not be published.</p>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Your Name*
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Enter your name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Enter your phone"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email*
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Enter your email"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Your Message*
-                </label>
-                <textarea
-                  id="message"
-                  required
-                  rows={5}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  placeholder="Enter your message"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium mb-2">File Upload</label>
-                <div className="flex gap-2">
-                  <button
-                    type="button"
-                    onClick={() => fileInputRef.current?.click()}
-                    className="px-4 py-2 bg-gray-700 border border-gray-600 rounded hover:bg-gray-600 transition"
-                  >
-                    选择文件
-                  </button>
-                  <input
-                    ref={fileInputRef}
-                    type="file"
-                    onChange={handleFileChange}
-                    className="hidden"
-                  />
-                  <span className="px-4 py-2 text-gray-400">
-                    {file ? file.name : "未选择文件"}
-                  </span>
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition disabled:opacity-50"
-              >
-                {isSubmitting ? "Sending..." : "SEND"}
-              </button>
-            </form>
+            <WufooForm onSuccess={() => router.push("/thank-you")} />
           </div>
 
           {/* Right Column - Let's Start a Project */}
-          <div>
+          <div className="bg-gray-800 text-white py-16 px-8">
             <h2 className="text-3xl font-bold mb-4">Let's Start a Project</h2>
             <p className="text-gray-400 mb-8 leading-relaxed">
               Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days. We will be happy to answer your questions.

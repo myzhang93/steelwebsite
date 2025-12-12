@@ -95,7 +95,7 @@ export default function ArticleNavigationGeneric({
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <article id={firstSectionId} className="prose prose-lg max-w-none scroll-mt-24">
-          {firstContent}
+          <div key="first-content">{firstContent}</div>
           
           {/* Jump to Second Section Button */}
           <div className="mt-12 flex justify-center">
@@ -110,7 +110,7 @@ export default function ArticleNavigationGeneric({
         </article>
         
         <article id={secondSectionId} className="prose prose-lg max-w-none scroll-mt-24 mt-20">
-          {secondContent}
+          <div key="second-content">{secondContent}</div>
           
           {/* Jump to First Section Button */}
           <div className="mt-12 flex justify-center">

@@ -2,17 +2,30 @@
 
 import Image from "next/image"
 import { Check } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import QuoteModal from "./quote-modal"
 
 export default function Product600HeroSection() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Side - Image */}
-          <div className="relative h-[500px] rounded-lg overflow-hidden">
+          <div 
+            className="relative h-[500px] rounded-lg overflow-hidden"
+            style={{
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateX(0)' : 'translateX(-30px)',
+              transition: 'opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s'
+            }}
+          >
             <Image
               src="/industrial-stainless-steel-factory.jpg"
               alt="600 Series Stainless Steel"
@@ -24,10 +37,24 @@ export default function Product600HeroSection() {
 
           {/* Right Side - Content */}
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 
+              className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+              style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+                transition: 'opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s'
+              }}
+            >
               600 Series Stainless Steel
             </h1>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p 
+              className="text-gray-600 leading-relaxed mb-6"
+              style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+                transition: 'opacity 0.8s ease-out 0.4s, transform 0.8s ease-out 0.4s'
+              }}
+            >
               600 series stainless steel is a premium grade material known for its exceptional strength, 
               superior corrosion resistance, and outstanding high-temperature performance. This advanced 
               alloy is engineered to meet the most demanding industrial requirements, making it ideal 
@@ -36,7 +63,14 @@ export default function Product600HeroSection() {
             </p>
             
             {/* Key Features List */}
-            <ul className="space-y-3 mb-8">
+            <ul 
+              className="space-y-3 mb-8"
+              style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+                transition: 'opacity 0.8s ease-out 0.5s, transform 0.8s ease-out 0.5s'
+              }}
+            >
               <li className="flex items-center gap-3">
                 <Check className="w-5 h-5 text-blue-600 flex-shrink-0" />
                 <span className="text-gray-700 font-medium">High Strength</span>
@@ -54,6 +88,11 @@ export default function Product600HeroSection() {
             <button
               onClick={() => setIsQuoteModalOpen(true)}
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold text-lg transition"
+              style={{
+                opacity: isVisible ? 1 : 0,
+                transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
+                transition: 'opacity 0.8s ease-out 0.6s, transform 0.8s ease-out 0.6s'
+              }}
             >
               Get A Quote
             </button>

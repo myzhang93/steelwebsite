@@ -2,20 +2,26 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { getMarkdownByPath } from "@/lib/markdown"
 import MarkdownContent from "@/components/markdown-content"
+import ArticleNavigationGeneric from "@/components/article-navigation-generic"
 
 export default function StainlessSteel321PipeTubePage() {
-  const { frontMatter, content } = getMarkdownByPath('app/300/321-stainless-steel-pipe.md')
+  const { frontMatter: pipeFrontMatter, content: pipeContent } = getMarkdownByPath('app/300/321-stainless-steel-pipe.md')
+  const { frontMatter: tubeFrontMatter, content: tubeContent } = getMarkdownByPath('app/300/321-stainless-steel-tube.md')
   
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <article className="prose prose-lg max-w-none">
-            <MarkdownContent content={content} />
-          </article>
-        </div>
-      </div>
+      <ArticleNavigationGeneric
+        firstContent={<MarkdownContent content={pipeContent} />}
+        secondContent={<MarkdownContent content={tubeContent} />}
+        firstSectionId="pipe-section"
+        secondSectionId="tube-section"
+        firstSectionName="Pipe Information"
+        secondSectionName="Tube Information"
+        separatorText="Tube Information"
+        firstButtonText="View Tube Information"
+        secondButtonText="Back to Pipe Information"
+      />
       <Footer />
     </>
   )

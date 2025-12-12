@@ -1,0 +1,73 @@
+/* [project]/app/css/structure.css [app-client] (css) */
+html {
+  background: #eee;
+}
+
+body {
+  text-align: center;
+  margin: 17px 0 15px;
+  padding: 0;
+  font-family: Lucida Grande, Tahoma, Arial, Verdana, sans-serif;
+  font-size: small;
+}
+
+article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object, output {
+  display: block;
+}
+
+#container {
+  text-align: left;
+  -o-box-shadow: #0003 0px 0px 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 640px;
+  margin: 0 auto 10px;
+  box-shadow: 0 0 5px #0003;
+}
+
+form.wufoo {
+  margin: 20px 14px 0;
+  padding: 0 0 20px;
+  position: relative;
+}
+
+#logo {
+  text-indent: -9000px;
+  background-color: #dedede;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#logo a {
+  background: url("../images/wflogo.png") 0 0 no-repeat;
+  height: 40px;
+  min-height: 40px;
+  display: block;
+  overflow: hidden;
+}
+
+* html #logo a {
+  _background-image: none;
+  _filter: progid:DXImageTransform. Microsoft. AlphaImageLoader(src= "../images/wflogo.png", sizingMethod= "crop");
+}
+
+img, a img {
+  -ms-interpolation-mode: bicubic;
+  border: none;
+}
+
+.hide, .cloak div, .cloak span, .likert.cloak tbody, .likert.cloak thead {
+  display: none !important;
+}
+
+.likert.cloak table {
+  border: none;
+}
+
+/* [project]/app/css/theme.css [app-client] (css) */
+/* unparsable [project]/app/css/theme.css [app-client] (css) */
+/* [project]/app/css/form.css [app-client] (css) */
+/* unparsable [project]/app/css/form.css [app-client] (css) */
+/*# sourceMappingURL=app_css_d1d4e225._.css.map*/

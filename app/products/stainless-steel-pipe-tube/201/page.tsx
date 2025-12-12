@@ -19,8 +19,8 @@ export default function StainlessSteel201PipeTubePage() {
         firstSectionName="Pipe Information"
         secondSectionName="Tube Information"
         separatorText="Tube Information"
-        firstButtonText="查看 Tube 信息"
-        secondButtonText="返回 Pipe 信息"
+        firstButtonText="View Tube Information"
+        secondButtonText="Back to Pipe Information"
       />
       <Footer />
     </>

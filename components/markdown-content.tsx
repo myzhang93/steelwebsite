@@ -10,18 +10,26 @@ export default function MarkdownContent({ content }: { content: string }) {
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       components={{
-        h1: ({ node, ...props }) => (
-          <h1 className="text-4xl font-bold text-gray-900 mb-6 mt-8" {...props} />
-        ),
-        h2: ({ node, ...props }) => (
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 mt-8" {...props} />
-        ),
-        h3: ({ node, ...props }) => (
-          <h3 className="text-2xl font-bold text-gray-900 mb-3 mt-6" {...props} />
-        ),
-        h4: ({ node, ...props }) => (
-          <h4 className="text-xl font-bold text-gray-900 mb-2 mt-4" {...props} />
-        ),
+        h1: ({ node, children, ...props }: any) => {
+          const text = typeof children === 'string' ? children : children?.toString() || ''
+          const id = `heading-${text.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`
+          return <h1 id={id} className="text-4xl font-bold text-gray-900 mb-6 mt-8 scroll-mt-20" {...props}>{children}</h1>
+        },
+        h2: ({ node, children, ...props }: any) => {
+          const text = typeof children === 'string' ? children : children?.toString() || ''
+          const id = `heading-${text.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`
+          return <h2 id={id} className="text-3xl font-bold text-gray-900 mb-4 mt-8 scroll-mt-20" {...props}>{children}</h2>
+        },
+        h3: ({ node, children, ...props }: any) => {
+          const text = typeof children === 'string' ? children : children?.toString() || ''
+          const id = `heading-${text.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`
+          return <h3 id={id} className="text-2xl font-bold text-gray-900 mb-3 mt-6 scroll-mt-20" {...props}>{children}</h3>
+        },
+        h4: ({ node, children, ...props }: any) => {
+          const text = typeof children === 'string' ? children : children?.toString() || ''
+          const id = `heading-${text.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`
+          return <h4 id={id} className="text-xl font-bold text-gray-900 mb-2 mt-4 scroll-mt-20" {...props}>{children}</h4>
+        },
         p: ({ node, children, ...props }: any) => {
           // 检查子元素中是否有图片，如果有图片就使用 div 而不是 p
           const hasImage = React.Children.toArray(children).some(
@@ -46,15 +54,24 @@ export default function MarkdownContent({ content }: { content: string }) {
             </p>
           )
         },
-        ul: ({ node, ...props }) => (
-          <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700" {...props} />
+        ul: ({ node, children, ...props }: any) => (
+          <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700" {...props}>
+            {children}
+          </ul>
         ),
-        ol: ({ node, ...props }) => (
-          <ol className="list-decimal list-inside mb-4 space-y-2 text-gray-700" {...props} />
+        ol: ({ node, children, ...props }: any) => (
+          <ol className="list-decimal list-inside mb-4 space-y-2 text-gray-700" {...props}>
+            {children}
+          </ol>
         ),
-        li: ({ node, ...props }) => (
-          <li className="text-gray-700" {...props} />
-        ),
+        li: ({ node, children, ...props }: any) => {
+          // react-markdown 会自动处理 key，我们只需要确保正确传递 children
+          return (
+            <li className="text-gray-700" {...props}>
+              {children}
+            </li>
+          )
+        },
         strong: ({ node, ...props }) => (
           <strong className="font-semibold text-gray-900" {...props} />
         ),
@@ -119,22 +136,6 @@ export default function MarkdownContent({ content }: { content: string }) {
               className="w-full h-auto rounded-lg my-6"
               {...props}
             />
-          )
-        },
-        p: ({ node, children, ...props }: any) => {
-          // 检查子元素中是否有图片，如果有图片就不使用 p 标签
-          const hasImage = React.Children.toArray(children).some(
-            (child: any) => child?.type === 'img' || child?.props?.src
-          )
-          
-          if (hasImage) {
-            return <div className="text-gray-700 leading-relaxed mb-4" {...props}>{children}</div>
-          }
-          
-          return (
-            <p className="text-gray-700 leading-relaxed mb-4" {...props}>
-              {children}
-            </p>
           )
         },
         a: ({ node, href, ...props }: any) => (

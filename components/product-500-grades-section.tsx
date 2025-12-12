@@ -9,7 +9,8 @@ const grades = [
   {
     grade: "502 Stainless Steel",
     image: "/stainless-steel-sheet.png",
-    description: "502 stainless steel is a high-chromium alloy offering excellent high-temperature oxidation resistance. It is ideal for applications requiring superior heat resistance and durability in extreme environments, making it perfect for high-temperature energy conversion systems and industrial furnaces."
+    description: "502 stainless steel is a high-chromium alloy offering excellent high-temperature oxidation resistance. It is ideal for applications requiring superior heat resistance and durability in extreme environments, making it perfect for high-temperature energy conversion systems and industrial furnaces.",
+    link: "/products/stainless-steel-sheet/502"
   },
   {
     grade: "503 Stainless Steel",
@@ -55,7 +56,7 @@ export default function Product500GradesSection() {
                       Get a Quote
                     </button>
                     <Link
-                      href="/products/stainless-steel-sheet#500-series-grades"
+                      href={grade.link || "/products/stainless-steel-sheet#500-series-grades"}
                       className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center"
                     >
                       Learn More

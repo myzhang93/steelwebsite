@@ -9,13 +9,16 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.7_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.7_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$0$2e$454$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/lucide-react@0.454.0_react@19.2.0/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.7_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
+;
 function QuoteForm({ onSuccess, source }) {
     _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         name: "",
         phone: "",
@@ -47,9 +50,12 @@ function QuoteForm({ onSuccess, source }) {
         if (fileInputRef.current) {
             fileInputRef.current.value = "";
         }
+        // Close modal if callback provided
         if (onSuccess) {
             onSuccess();
         }
+        // Navigate to thank you page
+        router.push("/thank-you");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
         onSubmit: handleSubmit,
@@ -63,7 +69,7 @@ function QuoteForm({ onSuccess, source }) {
                         children: "Your Name*"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 51,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -79,13 +85,13 @@ function QuoteForm({ onSuccess, source }) {
                         placeholder: "Your Name*"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 54,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/quote-form.tsx",
-                lineNumber: 50,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -96,7 +102,7 @@ function QuoteForm({ onSuccess, source }) {
                         children: "Your Phone"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 66,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -111,13 +117,13 @@ function QuoteForm({ onSuccess, source }) {
                         placeholder: "Your Phone"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 69,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/quote-form.tsx",
-                lineNumber: 65,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -128,7 +134,7 @@ function QuoteForm({ onSuccess, source }) {
                         children: "Your Email*"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 80,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -144,13 +150,13 @@ function QuoteForm({ onSuccess, source }) {
                         placeholder: "Your Email*"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 83,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/quote-form.tsx",
-                lineNumber: 79,
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -161,7 +167,7 @@ function QuoteForm({ onSuccess, source }) {
                         children: "Your Message*"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 95,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -177,13 +183,13 @@ function QuoteForm({ onSuccess, source }) {
                         placeholder: "Your Message*"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 98,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/quote-form.tsx",
-                lineNumber: 94,
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -193,7 +199,7 @@ function QuoteForm({ onSuccess, source }) {
                         children: "File Upload"
                     }, void 0, false, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 110,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -206,7 +212,7 @@ function QuoteForm({ onSuccess, source }) {
                                 children: "Choose File"
                             }, void 0, false, {
                                 fileName: "[project]/components/quote-form.tsx",
-                                lineNumber: 112,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -216,7 +222,7 @@ function QuoteForm({ onSuccess, source }) {
                                 className: "hidden"
                             }, void 0, false, {
                                 fileName: "[project]/components/quote-form.tsx",
-                                lineNumber: 119,
+                                lineNumber: 125,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -224,19 +230,19 @@ function QuoteForm({ onSuccess, source }) {
                                 children: file ? file.name : "No file chosen"
                             }, void 0, false, {
                                 fileName: "[project]/components/quote-form.tsx",
-                                lineNumber: 125,
+                                lineNumber: 131,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/quote-form.tsx",
-                        lineNumber: 111,
+                        lineNumber: 117,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/quote-form.tsx",
-                lineNumber: 109,
+                lineNumber: 115,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -251,28 +257,32 @@ function QuoteForm({ onSuccess, source }) {
                             className: "w-4 h-4"
                         }, void 0, false, {
                             fileName: "[project]/components/quote-form.tsx",
-                            lineNumber: 138,
+                            lineNumber: 144,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/quote-form.tsx",
-                    lineNumber: 132,
+                    lineNumber: 138,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/quote-form.tsx",
-                lineNumber: 131,
+                lineNumber: 137,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/quote-form.tsx",
-        lineNumber: 49,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }
-_s(QuoteForm, "xHMt4JOZkmHKcKYXgGLr+Vnh4CQ=");
+_s(QuoteForm, "9SKTD6Si8EK5/iojzBZHKY/4oBE=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = QuoteForm;
 var _c;
 __turbopack_context__.k.register(_c, "QuoteForm");
@@ -1797,7 +1807,7 @@ function ProductCoilGradesSection() {
                                     grade: "410 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "410 stainless steel coil is a martensitic steel with good corrosion resistance and high strength. Perfect for applications requiring moderate corrosion resistance and high hardness, such as pumps, valves, and shafts.",
-                                    link: "/products/stainless-steel-coil#400-series-grades"
+                                    link: "/products/stainless-steel-coil/410"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 159,
@@ -1807,7 +1817,7 @@ function ProductCoilGradesSection() {
                                     grade: "420 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "420 stainless steel coil is known for its high hardness and excellent wear resistance. Ideal for applications requiring sharp edges or high hardness, such as knives, surgical instruments, and cutting tools.",
-                                    link: "/products/stainless-steel-coil#400-series-grades"
+                                    link: "/products/stainless-steel-coil/420"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 165,
@@ -1817,7 +1827,7 @@ function ProductCoilGradesSection() {
                                     grade: "430 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "430 stainless steel coil is a ferritic alloy with good corrosion resistance to atmospheric and mildly corrosive environments. Perfect for decorative applications, automotive trim, and kitchen appliances.",
-                                    link: "/products/stainless-steel-coil#400-series-grades"
+                                    link: "/products/stainless-steel-coil/430"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 171,
@@ -1827,7 +1837,7 @@ function ProductCoilGradesSection() {
                                     grade: "446 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "446 stainless steel coil is a high-chromium ferritic alloy offering excellent resistance to high-temperature oxidation and corrosion. Ideal for furnace components and heat exchangers requiring high heat resistance.",
-                                    link: "/products/stainless-steel-coil#400-series-grades"
+                                    link: "/products/stainless-steel-coil/446"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 177,
@@ -1837,7 +1847,7 @@ function ProductCoilGradesSection() {
                                     grade: "409 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "409 stainless steel coil is a ferritic alloy often used for automotive exhaust systems due to its resistance to corrosion in high-temperature environments. Perfect for exhaust manifolds and catalytic converters.",
-                                    link: "/products/stainless-steel-coil#400-series-grades"
+                                    link: "/products/stainless-steel-coil/409"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 183,
@@ -1847,7 +1857,7 @@ function ProductCoilGradesSection() {
                                     grade: "410S Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "410S stainless steel coil is a low-carbon version offering enhanced weldability and resistance to stress corrosion cracking. Ideal for heat exchangers, pressure vessels, and welded structures.",
-                                    link: "/products/stainless-steel-coil#400-series-grades"
+                                    link: "/products/stainless-steel-coil/410S"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 189,
@@ -1901,7 +1911,7 @@ function ProductCoilGradesSection() {
                                     grade: "502 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "502 stainless steel coil is a high-chromium alloy offering excellent high-temperature oxidation resistance. Perfect for high-temperature energy conversion systems and industrial furnaces requiring superior heat resistance.",
-                                    link: "/products/stainless-steel-coil#500-series-grades"
+                                    link: "/products/stainless-steel-coil/502"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 210,
@@ -1911,7 +1921,7 @@ function ProductCoilGradesSection() {
                                     grade: "503 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "503 stainless steel coil provides good oxidation resistance and is ideal for high-temperature applications. Excellent for energy systems and industrial equipment where heat resistance and durability are critical.",
-                                    link: "/products/stainless-steel-coil#500-series-grades"
+                                    link: "/products/stainless-steel-coil/503"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 216,
@@ -1920,8 +1930,8 @@ function ProductCoilGradesSection() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GradeCard, {
                                     grade: "504 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
-                                    description: "504 stainless steel coil resists scaling and oxidation, making it ideal for furnace parts and high-temperature industrial applications. Maintains structural integrity at elevated temperatures.",
-                                    link: "/products/stainless-steel-coil#500-series-grades"
+                                    description: "504 stainless steel coil resists scaling and oxidation, making it ideal for use in furnace parts and high-temperature industrial applications. It maintains structural integrity at elevated temperatures, ensuring reliable performance in demanding thermal environments.",
+                                    link: "/products/stainless-steel-coil/504"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 222,
@@ -1975,7 +1985,7 @@ function ProductCoilGradesSection() {
                                     grade: "630 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "630 stainless steel coil is a precipitation-hardening alloy offering high strength and good corrosion resistance. Perfect for high-stress components, aerospace applications, and critical industrial equipment.",
-                                    link: "/products/stainless-steel-coil#600-series-grades"
+                                    link: "/products/stainless-steel-coil/630"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 243,
@@ -1985,7 +1995,7 @@ function ProductCoilGradesSection() {
                                     grade: "631 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "631 stainless steel coil offers excellent fatigue resistance, making it suitable for high-stress applications where reliability and durability are paramount. Ideal for oil and gas equipment and power generation.",
-                                    link: "/products/stainless-steel-coil#600-series-grades"
+                                    link: "/products/stainless-steel-coil/631"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 249,
@@ -1995,7 +2005,7 @@ function ProductCoilGradesSection() {
                                     grade: "640 Stainless Steel Coil",
                                     image: "/stainless-steel-sheet.png",
                                     description: "640 stainless steel coil provides good high-temperature strength and oxidation resistance. Designed for high-temperature industrial processes and equipment requiring both mechanical strength and thermal stability.",
-                                    link: "/products/stainless-steel-coil#600-series-grades"
+                                    link: "/products/stainless-steel-coil/640"
                                 }, void 0, false, {
                                     fileName: "[project]/components/product-coil-grades-section.tsx",
                                     lineNumber: 255,

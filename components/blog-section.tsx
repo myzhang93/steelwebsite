@@ -9,21 +9,21 @@ export default function BlogSection() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   const posts = [
     {
-      image: "/manufacturing-facility-sparks-metal-cutting.jpg",
+      image: "/industrial-steel-machinery-equipment.jpg",
       date: "10 Feb 24",
       title: "The New Customer-Centric Post-Purchase Customer-Facing Strategy",
       description: "Exploring innovative approaches to customer engagement and satisfaction in the steel industry.",
       link: "#"
     },
     {
-      image: "/molten-steel-industrial-furnace.jpg",
+      image: "/steel-bar-heat-treating-1122x567.jpeg",
       date: "06 Feb 24",
       title: "Leveraging AI in Welding Operations with HR Integrated",
       description: "How artificial intelligence is revolutionizing welding processes and improving efficiency.",
       link: "#"
     },
     {
-      image: "/oil-platform-sunset-offshore-industrial.jpg",
+      image: "/Eagle-Aluminum-Aluminum-vs-Steel.jpg",
       date: "02 Feb 24",
       title: "Managing Disruptions: The Digital Twin for Supply Chain",
       description: "Understanding the role of digital twin technology in optimizing supply chain management.",
