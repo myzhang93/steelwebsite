@@ -27,7 +27,7 @@ export default function Product600HeroSection() {
             }}
           >
             <Image
-              src="/industrial-stainless-steel-factory.jpg"
+              src="/Module-4-3-1024x713.jpg"
               alt="600 Series Stainless Steel"
               fill
               className="object-cover"

@@ -10,35 +10,19 @@ export default function Product600FactorySection() {
           OUR FACTORY
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="relative h-64 rounded-lg overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/industrial-stainless-steel-factory.jpg"
+              src="/premium_photo-1664300608028-15bcc4da4996.jpg"
               alt="Factory Floor"
               fill
               className="object-cover"
             />
           </div>
-          <div className="relative h-64 rounded-lg overflow-hidden">
+          <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/stainless-steel-welding-sparks.jpg"
+              src="/shutterstock-375337648.jpg"
               alt="Worker Processing Metal"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image
-              src="/industrial-manufacturing-steel-production.jpg"
-              alt="Factory Interior"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image
-              src="/stainless-steel-sheet.png"
-              alt="Metal Coils"
               fill
               className="object-cover"
             />

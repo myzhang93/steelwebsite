@@ -3,34 +3,7 @@
     "[project]/app/about-us/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/applications/automotive/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/applications/construction/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/applications/food-processing/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/applications/kitchen-equipment/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/blog/comparison/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/blog/pricing/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/blog/trends/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/contact/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/knowledge-base/grades/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/knowledge-base/technical-guide/page": [
+    "[project]/app/blog/lists/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
     "[project]/app/page": [
@@ -39,10 +12,22 @@
     "[project]/app/products/200-series/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
+    "[project]/app/products/300-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/400-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/500-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/600-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
     "[project]/app/products/customized-stainless-steel-parts/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-fittings/201/page": [
+    "[project]/app/products/stainless-steel-coil/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
     "[project]/app/products/stainless-steel-fittings/page": [
@@ -51,31 +36,10 @@
     "[project]/app/products/stainless-steel-pipe-tube/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
-    "[project]/app/products/stainless-steel-sheet/201/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
     "[project]/app/products/stainless-steel-sheet/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ],
     "[project]/app/surface-finish/2b/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/surface-finish/ba/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/surface-finish/embossed/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/surface-finish/hl/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/surface-finish/mirror/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/surface-finish/no4/page": [
-      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
-    ],
-    "[project]/app/thank-you/page": [
       "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
     ]
   },

@@ -6,7 +6,6 @@ import ProductUsesSection from "@/components/product-uses-section"
 import ProductAdvantagesSection from "@/components/product-advantages-section"
 import ProductFormabilitySection from "@/components/product-formability-section"
 import ProductEcoFriendlySection from "@/components/product-eco-friendly-section"
-import ProductTailoredSection from "@/components/product-tailored-section"
 import ProductCommonProductsSection from "@/components/product-common-products-section"
 import ProductCTABanner from "@/components/product-cta-banner"
 import ProductRelatedSection from "@/components/product-related-section"
@@ -23,7 +22,6 @@ export default function Product200SeriesPage() {
       <ProductAdvantagesSection />
       <ProductFormabilitySection />
       <ProductEcoFriendlySection />
-      <ProductTailoredSection />
       <ProductCommonProductsSection />
       <ProductCTABanner />
       <ProductRelatedSection />

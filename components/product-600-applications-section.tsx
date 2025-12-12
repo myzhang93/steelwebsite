@@ -9,25 +9,25 @@ const applications = [
     id: 1,
     title: "Oil & Gas Industry Equipment",
     description: "600 series stainless steel is essential for demanding oil and gas environments, providing exceptional corrosion resistance and strength for pipelines, valves, and processing equipment that must withstand harsh conditions and high pressures.",
-    image: "/oil-platform-sunset-offshore-industrial.jpg"
+    image: "/134843968-690x420.webp"
   },
   {
     id: 2,
     title: "Power Generation",
     description: "The material's excellent high-temperature performance and durability make it ideal for power generation applications, including solar energy systems, thermal power plants, and renewable energy infrastructure.",
-    image: "/industrial-manufacturing-steel-production.jpg"
+    image: "/main_img2.jpg"
   },
   {
     id: 3,
     title: "Automotive Performance Parts",
     description: "600 series stainless steel is used in high-performance automotive components where strength, heat resistance, and durability are critical. Applications include exhaust systems, turbochargers, and structural components.",
-    image: "/stainless-steel-welding-sparks.jpg"
+    image: "/unnamed.jpg"
   },
   {
     id: 4,
     title: "Mold and Die Making",
     description: "The superior hardness and wear resistance of 600 series make it perfect for creating durable molds and dies used in manufacturing processes, ensuring precision and longevity in production applications.",
-    image: "/industrial-machinery-fabrication.jpg"
+    image: "/Untitled-design-13.webp"
   }
 ]
 

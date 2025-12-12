@@ -37,10 +37,10 @@ export default function Product400InnovationSection() {
           {/* Right Image */}
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/industrial-manufacturing-steel-production.jpg"
+              src="/102372024_82482023_مصنع الحديد والصلب السليمانية (6).jpg"
               alt="Industrial Innovation"
               fill
-              className="object-cover grayscale"
+              className="object-cover"
             />
           </div>
         </div>

@@ -10,25 +10,25 @@ const applications = [
     id: 1,
     title: "Automotive Manufacturing",
     description: "300 series stainless steel sheets are extensively used in automotive manufacturing for components requiring excellent corrosion resistance, durability, and aesthetic appeal. Applications include exhaust systems, trim pieces, and structural components.",
-    image: "/industrial-machinery-fabrication.jpg"
+    image: "/GettyImages-1161953454.avif"
   },
   {
     id: 2,
     title: "Marine Applications",
     description: "The superior corrosion resistance of 300 series stainless steel makes it ideal for marine environments. Used in shipbuilding, offshore platforms, and marine equipment where saltwater exposure demands exceptional material performance.",
-    image: "/oil-platform-sunset-offshore-industrial.jpg"
+    image: "/image-2-green-steel-1024x576.jpeg"
   },
   {
     id: 3,
     title: "Renewable Energy Infrastructure",
     description: "300 series stainless steel plays a crucial role in renewable energy applications, including wind turbines, solar panel mounting systems, and energy storage facilities. Its durability and resistance to environmental factors ensure long-term reliability.",
-    image: "/industrial-manufacturing-steel-production.jpg"
+    image: "/LC-Iron-Industry_2800x1800-scaled.jpg"
   },
   {
     id: 4,
     title: "Electronics and Semiconductor Manufacturing",
     description: "The clean, non-contaminating properties of 300 series stainless steel make it essential in electronics and semiconductor manufacturing. Used in cleanroom environments, processing equipment, and component fabrication.",
-    image: "/industrial-surface-treatment-facility.jpg"
+    image: "/Coils-2.jpg"
   }
 ]
 

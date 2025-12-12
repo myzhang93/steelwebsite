@@ -51,7 +51,7 @@ export default function Product500BenefitsSection() {
             <div className="order-2 md:order-1">
               <div className="relative h-64 rounded-lg overflow-hidden">
                 <Image
-                  src="/stainless-steel-welding-sparks.jpg"
+                  src="/steel-manufacturing.jpeg"
                   alt="High Strength"
                   fill
                   className="object-cover"
@@ -96,7 +96,7 @@ export default function Product500BenefitsSection() {
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
-                src="/industrial-stainless-steel-factory.jpg"
+                src="/Iron-and-steel-industry-in-India.jpg"
                 alt="High Temperature"
                 fill
                 className="object-cover"

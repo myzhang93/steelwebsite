@@ -19,16 +19,16 @@ export default function Product300CustomerServiceSection() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="relative h-80 rounded-lg overflow-hidden">
             <Image
-              src="/stainless-steel-sheet.png"
-              alt="Stainless Steel Sheets"
+              src="/Modern-Industrial-Plant.webp"
+              alt="Modern Industrial Plant"
               fill
               className="object-cover"
             />
           </div>
           <div className="relative h-80 rounded-lg overflow-hidden">
             <Image
-              src="/industrial-stainless-steel-factory.jpg"
-              alt="Manufacturing Facility"
+              src="/steel-plant-worker-iStock-143690125.jpg"
+              alt="Steel Plant Worker"
               fill
               className="object-cover"
             />

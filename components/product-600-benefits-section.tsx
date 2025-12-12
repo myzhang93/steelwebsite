@@ -14,7 +14,7 @@ export default function Product600BenefitsSection() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition flex flex-col">
             <div className="relative h-64">
               <Image
-                src="/stainless-steel-sheet.png"
+                src="/Stainless-Steel-scaled.jpeg"
                 alt="Durability and Corrosion Resistance"
                 fill
                 className="object-cover"
@@ -42,7 +42,7 @@ export default function Product600BenefitsSection() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition flex flex-col">
             <div className="relative h-64">
               <Image
-                src="/industrial-manufacturing-steel-production.jpg"
+                src="/iron-smelter_hu245d07dd8af81482550c097dad3f7a4b_69516_750x375_resize_q100_h2_box.webp"
                 alt="High-Temperature Performance"
                 fill
                 className="object-cover"
@@ -70,7 +70,7 @@ export default function Product600BenefitsSection() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition flex flex-col">
             <div className="relative h-64">
               <Image
-                src="/stainless-steel-welding-sparks.jpg"
+                src="/istock-1163344935-scaled-e1633027039208-20240402-1152.jpg"
                 alt="Versatility of Applications"
                 fill
                 className="object-cover"

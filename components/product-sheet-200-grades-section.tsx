@@ -194,14 +194,6 @@ export default function ProductSheet200GradesSection() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Link 
-            href="/products/200-series"
-            className="inline-block text-blue-600 hover:text-blue-700 font-semibold text-lg transition-colors"
-          >
-            Learn more about 200 Series →
-          </Link>
-        </div>
       </div>
     </section>
   )

@@ -90,14 +90,6 @@ export default function ProductCoilGradesSection() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Link 
-            href="/products/200-series"
-            className="inline-block text-blue-600 hover:text-blue-700 font-semibold text-lg transition-colors"
-          >
-            Learn more about 200 Series →
-          </Link>
-        </div>
 
         {/* 300 Series Section */}
         <div id="300-series-grades" className="mt-16 pt-16 border-t border-gray-300 scroll-mt-20">
