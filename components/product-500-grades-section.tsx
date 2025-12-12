@@ -56,7 +56,7 @@ export default function Product500GradesSection() {
                       Get a Quote
                     </button>
                     <Link
-                      href={grade.link || "/products/stainless-steel-sheet#500-series-grades"}
+                      href="/products/stainless-steel-sheet#500-series-grades"
                       className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center"
                     >
                       Learn More

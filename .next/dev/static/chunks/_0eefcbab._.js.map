@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/111work/steel-website-clone%20%281%29/app/products/200-series/page.tsx"],"sourcesContent":["\"use client\"\n\nimport { useEffect } from \"react\"\nimport { useRouter } from \"next/navigation\"\n\nexport default function Product200SeriesPage() {\n  const router = useRouter()\n\n  useEffect(() => {\n    // 重定向到 Stainless Steel Sheet & Plate 页面的 200 系列部分\n    router.replace(\"/products/stainless-steel-sheet#200-series-grades\")\n  }, [router])\n\n  return null\n}\n\n\n\n\n"],"names":[],"mappings":";;;;AAEA;AACA;;AAHA;;;AAKe,SAAS;;IACtB,MAAM,SAAS,IAAA,iRAAS;IAExB,IAAA,ySAAS;0CAAC;YACR,kDAAkD;YAClD,OAAO,OAAO,CAAC;QACjB;yCAAG;QAAC;KAAO;IAEX,OAAO;AACT;GATwB;;QACP,iRAAS;;;KADF"}},
+    {"offset": {"line": 41, "column": 0}, "map": {"version":3,"sources":["file:///D:/111work/steel-website-clone%20%281%29/node_modules/.pnpm/next%4016.0.7_react-dom%4019.2.0_react%4019.2.0__react%4019.2.0/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}}]
+}

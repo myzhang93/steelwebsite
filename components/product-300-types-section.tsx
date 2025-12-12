@@ -75,7 +75,7 @@ export default function Product300TypesSection() {
                       Get a Quote
                     </button>
                     <Link
-                      href={type.link || "/products/stainless-steel-sheet#300-series-grades"}
+                      href="/products/stainless-steel-sheet#300-series-grades"
                       className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center"
                     >
                       Learn More

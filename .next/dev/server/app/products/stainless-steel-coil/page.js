@@ -1,6 +1,6 @@
 var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/products/stainless-steel-coil/page.js")
-R.c("server/chunks/ssr/node_modules__pnpm_fd24ea9b._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__80afad46._.js")
+R.c("server/chunks/ssr/node_modules__pnpm_7764cf18._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__aaebf69f._.js")
 R.c("server/chunks/ssr/e559b_next_dist_37fe9ee5._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__7f148858._.js")
 R.c("server/chunks/ssr/e559b_next_dist_client_components_builtin_global-error_fcf043df.js")

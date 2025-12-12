@@ -6,7 +6,6 @@ import ProductPipeTubeTypesSection from "@/components/product-pipe-tube-types-se
 import ProductPipeTubeSpecsSection from "@/components/product-pipe-tube-specs-section"
 import ProductPipeTubeApplicationsSection from "@/components/product-pipe-tube-applications-section"
 import ProductPipeTubeAdvantagesSection from "@/components/product-pipe-tube-advantages-section"
-import ProductCTABanner from "@/components/product-cta-banner"
 import Footer from "@/components/footer"
 
 export default function StainlessSteelPipeTubePage() {
@@ -20,7 +19,6 @@ export default function StainlessSteelPipeTubePage() {
       <ProductPipeTubeSpecsSection />
       <ProductPipeTubeApplicationsSection />
       <ProductPipeTubeAdvantagesSection />
-      <ProductCTABanner />
       <Footer />
     </>
   )

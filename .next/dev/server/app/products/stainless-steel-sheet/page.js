@@ -1,6 +1,6 @@
 var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/products/stainless-steel-sheet/page.js")
-R.c("server/chunks/ssr/node_modules__pnpm_ca9e91dd._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__bb2ef470._.js")
+R.c("server/chunks/ssr/e559b_next_dist_a385dd3d._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a9f90cf7._.js")
 R.c("server/chunks/ssr/e559b_next_dist_37fe9ee5._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__7f148858._.js")
 R.c("server/chunks/ssr/e559b_next_dist_client_components_builtin_global-error_fcf043df.js")

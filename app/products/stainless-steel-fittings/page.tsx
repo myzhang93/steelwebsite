@@ -7,7 +7,6 @@ import ProductFittingsSpecsSection from "@/components/product-fittings-specs-sec
 import ProductFittingsApplicationsSection from "@/components/product-fittings-applications-section"
 import ProductFittingsBenefitsSection from "@/components/product-fittings-benefits-section"
 import ProductFittingsQualitySection from "@/components/product-fittings-quality-section"
-import ProductCTABanner from "@/components/product-cta-banner"
 import Footer from "@/components/footer"
 
 export default function StainlessSteelFittingsPage() {
@@ -22,7 +21,6 @@ export default function StainlessSteelFittingsPage() {
       <ProductFittingsApplicationsSection />
       <ProductFittingsBenefitsSection />
       <ProductFittingsQualitySection />
-      <ProductCTABanner />
       <Footer />
     </>
   )

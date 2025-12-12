@@ -1,16 +1,22 @@
 {
-  "/about-us/page": "app/about-us/page.js",
-  "/blog/lists/page": "app/blog/lists/page.js",
+  "/applications/automotive/page": "app/applications/automotive/page.js",
+  "/blog/trends/page": "app/blog/trends/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/knowledge-base/technical-guide/page": "app/knowledge-base/technical-guide/page.js",
   "/page": "app/page.js",
   "/products/200-series/page": "app/products/200-series/page.js",
   "/products/300-series/page": "app/products/300-series/page.js",
   "/products/400-series/page": "app/products/400-series/page.js",
   "/products/500-series/page": "app/products/500-series/page.js",
   "/products/600-series/page": "app/products/600-series/page.js",
-  "/products/customized-stainless-steel-parts/page": "app/products/customized-stainless-steel-parts/page.js",
   "/products/stainless-steel-coil/page": "app/products/stainless-steel-coil/page.js",
   "/products/stainless-steel-fittings/page": "app/products/stainless-steel-fittings/page.js",
   "/products/stainless-steel-pipe-tube/page": "app/products/stainless-steel-pipe-tube/page.js",
-  "/products/stainless-steel-sheet/page": "app/products/stainless-steel-sheet/page.js",
-  "/surface-finish/2b/page": "app/surface-finish/2b/page.js"
+  "/products/stainless-steel-sheet/201/page": "app/products/stainless-steel-sheet/201/page.js",
+  "/products/stainless-steel-sheet/304/page": "app/products/stainless-steel-sheet/304/page.js",
+  "/products/stainless-steel-sheet/310/page": "app/products/stainless-steel-sheet/310/page.js",
+  "/products/stainless-steel-sheet/321/page": "app/products/stainless-steel-sheet/321/page.js",
+  "/products/stainless-steel-sheet/446/page": "app/products/stainless-steel-sheet/446/page.js",
+  "/products/stainless-steel-sheet/502/page": "app/products/stainless-steel-sheet/502/page.js",
+  "/products/stainless-steel-sheet/page": "app/products/stainless-steel-sheet/page.js"
 }
