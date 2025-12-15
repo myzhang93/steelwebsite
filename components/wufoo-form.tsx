@@ -247,7 +247,7 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
 
             <li id="foli9" className="notranslate">
               <label className="desc" id="title9" htmlFor="Field9">
-                Attach a File (Max 4MB)
+                Attach a File
               </label>
               <div>
                 <input
