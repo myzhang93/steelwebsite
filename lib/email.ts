@@ -137,9 +137,16 @@ Submitted at: ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }
   }
 
   try {
-    // 记录附件信息用于调试
+    // 记录邮件发送信息用于调试
+    console.log('Sending email notification:', {
+      to: recipientEmail,
+      from: mailOptions.from,
+      subject: mailOptions.subject,
+      hasAttachment: !!data.attachment,
+    })
+    
     if (data.attachment) {
-      console.log('Sending email with attachment:', {
+      console.log('Email attachment details:', {
         filename: data.attachment.filename,
         contentType: data.attachment.contentType,
         size: data.attachment.content.length,
@@ -150,6 +157,7 @@ Submitted at: ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }
     // 注释掉验证以避免连接超时导致提交失败
     // await transporter.verify()
     
+    console.log('Calling transporter.sendMail...')
     const info = await transporter.sendMail(mailOptions)
     console.log('Email sent successfully:', info.messageId)
     console.log('Email response:', {
@@ -167,6 +175,10 @@ Submitted at: ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }
       command: error?.command,
       responseCode: error?.responseCode,
       response: error?.response,
+      errno: error?.errno,
+      syscall: error?.syscall,
+      hostname: error?.hostname,
+      port: error?.port,
       stack: error?.stack,
     })
     throw new Error(`Failed to send email: ${error?.message || 'Unknown error'}`)

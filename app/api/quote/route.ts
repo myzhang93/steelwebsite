@@ -88,31 +88,44 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString()
     })
 
-    // 发送邮件通知（包含附件）- 使用异步非阻塞方式，不等待完成
+    // 记录收件人邮箱用于调试
+    const recipientEmail = process.env.RECIPIENT_EMAIL || '1011300569@qq.com'
+    console.log('Preparing to send email notification to:', recipientEmail)
+
+    // 发送邮件通知（包含附件）
+    // 使用 await 确保在 Serverless 环境中邮件发送完成
     // 即使邮件发送失败，也不影响表单提交成功
-    sendQuoteEmail({
-      name,
-      phone: phone || undefined,
-      email,
-      message: message || undefined,
-      attachment: fileBuffer ? {
-        filename: fileName!,
-        content: fileBuffer,
-        contentType: fileType || undefined,
-      } : undefined,
-    }).then(() => {
+    let emailSent = false
+    try {
+      await sendQuoteEmail({
+        name,
+        phone: phone || undefined,
+        email,
+        message: message || undefined,
+        attachment: fileBuffer ? {
+          filename: fileName!,
+          content: fileBuffer,
+          contentType: fileType || undefined,
+        } : undefined,
+      })
+      emailSent = true
       console.log('Email notification sent successfully')
-    }).catch((emailError: any) => {
-      console.error('Failed to send email notification (non-blocking):', emailError)
+    } catch (emailError: any) {
+      console.error('Failed to send email notification:', emailError)
       console.error('Email error details:', {
         message: emailError?.message,
         code: emailError?.code,
+        command: emailError?.command,
+        responseCode: emailError?.responseCode,
+        response: emailError?.response,
         stack: emailError?.stack,
       })
-      // 邮件发送失败不影响表单提交，继续执行
-    })
+      // 邮件发送失败不影响表单提交成功，但记录错误以便排查
+      emailSent = false
+    }
 
     // 始终返回成功，即使邮件发送失败
+    // 这样用户看到提交成功，但我们会在日志中记录邮件发送状态
     return NextResponse.json(
       { 
         success: true,
