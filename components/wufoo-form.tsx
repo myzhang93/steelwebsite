@@ -39,31 +39,22 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
     const form = e.currentTarget
     const formData = new FormData(form)
     
-    // 检查是否有文件
-    const fileInput = formData.get("Field9") as File | null
-    const hasFile = fileInput && fileInput.size > 0
-
-    try {
-      const response = await fetch("/api/quote", {
-        method: "POST",
-        // 不要设置 Content-Type，让浏览器自动设置（包含 boundary）
-        body: formData,
-      })
-
-      if (response.ok) {
-        form.reset()
-        if (onSuccess) {
-          onSuccess()
-        }
-        router.push("/thank-you")
-      } else {
-        const errorData = await response.json().catch(() => ({}))
-        alert(errorData.error || "提交失败，请稍后重试")
-      }
-    } catch (error) {
-      console.error("提交错误:", error)
-      alert("提交失败，请稍后重试")
+    // 立即跳转到 thank you 页面，不等待服务器响应
+    form.reset()
+    if (onSuccess) {
+      onSuccess()
     }
+    router.push("/thank-you")
+
+    // 在后台继续发送请求（不等待响应）
+    fetch("/api/quote", {
+      method: "POST",
+      // 不要设置 Content-Type，让浏览器自动设置（包含 boundary）
+      body: formData,
+    }).catch((error) => {
+      console.error("提交错误:", error)
+      // 静默处理错误，因为用户已经跳转到 thank you 页面
+    })
   }
 
   return (
