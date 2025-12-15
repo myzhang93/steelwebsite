@@ -6,16 +6,28 @@ const createTransporter = () => {
   const host = process.env.SMTP_HOST || 'smtp.qq.com'
   const port = parseInt(process.env.SMTP_PORT || '587')
   const secure = process.env.SMTP_SECURE === 'true' || port === 465
+  const user = process.env.SMTP_USER
+  const pass = process.env.SMTP_PASS
   
-  return nodemailer.createTransport({
+  // 检查必要的环境变量
+  if (!user || !pass) {
+    throw new Error('SMTP credentials are missing. Please check SMTP_USER and SMTP_PASS environment variables.')
+  }
+  
+  const transporter = nodemailer.createTransport({
     host,
     port,
     secure, // true for 465, false for other ports
     auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS, // QQ 邮箱需要使用授权码，不是密码
+      user,
+      pass, // QQ 邮箱需要使用授权码，不是密码
     },
+    // 添加连接超时设置
+    connectionTimeout: 10000, // 10 seconds
+    greetingTimeout: 10000,
   })
+  
+  return transporter
 }
 
 // 发送表单提交通知邮件
@@ -134,6 +146,10 @@ Submitted at: ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }
       })
     }
     
+    // 验证 transporter 连接（可选，如果验证失败会抛出错误）
+    // 注释掉验证以避免连接超时导致提交失败
+    // await transporter.verify()
+    
     const info = await transporter.sendMail(mailOptions)
     console.log('Email sent successfully:', info.messageId)
     console.log('Email response:', {
@@ -146,11 +162,14 @@ Submitted at: ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }
   } catch (error: any) {
     console.error('Error sending email:', error)
     console.error('Error details:', {
-      message: error.message,
-      code: error.code,
-      command: error.command,
+      message: error?.message,
+      code: error?.code,
+      command: error?.command,
+      responseCode: error?.responseCode,
+      response: error?.response,
+      stack: error?.stack,
     })
-    throw new Error(`Failed to send email: ${error.message}`)
+    throw new Error(`Failed to send email: ${error?.message || 'Unknown error'}`)
   }
 }
 

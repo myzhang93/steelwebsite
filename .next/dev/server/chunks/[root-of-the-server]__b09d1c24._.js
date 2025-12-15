@@ -146,15 +146,25 @@ const createTransporter = ()=>{
     const host = process.env.SMTP_HOST || 'smtp.qq.com';
     const port = parseInt(process.env.SMTP_PORT || '587');
     const secure = process.env.SMTP_SECURE === 'true' || port === 465;
-    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$nodemailer$40$7$2e$0$2e$11$2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].createTransport({
+    const user = process.env.SMTP_USER;
+    const pass = process.env.SMTP_PASS;
+    // 检查必要的环境变量
+    if (!user || !pass) {
+        throw new Error('SMTP credentials are missing. Please check SMTP_USER and SMTP_PASS environment variables.');
+    }
+    const transporter = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$nodemailer$40$7$2e$0$2e$11$2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].createTransport({
         host,
         port,
         secure,
         auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS
-        }
+            user,
+            pass
+        },
+        // 添加连接超时设置
+        connectionTimeout: 10000,
+        greetingTimeout: 10000
     });
+    return transporter;
 };
 async function sendQuoteEmail(data) {
     const transporter = createTransporter();
@@ -260,6 +270,9 @@ Submitted at: ${new Date().toLocaleString('en-US', {
                 size: data.attachment.content.length
             });
         }
+        // 验证 transporter 连接（可选，如果验证失败会抛出错误）
+        // 注释掉验证以避免连接超时导致提交失败
+        // await transporter.verify()
         const info = await transporter.sendMail(mailOptions);
         console.log('Email sent successfully:', info.messageId);
         console.log('Email response:', {
@@ -275,11 +288,14 @@ Submitted at: ${new Date().toLocaleString('en-US', {
     } catch (error) {
         console.error('Error sending email:', error);
         console.error('Error details:', {
-            message: error.message,
-            code: error.code,
-            command: error.command
+            message: error?.message,
+            code: error?.code,
+            command: error?.command,
+            responseCode: error?.responseCode,
+            response: error?.response,
+            stack: error?.stack
         });
-        throw new Error(`Failed to send email: ${error.message}`);
+        throw new Error(`Failed to send email: ${error?.message || 'Unknown error'}`);
     }
 }
 }),
@@ -374,32 +390,30 @@ async function POST(request) {
             fileName,
             timestamp: new Date().toISOString()
         });
-        // 发送邮件通知（包含附件）
-        try {
-            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$email$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sendQuoteEmail"])({
-                name,
-                phone: phone || undefined,
-                email,
-                message: message || undefined,
-                attachment: fileBuffer ? {
-                    filename: fileName,
-                    content: fileBuffer,
-                    contentType: fileType || undefined
-                } : undefined
-            });
+        // 发送邮件通知（包含附件）- 使用异步非阻塞方式，不等待完成
+        // 即使邮件发送失败，也不影响表单提交成功
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$email$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sendQuoteEmail"])({
+            name,
+            phone: phone || undefined,
+            email,
+            message: message || undefined,
+            attachment: fileBuffer ? {
+                filename: fileName,
+                content: fileBuffer,
+                contentType: fileType || undefined
+            } : undefined
+        }).then(()=>{
             console.log('Email notification sent successfully');
-        } catch (emailError) {
-            console.error('Failed to send email notification:', emailError);
-        // 即使邮件发送失败，也返回成功（避免用户看到错误）
-        // 如果需要严格处理，可以取消下面的注释
-        // return NextResponse.json(
-        //   { 
-        //     error: 'Failed to send notification email',
-        //     details: emailError.message
-        //   },
-        //   { status: 500 }
-        // )
-        }
+        }).catch((emailError)=>{
+            console.error('Failed to send email notification (non-blocking):', emailError);
+            console.error('Email error details:', {
+                message: emailError?.message,
+                code: emailError?.code,
+                stack: emailError?.stack
+            });
+        // 邮件发送失败不影响表单提交，继续执行
+        });
+        // 始终返回成功，即使邮件发送失败
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             success: true,
             message: 'Form submitted successfully'
@@ -408,9 +422,15 @@ async function POST(request) {
         });
     } catch (error) {
         console.error('Error processing form submission:', error);
+        console.error('Error details:', {
+            message: error?.message,
+            stack: error?.stack,
+            name: error?.name,
+            cause: error?.cause
+        });
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             error: 'Failed to process form submission',
-            details: error.message || 'Unknown error'
+            details: error?.message || 'Unknown error'
         }, {
             status: 500
         });

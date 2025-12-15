@@ -64,21 +64,29 @@ function WufooForm({ onSuccess }) {
         e.preventDefault();
         const form = e.currentTarget;
         const formData = new FormData(form);
-        // 立即跳转到 thank you 页面，不等待服务器响应
-        form.reset();
-        if (onSuccess) {
-            onSuccess();
-        }
-        router.push("/thank-you");
-        // 在后台继续发送请求（不等待响应）
-        fetch("/api/quote", {
-            method: "POST",
-            // 不要设置 Content-Type，让浏览器自动设置（包含 boundary）
-            body: formData
-        }).catch((error)=>{
+        // 检查是否有文件
+        const fileInput = formData.get("Field9");
+        const hasFile = fileInput && fileInput.size > 0;
+        try {
+            const response = await fetch("/api/quote", {
+                method: "POST",
+                // 不要设置 Content-Type，让浏览器自动设置（包含 boundary）
+                body: formData
+            });
+            if (response.ok) {
+                form.reset();
+                if (onSuccess) {
+                    onSuccess();
+                }
+                router.push("/thank-you");
+            } else {
+                const errorData = await response.json().catch(()=>({}));
+                alert(errorData.error || "提交失败，请稍后重试");
+            }
+        } catch (error) {
             console.error("提交错误:", error);
-        // 静默处理错误，因为用户已经跳转到 thank you 页面
-        });
+            alert("提交失败，请稍后重试");
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -160,7 +168,7 @@ function WufooForm({ onSuccess }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/wufoo-form.tsx",
-                lineNumber: 62,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -188,20 +196,20 @@ function WufooForm({ onSuccess }) {
                                         children: "Contact Us"
                                     }, void 0, false, {
                                         fileName: "[project]/components/wufoo-form.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "0"
                                     }, void 0, false, {
                                         fileName: "[project]/components/wufoo-form.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 159,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/wufoo-form.tsx",
-                                lineNumber: 148,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -219,7 +227,7 @@ function WufooForm({ onSuccess }) {
                                                 children: "Your Name"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 155,
+                                                lineNumber: 164,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -234,18 +242,18 @@ function WufooForm({ onSuccess }) {
                                                     placeholder: ""
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/wufoo-form.tsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 168,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 158,
+                                                lineNumber: 167,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/wufoo-form.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 163,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -259,7 +267,7 @@ function WufooForm({ onSuccess }) {
                                                 children: "Your Phone"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 173,
+                                                lineNumber: 182,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -273,18 +281,18 @@ function WufooForm({ onSuccess }) {
                                                     placeholder: ""
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/wufoo-form.tsx",
-                                                    lineNumber: 177,
+                                                    lineNumber: 186,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 176,
+                                                lineNumber: 185,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/wufoo-form.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 181,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -300,7 +308,7 @@ function WufooForm({ onSuccess }) {
                                                 children: "Your Email"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 190,
+                                                lineNumber: 199,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -315,18 +323,18 @@ function WufooForm({ onSuccess }) {
                                                     placeholder: ""
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/wufoo-form.tsx",
-                                                    lineNumber: 194,
+                                                    lineNumber: 203,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 193,
+                                                lineNumber: 202,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/wufoo-form.tsx",
-                                        lineNumber: 189,
+                                        lineNumber: 198,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -340,7 +348,7 @@ function WufooForm({ onSuccess }) {
                                                 children: "Your Message"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 217,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -356,18 +364,18 @@ function WufooForm({ onSuccess }) {
                                                     placeholder: ""
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/wufoo-form.tsx",
-                                                    lineNumber: 212,
+                                                    lineNumber: 221,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 211,
+                                                lineNumber: 220,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/wufoo-form.tsx",
-                                        lineNumber: 207,
+                                        lineNumber: 216,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -381,7 +389,7 @@ function WufooForm({ onSuccess }) {
                                                 children: "Attach a File"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 227,
+                                                lineNumber: 236,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -396,18 +404,18 @@ function WufooForm({ onSuccess }) {
                                                     "data-wufoo-field": "file-upload"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/wufoo-form.tsx",
-                                                    lineNumber: 231,
+                                                    lineNumber: 240,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 230,
+                                                lineNumber: 239,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/wufoo-form.tsx",
-                                        lineNumber: 226,
+                                        lineNumber: 235,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -421,39 +429,39 @@ function WufooForm({ onSuccess }) {
                                                 value: "Submit"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/wufoo-form.tsx",
-                                                lineNumber: 246,
+                                                lineNumber: 255,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/wufoo-form.tsx",
-                                            lineNumber: 245,
+                                            lineNumber: 254,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/wufoo-form.tsx",
-                                        lineNumber: 244,
+                                        lineNumber: 253,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/wufoo-form.tsx",
-                                lineNumber: 153,
+                                lineNumber: 162,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/wufoo-form.tsx",
-                        lineNumber: 137,
+                        lineNumber: 146,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/wufoo-form.tsx",
-                    lineNumber: 136,
+                    lineNumber: 145,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/wufoo-form.tsx",
-                lineNumber: 135,
+                lineNumber: 144,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$7_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -461,7 +469,7 @@ function WufooForm({ onSuccess }) {
                 strategy: "afterInteractive"
             }, void 0, false, {
                 fileName: "[project]/components/wufoo-form.tsx",
-                lineNumber: 260,
+                lineNumber: 269,
                 columnNumber: 7
             }, this)
         ]

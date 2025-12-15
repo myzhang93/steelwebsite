@@ -87,33 +87,31 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString()
     })
 
-    // 发送邮件通知（包含附件）
-    try {
-      await sendQuoteEmail({
-        name,
-        phone: phone || undefined,
-        email,
-        message: message || undefined,
-        attachment: fileBuffer ? {
-          filename: fileName!,
-          content: fileBuffer,
-          contentType: fileType || undefined,
-        } : undefined,
-      })
+    // 发送邮件通知（包含附件）- 使用异步非阻塞方式，不等待完成
+    // 即使邮件发送失败，也不影响表单提交成功
+    sendQuoteEmail({
+      name,
+      phone: phone || undefined,
+      email,
+      message: message || undefined,
+      attachment: fileBuffer ? {
+        filename: fileName!,
+        content: fileBuffer,
+        contentType: fileType || undefined,
+      } : undefined,
+    }).then(() => {
       console.log('Email notification sent successfully')
-    } catch (emailError: any) {
-      console.error('Failed to send email notification:', emailError)
-      // 即使邮件发送失败，也返回成功（避免用户看到错误）
-      // 如果需要严格处理，可以取消下面的注释
-      // return NextResponse.json(
-      //   { 
-      //     error: 'Failed to send notification email',
-      //     details: emailError.message
-      //   },
-      //   { status: 500 }
-      // )
-    }
+    }).catch((emailError: any) => {
+      console.error('Failed to send email notification (non-blocking):', emailError)
+      console.error('Email error details:', {
+        message: emailError?.message,
+        code: emailError?.code,
+        stack: emailError?.stack,
+      })
+      // 邮件发送失败不影响表单提交，继续执行
+    })
 
+    // 始终返回成功，即使邮件发送失败
     return NextResponse.json(
       { 
         success: true,
@@ -123,10 +121,16 @@ export async function POST(request: NextRequest) {
     )
   } catch (error: any) {
     console.error('Error processing form submission:', error)
+    console.error('Error details:', {
+      message: error?.message,
+      stack: error?.stack,
+      name: error?.name,
+      cause: error?.cause,
+    })
     return NextResponse.json(
       { 
         error: 'Failed to process form submission',
-        details: error.message || 'Unknown error'
+        details: error?.message || 'Unknown error'
       },
       { status: 500 }
     )

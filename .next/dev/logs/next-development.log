@@ -1,3 +1,9 @@
-[00:00:02.325] Server  LOG      ✓ Ready in 1528ms
-[00:00:18.372] Server  LOG      ○ Compiling / ...
-[00:00:20.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.762] Server  LOG      ✓ Ready in 1206ms
+[00:03:20.513] Server  LOG      ○ Compiling / ...
+[00:03:22.491] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:58.061] Server  LOG     File received: {}
+[00:03:58.062] Server  LOG     Form submission received: {}
+[00:03:58.085] Server  LOG     Sending email with attachment: {}
+[00:03:59.370] Server  LOG     Email sent successfully: "<56dc3069-8d1b-67f6-01d5-ba83ae2b8daf@qq.com>"
+[00:03:59.372] Server  LOG     Email response: {}
+[00:03:59.373] Server  LOG     Email notification sent successfully
