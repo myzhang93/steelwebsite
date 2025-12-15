@@ -1,26 +1,3 @@
-[00:00:03.509] Server  LOG      ✓ Ready in 2.5s
-[00:00:57.326] Server  LOG      ○ Compiling / ...
-[00:00:59.836] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:09.830] Server  LOG     File received: {}
-[00:01:09.832] Server  LOG     Form submission received: {}
-[00:01:09.902] Server  LOG     Sending email with attachment: {}
-[00:01:13.350] Server  LOG     Email sent successfully: "<63ad6503-7aa1-c005-1264-94a2bea4abc8@qq.com>"
-[00:01:13.351] Server  LOG     Email response: {}
-[00:01:13.352] Server  LOG     Email notification sent successfully
-[00:17:28.942] Server  LOG     File received: {}
-[00:17:28.943] Server  LOG     Form submission received: {}
-[00:17:28.946] Server  LOG     Sending email with attachment: {}
-[00:17:29.986] Server  LOG     Email sent successfully: "<f710e29a-c77e-ceb1-5a37-f66853261591@qq.com>"
-[00:17:29.988] Server  LOG     Email response: {}
-[00:17:29.989] Server  LOG     Email notification sent successfully
-[00:43:26.920] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:43:36.440] Server  LOG     File received: {}
-[00:43:36.441] Server  LOG     Form submission received: {}
-[00:43:36.449] Server  LOG     Sending email with attachment: {}
-[00:43:37.572] Server  LOG     Email sent successfully: "<a0dea0b1-bd3c-1454-9631-e92b4b066b33@qq.com>"
-[00:43:37.574] Server  LOG     Email response: {}
-[00:43:37.574] Server  LOG     Email notification sent successfully
-[00:44:14.429] Server  LOG     Form submission received: {}
-[00:44:15.370] Server  LOG     Email sent successfully: "<0426b978-7bb6-3e51-b98b-0dc6ac94c5c7@qq.com>"
-[00:44:15.370] Server  LOG     Email response: {}
-[00:44:15.371] Server  LOG     Email notification sent successfully
+[00:00:02.325] Server  LOG      ✓ Ready in 1528ms
+[00:00:18.372] Server  LOG      ○ Compiling / ...
+[00:00:20.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
