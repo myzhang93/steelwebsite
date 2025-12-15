@@ -39,9 +39,17 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
     const form = e.currentTarget
     const formData = new FormData(form)
     
-    // 检查是否有文件
+    // 检查是否有文件，并验证文件大小
     const fileInput = formData.get("Field9") as File | null
-    const hasFile = fileInput && fileInput.size > 0
+    if (fileInput && fileInput.size > 0) {
+      // Vercel 的限制是 4.5MB，我们设置为 4MB 以留出余量
+      const maxSize = 4 * 1024 * 1024 // 4MB
+      if (fileInput.size > maxSize) {
+        const fileSizeMB = (fileInput.size / (1024 * 1024)).toFixed(2)
+        alert(`文件大小（${fileSizeMB}MB）超过限制。请上传小于 4MB 的文件，或压缩后再试。`)
+        return
+      }
+    }
 
     try {
       const response = await fetch("/api/quote", {
@@ -57,6 +65,11 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
         }
         router.push("/thank-you")
       } else {
+        // 处理 413 错误（文件太大）
+        if (response.status === 413) {
+          alert("文件太大，请上传小于 4MB 的文件，或压缩后再试。")
+          return
+        }
         const errorData = await response.json().catch(() => ({}))
         alert(errorData.error || "提交失败，请稍后重试")
       }
@@ -234,7 +247,7 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
 
             <li id="foli9" className="notranslate">
               <label className="desc" id="title9" htmlFor="Field9">
-                Attach a File
+                Attach a File (Max 4MB)
               </label>
               <div>
                 <input
@@ -243,9 +256,20 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
                   type="file"
                   className="field file"
                   size={12}
-                  data-file-max-size="50"
+                  data-file-max-size="4"
                   tabIndex={0}
                   data-wufoo-field="file-upload"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0]
+                    if (file) {
+                      const maxSize = 4 * 1024 * 1024 // 4MB
+                      if (file.size > maxSize) {
+                        const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2)
+                        alert(`文件大小（${fileSizeMB}MB）超过 4MB 限制。请选择较小的文件。`)
+                        e.target.value = '' // 清除选择
+                      }
+                    }
+                  }}
                 />
               </div>
             </li>

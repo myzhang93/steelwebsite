@@ -35,11 +35,12 @@ export async function POST(request: NextRequest) {
     let fileType: string | null = null
 
     if (file && file.size > 0) {
-      // 检查文件大小（限制为 50MB）
-      const maxSize = 50 * 1024 * 1024 // 50MB
+      // 检查文件大小（Vercel 限制为 4.5MB，我们设置为 4MB 以留出余量）
+      const maxSize = 4 * 1024 * 1024 // 4MB
       if (file.size > maxSize) {
+        const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2)
         return NextResponse.json(
-          { error: 'File size exceeds 50MB limit' },
+          { error: `File size (${fileSizeMB}MB) exceeds 4MB limit. Please upload a file smaller than 4MB or compress it.` },
           { status: 400 }
         )
       }
