@@ -35,12 +35,11 @@ export async function POST(request: NextRequest) {
     let fileType: string | null = null
 
     if (file && file.size > 0) {
-      // 检查文件大小（Vercel 限制为 4.5MB，我们设置为 4MB 以留出余量）
-      const maxSize = 4 * 1024 * 1024 // 4MB
+      // 检查文件大小（限制为 50MB）
+      const maxSize = 50 * 1024 * 1024 // 50MB
       if (file.size > maxSize) {
-        const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2)
         return NextResponse.json(
-          { error: `File size (${fileSizeMB}MB) exceeds 4MB limit. Please upload a file smaller than 4MB or compress it.` },
+          { error: 'File size exceeds 50MB limit' },
           { status: 400 }
         )
       }
@@ -88,14 +87,7 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString()
     })
 
-    // 记录收件人邮箱用于调试
-    const recipientEmail = process.env.RECIPIENT_EMAIL || '1011300569@qq.com'
-    console.log('Preparing to send email notification to:', recipientEmail)
-
     // 发送邮件通知（包含附件）
-    // 使用 await 确保在 Serverless 环境中邮件发送完成
-    // 即使邮件发送失败，也不影响表单提交成功
-    let emailSent = false
     try {
       await sendQuoteEmail({
         name,
@@ -108,24 +100,20 @@ export async function POST(request: NextRequest) {
           contentType: fileType || undefined,
         } : undefined,
       })
-      emailSent = true
       console.log('Email notification sent successfully')
     } catch (emailError: any) {
       console.error('Failed to send email notification:', emailError)
-      console.error('Email error details:', {
-        message: emailError?.message,
-        code: emailError?.code,
-        command: emailError?.command,
-        responseCode: emailError?.responseCode,
-        response: emailError?.response,
-        stack: emailError?.stack,
-      })
-      // 邮件发送失败不影响表单提交成功，但记录错误以便排查
-      emailSent = false
+      // 即使邮件发送失败，也返回成功（避免用户看到错误）
+      // 如果需要严格处理，可以取消下面的注释
+      // return NextResponse.json(
+      //   { 
+      //     error: 'Failed to send notification email',
+      //     details: emailError.message
+      //   },
+      //   { status: 500 }
+      // )
     }
 
-    // 始终返回成功，即使邮件发送失败
-    // 这样用户看到提交成功，但我们会在日志中记录邮件发送状态
     return NextResponse.json(
       { 
         success: true,
@@ -135,16 +123,10 @@ export async function POST(request: NextRequest) {
     )
   } catch (error: any) {
     console.error('Error processing form submission:', error)
-    console.error('Error details:', {
-      message: error?.message,
-      stack: error?.stack,
-      name: error?.name,
-      cause: error?.cause,
-    })
     return NextResponse.json(
       { 
         error: 'Failed to process form submission',
-        details: error?.message || 'Unknown error'
+        details: error.message || 'Unknown error'
       },
       { status: 500 }
     )
