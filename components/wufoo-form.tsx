@@ -1,18 +1,42 @@
 "use client"
 
-import { useRouter } from "next/navigation"
 import Script from "next/script"
-import { useEffect } from "react"
+import { useEffect, useState, useRef } from "react"
+import { useRouter } from "next/navigation"
 
 interface WufooFormProps {
   onSuccess?: () => void
 }
 
-export default function WufooForm({ onSuccess }: WufooFormProps) {
+function WufooForm({ onSuccess }: WufooFormProps) {
   const router = useRouter()
-
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
+  const submitErrorRef = useRef<string | null>(null)
+  const isSubmittingRef = useRef(false)
+  
   useEffect(() => {
-    // Load only form.css and theme.css, skip structure.css to avoid global styles
+    submitErrorRef.current = submitError
+    isSubmittingRef.current = isSubmitting
+  }, [submitError, isSubmitting])
+  
+  const wufooActionUrl = "https://wxlanyunadmin.wufoo.com/forms/r1pebtt51el7qt8/"
+  
+  useEffect(() => {
+    let iframe = document.getElementById("hidden_iframe") as HTMLIFrameElement
+    if (!iframe) {
+      iframe = document.createElement("iframe")
+      iframe.name = "hidden_iframe"
+      iframe.id = "hidden_iframe"
+      iframe.style.display = "none"
+      iframe.style.width = "0"
+      iframe.style.height = "0"
+      iframe.style.border = "none"
+      iframe.style.position = "absolute"
+      iframe.style.left = "-9999px"
+      document.body.appendChild(iframe)
+    }
+
     const link2 = document.createElement("link")
     link2.rel = "stylesheet"
     link2.href = "/css/form.css"
@@ -25,64 +49,124 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
     link3.id = "wufoo-theme-css"
     document.head.appendChild(link3)
 
+    let formSubmitted = false
+    let jumpTimer: NodeJS.Timeout | null = null
+    let submitTimeoutTimer: NodeJS.Timeout | null = null
+    let iframeLoadCount = 0
+    let isFormSubmitting = false
+    let submitTime = 0
+
+    iframe.onload = () => {
+      iframeLoadCount++
+      
+      if (isFormSubmitting && iframeLoadCount >= 1) {
+        if (submitTimeoutTimer) {
+          clearTimeout(submitTimeoutTimer)
+          submitTimeoutTimer = null
+        }
+        if (jumpTimer) {
+          clearTimeout(jumpTimer)
+        }
+        
+        jumpTimer = setTimeout(() => {
+          isFormSubmitting = false
+          formSubmitted = true
+          setIsSubmitting(false)
+          if (onSuccess) {
+            onSuccess()
+          }
+          router.push("/thank-you")
+        }, 1000)
+      }
+    }
+
+    let handleFormSubmit: ((e: Event) => void) | null = null
+    let form: HTMLFormElement | null = null
+    const setupFormListener = () => {
+      form = document.getElementById("form4") as HTMLFormElement
+      if (form) {
+        handleFormSubmit = (e: Event) => {
+          setIsSubmitting(true)
+          setSubmitError(null)
+          
+          const nameField = form.querySelector('#Field19') as HTMLInputElement
+          const emailField = form.querySelector('#Field23') as HTMLInputElement
+          
+          const hasName = nameField && nameField.value.trim().length > 0
+          const hasEmail = emailField && emailField.value.trim().length > 0
+          
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+          const isValidEmail = hasEmail && emailRegex.test(emailField.value.trim())
+          
+          if (hasName && isValidEmail) {
+            formSubmitted = true
+            isFormSubmitting = true
+            submitTime = Date.now()
+            iframeLoadCount = 0
+            
+            if (submitTimeoutTimer) {
+              clearTimeout(submitTimeoutTimer)
+            }
+            submitTimeoutTimer = setTimeout(() => {
+              if (isSubmittingRef.current && isFormSubmitting) {
+                console.warn('15 second timeout - iframe did not respond, but form was submitted to Wufoo')
+              }
+            }, 15000)
+          } else {
+            if (e) {
+              e.preventDefault()
+              e.stopPropagation()
+            }
+            formSubmitted = false
+            isFormSubmitting = false
+            
+            if (!hasName) {
+              setSubmitError('Please enter your name')
+            } else if (!hasEmail) {
+              setSubmitError('Please enter your email')
+            } else if (!isValidEmail) {
+              setSubmitError('Please enter a valid email address')
+            }
+            
+            setTimeout(() => {
+              setIsSubmitting(false)
+            }, 1000)
+            return false
+          }
+        }
+        form.addEventListener("submit", handleFormSubmit)
+      }
+    }
+    
+    const setupTimer = setTimeout(setupFormListener, 100)
+
     return () => {
+      clearTimeout(setupTimer)
       const formCss = document.getElementById("wufoo-form-css")
       const themeCss = document.getElementById("wufoo-theme-css")
       if (formCss) document.head.removeChild(formCss)
       if (themeCss) document.head.removeChild(themeCss)
-    }
-  }, [])
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    
-    const form = e.currentTarget
-    const formData = new FormData(form)
-    
-    // 检查是否有文件，并验证文件大小
-    const fileInput = formData.get("Field9") as File | null
-    if (fileInput && fileInput.size > 0) {
-      // Vercel 的限制是 4.5MB，我们设置为 4MB 以留出余量
-      const maxSize = 4 * 1024 * 1024 // 4MB
-      if (fileInput.size > maxSize) {
-        const fileSizeMB = (fileInput.size / (1024 * 1024)).toFixed(2)
-        alert(`文件大小（${fileSizeMB}MB）超过限制。请上传小于 4MB 的文件，或压缩后再试。`)
-        return
+      const iframe = document.getElementById("hidden_iframe")
+      if (iframe) document.body.removeChild(iframe)
+      if (jumpTimer) {
+        clearTimeout(jumpTimer)
+      }
+      if (submitTimeoutTimer) {
+        clearTimeout(submitTimeoutTimer)
+      }
+      if (form && handleFormSubmit) {
+        form.removeEventListener("submit", handleFormSubmit)
       }
     }
+  }, [router, onSuccess])
 
-    try {
-      const response = await fetch("/api/quote", {
-        method: "POST",
-        // 不要设置 Content-Type，让浏览器自动设置（包含 boundary）
-        body: formData,
-      })
-
-      if (response.ok) {
-        form.reset()
-        if (onSuccess) {
-          onSuccess()
-        }
-        router.push("/thank-you")
-      } else {
-        // 处理 413 错误（文件太大）
-        if (response.status === 413) {
-          alert("文件太大，请上传小于 4MB 的文件，或压缩后再试。")
-          return
-        }
-        const errorData = await response.json().catch(() => ({}))
-        alert(errorData.error || "提交失败，请稍后重试")
-      }
-    } catch (error) {
-      console.error("提交错误:", error)
-      alert("提交失败，请稍后重试")
-    }
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    console.log('Form onSubmit handler called - allowing default submission')
   }
 
   return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
-        /* 限制 Wufoo CSS 只作用于表单容器 */
         .wufoo-form-wrapper #container {
           text-align: left !important;
           background: transparent !important;
@@ -90,35 +174,36 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
           box-shadow: none !important;
           margin: 0 auto !important;
           width: 100% !important;
-          max-width: 900px !important;
+          max-width: 600px !important;
         }
         .wufoo-form-wrapper form.wufoo {
           margin: 0 !important;
           padding: 0 !important;
           position: relative;
         }
-        /* 增加表单字段宽度 */
+        .wufoo-form-wrapper #logo {
+          display: none !important;
+        }
+        .wufoo-form-wrapper .powertiny {
+          display: none !important;
+        }
         .wufoo-form-wrapper .wufoo li {
           width: 100% !important;
         }
-        /* name, phone, email 字段宽度为 message 的一半 */
         .wufoo-form-wrapper .wufoo li#foli19 input,
         .wufoo-form-wrapper .wufoo li#foli12 input,
         .wufoo-form-wrapper .wufoo li#foli23 input {
           width: 50% !important;
         }
-        /* message 字段保持全宽 */
         .wufoo-form-wrapper .wufoo li#foli21 textarea {
           width: 100% !important;
           min-width: 100% !important;
           max-width: 100% !important;
         }
-        /* 其他输入框默认全宽 */
         .wufoo-form-wrapper .wufoo input.small,
         .wufoo-form-wrapper .wufoo input.text {
           width: 100% !important;
         }
-        /* 文件上传按钮 - 只样式化按钮部分，不影响文件名显示 */
         .wufoo-form-wrapper .wufoo input[type="file"] {
           font-size: 13px !important;
           padding: 0 !important;
@@ -136,7 +221,6 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
         .wufoo-form-wrapper .wufoo input[type="file"]::file-selector-button:hover {
           background-color: #e8e8e8 !important;
         }
-        /* 提交按钮样式 - 灰色方框样式，高度与选择文件按钮一致 */
         .wufoo-form-wrapper .wufoo .buttons input[type="submit"] {
           background-color: #f5f5f5 !important;
           border: 1px solid #999 !important;
@@ -150,12 +234,20 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
           height: auto !important;
           line-height: 1.5 !important;
         }
-        .wufoo-form-wrapper .wufoo .buttons input[type="submit"]:hover {
+        .wufoo-form-wrapper .wufoo .buttons input[type="submit"]:hover:not(:disabled) {
           background-color: #e8e8e8 !important;
+        }
+        .wufoo-form-wrapper .wufoo .buttons input[type="submit"]:disabled {
+          opacity: 0.6 !important;
+          cursor: not-allowed !important;
         }
       `}} />
       <div className="wufoo-form-wrapper">
         <div id="container" className="ltr">
+          <h1 id="logo">
+            <a href="http://www.wufoo.com" title="Powered by Wufoo">Wufoo</a>
+          </h1>
+          
           <form
             id="form4"
             name="form4"
@@ -164,6 +256,8 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
             autoComplete="off"
             encType="multipart/form-data"
             method="post"
+            action={wufooActionUrl}
+            target="hidden_iframe"
             noValidate
             onSubmit={handleSubmit}
           >
@@ -173,7 +267,7 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
           </header>
           
           <ul>
-            <li id="foli19" data-wufoo-field data-field-type="text" className="notranslate">
+            <li id="foli19" data-wufoo-field data-field-type="text" className="notranslate      ">
               <label className="desc" id="title19" htmlFor="Field19">
                 Your Name
               </label>
@@ -191,8 +285,8 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
               </div>
             </li>
 
-            <li id="foli12" className="notranslate">
-              <label className="desc" id="title12" htmlFor="Field12">
+            <li id="foli12" className="notranslate      ">
+              <label className="desc " id="title12" htmlFor="Field12">
                 Your Phone
               </label>
               <div>
@@ -208,7 +302,7 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
               </div>
             </li>
 
-            <li id="foli23" data-wufoo-field data-field-type="text" className="notranslate">
+            <li id="foli23" data-wufoo-field data-field-type="text" className="notranslate      ">
               <label className="desc" id="title23" htmlFor="Field23">
                 Your Email
               </label>
@@ -226,7 +320,7 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
               </div>
             </li>
 
-            <li id="foli21" className="notranslate">
+            <li id="foli21" className="notranslate      ">
               <label className="desc" id="title21" htmlFor="Field21">
                 Your Message
               </label>
@@ -236,16 +330,20 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
                   name="Field21"
                   className="field textarea small"
                   spellCheck="true"
-                  rows={5}
+                  rows={10}
                   cols={50}
                   tabIndex={0}
-                  onKeyUp={() => {}}
+                  onKeyUp={() => {
+                    if (typeof (window as any).validateRange === 'function') {
+                      (window as any).validateRange(21, 'character')
+                    }
+                  }}
                   placeholder=""
                 ></textarea>
               </div>
             </li>
 
-            <li id="foli9" className="notranslate">
+            <li id="foli9" className="notranslate       ">
               <label className="desc" id="title9" htmlFor="Field9">
                 Attach a File
               </label>
@@ -256,41 +354,101 @@ export default function WufooForm({ onSuccess }: WufooFormProps) {
                   type="file"
                   className="field file"
                   size={12}
-                  data-file-max-size="4"
+                  data-file-max-size="10"
                   tabIndex={0}
                   data-wufoo-field="file-upload"
-                  onChange={(e) => {
-                    const file = e.target.files?.[0]
-                    if (file) {
-                      const maxSize = 4 * 1024 * 1024 // 4MB
-                      if (file.size > maxSize) {
-                        const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2)
-                        alert(`文件大小（${fileSizeMB}MB）超过 4MB 限制。请选择较小的文件。`)
-                        e.target.value = '' // 清除选择
-                      }
-                    }
-                  }}
                 />
               </div>
             </li>
 
-            <li className="buttons">
+            <li className="buttons ">
               <div>
                 <input
                   id="saveForm"
                   name="saveForm"
                   className="btTxt submit"
                   type="submit"
-                  value="Submit"
+                  value={isSubmitting ? "Submitting..." : "Submit"}
+                  disabled={isSubmitting}
+                  style={{
+                    opacity: isSubmitting ? 0.6 : 1,
+                    cursor: isSubmitting ? 'not-allowed' : 'pointer'
+                  }}
                 />
               </div>
+              {submitError && (
+                <div style={{
+                  marginTop: '12px',
+                  padding: '8px 12px',
+                  backgroundColor: '#fee',
+                  border: '1px solid #fcc',
+                  borderRadius: '4px',
+                  color: '#c33',
+                  fontSize: '14px'
+                }}>
+                  {submitError}
+                </div>
+              )}
+            </li>
+
+            <li className="hide">
+              <label htmlFor="comment">Do Not Fill This Out</label>
+              <textarea name="comment" id="comment" rows={1} cols={1}></textarea>
+              <input type="hidden" id="idstamp" name="idstamp" value="IFNU2ntw1gizBlK2KHs8iRMdJ+L685Jht1v3R63x17g=" />
+              <input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" />
             </li>
           </ul>
         </form>
         </div>
+        
+        <a 
+          className="powertiny" 
+          href="http://www.wufoo.com/" 
+          title="Powered by Wufoo"
+          style={{
+            display: 'block !important',
+            visibility: 'visible !important',
+            textIndent: '0 !important',
+            position: 'relative !important',
+            height: 'auto !important',
+            width: '95px !important',
+            overflow: 'visible !important',
+            textDecoration: 'none',
+            cursor: 'pointer !important',
+            margin: '0 auto !important'
+          }}
+        >
+          <span style={{
+            background: 'url(./images/powerlogo.png) no-repeat center 7px',
+            margin: '0 auto',
+            display: 'inline-block !important',
+            visibility: 'visible !important',
+            textIndent: '-9000px !important',
+            position: 'static !important',
+            overflow: 'auto !important',
+            width: '62px !important',
+            height: '30px !important'
+          }}>Wufoo</span>
+          <b style={{
+            display: 'block !important',
+            visibility: 'visible !important',
+            textIndent: '0 !important',
+            position: 'static !important',
+            height: 'auto !important',
+            width: 'auto !important',
+            overflow: 'auto !important',
+            fontWeight: 'normal',
+            fontSize: '9px',
+            color: '#777',
+            padding: '0 0 0 3px'
+          }}>Designed</b>
+        </a>
       </div>
 
       <Script src="/scripts/wufoo.js" strategy="afterInteractive" />
     </>
   )
 }
+
+export default WufooForm
+

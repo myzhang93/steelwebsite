@@ -138,7 +138,7 @@ __turbopack_context__.s([
     "sendQuoteEmail",
     ()=>sendQuoteEmail
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/nodemailer/lib/nodemailer.js [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$nodemailer$40$7$2e$0$2e$11$2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/nodemailer@7.0.11/node_modules/nodemailer/lib/nodemailer.js [app-route] (ecmascript)");
 ;
 // 创建邮件传输器
 const createTransporter = ()=>{
@@ -152,7 +152,7 @@ const createTransporter = ()=>{
     if (!user || !pass) {
         throw new Error('SMTP credentials are missing. Please check SMTP_USER and SMTP_PASS environment variables.');
     }
-    const transporter = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].createTransport({
+    const transporter = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$nodemailer$40$7$2e$0$2e$11$2f$node_modules$2f$nodemailer$2f$lib$2f$nodemailer$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].createTransport({
         host,
         port,
         secure,
@@ -167,17 +167,9 @@ const createTransporter = ()=>{
     return transporter;
 };
 async function sendQuoteEmail(data) {
-    console.log('Starting email send process...');
-    console.log('SMTP config:', {
-        host: process.env.SMTP_HOST || 'smtp.qq.com',
-        port: process.env.SMTP_PORT || '587',
-        user: process.env.SMTP_USER ? `${process.env.SMTP_USER.substring(0, 3)}***` : 'not set',
-        hasPassword: !!process.env.SMTP_PASS
-    });
     const transporter = createTransporter();
     // 收件人邮箱（从环境变量获取，如果没有则使用默认值）
     const recipientEmail = process.env.RECIPIENT_EMAIL || '1011300569@qq.com';
-    console.log('Sending email to:', recipientEmail);
     // 构建附件数组
     // nodemailer 会自动处理 Buffer 的编码
     const attachments = data.attachment ? [
@@ -278,20 +270,11 @@ Submitted at: ${new Date().toLocaleString('en-US', {
                 size: data.attachment.content.length
             });
         }
-        // 记录邮件基本信息（不包含敏感内容）
-        console.log('Email options:', {
-            from: mailOptions.from,
-            to: mailOptions.to,
-            subject: mailOptions.subject,
-            hasAttachment: data.attachment ? true : false
-        });
         // 验证 transporter 连接（可选，如果验证失败会抛出错误）
         // 注释掉验证以避免连接超时导致提交失败
         // await transporter.verify()
-        console.log('Attempting to send email...');
         const info = await transporter.sendMail(mailOptions);
-        console.log('Email sent successfully!');
-        console.log('Email message ID:', info.messageId);
+        console.log('Email sent successfully:', info.messageId);
         console.log('Email response:', {
             messageId: info.messageId,
             response: info.response,
@@ -303,29 +286,16 @@ Submitted at: ${new Date().toLocaleString('en-US', {
             messageId: info.messageId
         };
     } catch (error) {
-        console.error('❌ Error sending email:', error);
+        console.error('Error sending email:', error);
         console.error('Error details:', {
             message: error?.message,
             code: error?.code,
             command: error?.command,
             responseCode: error?.responseCode,
             response: error?.response,
-            errno: error?.errno,
-            syscall: error?.syscall,
-            hostname: error?.hostname,
-            port: error?.port,
             stack: error?.stack
         });
-        // 提供更友好的错误信息
-        let errorMessage = 'Unknown error';
-        if (error?.code === 'EAUTH') {
-            errorMessage = 'SMTP authentication failed. Please check SMTP_USER and SMTP_PASS.';
-        } else if (error?.code === 'ETIMEDOUT' || error?.code === 'ECONNREFUSED') {
-            errorMessage = `SMTP connection failed: ${error?.message}`;
-        } else if (error?.message) {
-            errorMessage = error.message;
-        }
-        throw new Error(`Failed to send email: ${errorMessage}`);
+        throw new Error(`Failed to send email: ${error?.message || 'Unknown error'}`);
     }
 }
 }),
@@ -336,7 +306,7 @@ __turbopack_context__.s([
     "POST",
     ()=>POST
 ]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/server.js [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.0.10_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/server.js [app-route] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$email$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/email.ts [app-route] (ecmascript)");
 ;
 ;
@@ -351,7 +321,7 @@ async function POST(request) {
         const file = formData.get("Field9");
         // 验证必填字段
         if (!name || !email) {
-            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 error: 'Name and email are required'
             }, {
                 status: 400
@@ -360,7 +330,7 @@ async function POST(request) {
         // 验证邮箱格式
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 error: 'Invalid email format'
             }, {
                 status: 400
@@ -371,13 +341,12 @@ async function POST(request) {
         let fileName = null;
         let fileType = null;
         if (file && file.size > 0) {
-            // 检查文件大小（Vercel Serverless Functions 限制为 4.5MB，我们设置为 4.3MB 以留出余量）
-            const maxSize = 4.3 * 1024 * 1024 // 4.3MB
+            // 检查文件大小（限制为 50MB）
+            const maxSize = 50 * 1024 * 1024 // 50MB
             ;
             if (file.size > maxSize) {
-                const fileSizeMB = (file.size / (1024 * 1024)).toFixed(2);
-                return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-                    error: `File size (${fileSizeMB}MB) exceeds 4.3MB limit. Please upload a file smaller than 4.3MB or compress it.`
+                return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+                    error: 'File size exceeds 50MB limit'
                 }, {
                     status: 400
                 });
@@ -421,10 +390,7 @@ async function POST(request) {
             fileName,
             timestamp: new Date().toISOString()
         });
-        // 发送邮件通知（包含附件）- 使用 await 确保邮件发送完成
-        // 在 Serverless 环境中，必须等待邮件发送完成，否则函数可能提前终止
-        let emailSent = false;
-        let emailError = null;
+        // 发送邮件通知（包含附件）
         try {
             await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$email$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sendQuoteEmail"])({
                 name,
@@ -437,45 +403,30 @@ async function POST(request) {
                     contentType: fileType || undefined
                 } : undefined
             });
-            emailSent = true;
             console.log('Email notification sent successfully');
-        } catch (err) {
-            emailError = err;
-            console.error('Failed to send email notification:', err);
-            console.error('Email error details:', {
-                message: err?.message,
-                code: err?.code,
-                command: err?.command,
-                responseCode: err?.responseCode,
-                response: err?.response,
-                stack: err?.stack
-            });
-        // 邮件发送失败不影响表单提交成功，但会在日志中记录
+        } catch (emailError) {
+            console.error('Failed to send email notification:', emailError);
+        // 即使邮件发送失败，也返回成功（避免用户看到错误）
+        // 如果需要严格处理，可以取消下面的注释
+        // return NextResponse.json(
+        //   { 
+        //     error: 'Failed to send notification email',
+        //     details: emailError.message
+        //   },
+        //   { status: 500 }
+        // )
         }
-        // 即使邮件发送失败，也返回成功（表单数据已提交）
-        // 但会在日志中记录邮件发送状态，方便排查问题
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             success: true,
-            message: 'Form submitted successfully',
-            emailSent: emailSent,
-            // 如果邮件发送失败，在开发环境中返回错误信息（生产环境不返回敏感信息）
-            ...emailError && ("TURBOPACK compile-time value", "development") === 'development' ? {
-                emailError: emailError.message
-            } : {}
+            message: 'Form submitted successfully'
         }, {
             status: 200
         });
     } catch (error) {
         console.error('Error processing form submission:', error);
-        console.error('Error details:', {
-            message: error?.message,
-            stack: error?.stack,
-            name: error?.name,
-            cause: error?.cause
-        });
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             error: 'Failed to process form submission',
-            details: error?.message || 'Unknown error'
+            details: error.message || 'Unknown error'
         }, {
             status: 500
         });
