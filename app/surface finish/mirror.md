@@ -1,6 +1,6 @@
 # Mirror Finish Stainless Steel – No.8 / 8K Finish for Maximum Reflection
 
-Mirror finish, also known as No.8 or 8K finish, is the highest level of polish achievable on stainless steel. It provides a true mirror-like surface with almost no visible grain, making it ideal for decorative and high-end applications.
+Mirror finish, also known as No.8 or 8K finish, is the highest level of polish achievable on stainless steel. It provides a true mirror-like surface with almost no visible grain, making it ideal for decorative and high-end applications, particularly with [stainless steel sheets](/products/stainless-steel-sheet).
 
 ### What is Mirror Finish?
 Mirror finish is created by progressively finer polishing and buffing until the surface reflects light like a glass mirror.
@@ -35,7 +35,7 @@ Mirror finish is created by progressively finer polishing and buffing until the 
 - Architectural ceilings and reflectors.
 - Luxury elevator doors and cabins.
 - High-end appliances.
-- Jewelry and decorative trim.
+- Jewelry and decorative [fittings](/products/stainless-steel-fittings).
 - Display cases and showcases.
 - Retail and hotel interiors.
 
@@ -44,4 +44,4 @@ Mirror finish is created by progressively finer polishing and buffing until the 
 - Avoid abrasive materials.
 - Protective films are recommended during installation.
 
-Mirror finish offers unmatched visual appeal and is the go-to choice for projects where appearance is paramount.
+Mirror finish offers unmatched visual appeal and is the go-to choice for projects where appearance is paramount. Best suited for [600 series](/products/600-series) stainless steel in premium applications.

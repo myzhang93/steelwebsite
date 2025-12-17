@@ -21,8 +21,8 @@ Stainless steel plays a vital role in the automotive industry, offering a unique
 
 ### Common Grades in Automotive
 
-- **409 / 439**: Exhaust systems (cost-effective, good heat resistance).
-- **304 / 304L**: General-purpose, decorative trim.
+- **409 / 439**: Exhaust systems (cost-effective, good heat resistance), commonly used in [400 series](/products/400-series) stainless steel.
+- **[304 / 304L](/products/300-series)**: General-purpose, decorative trim.
 - **316 / 316L**: High-corrosion areas (e.g., coastal regions).
 - **430**: Decorative trim and non-structural parts.
 - **310S**: High-temperature components.
@@ -36,7 +36,7 @@ Stainless steel plays a vital role in the automotive industry, offering a unique
 ### Key Automotive Applications
 
 1. **Exhaust Systems**  
-   Mufflers, catalytic converters, pipes, and manifolds in 409/439.
+   Mufflers, catalytic converters, pipes, and manifolds in 409/439, typically using [stainless steel pipes](/products/stainless-steel-pipe-tube).
 
 2. **Fuel Tanks and Lines**  
    304L for corrosion resistance and fuel compatibility.
@@ -78,5 +78,5 @@ Stainless steel plays a vital role in the automotive industry, offering a unique
 - Hydrogen fuel cell components.
 - Sustainable and recycled stainless steel.
 
-Stainless steel remains a critical material for the automotive industry, delivering performance, safety, and style in both traditional and next-generation vehicles.
+Stainless steel remains a critical material for the automotive industry, delivering performance, safety, and style in both traditional and next-generation vehicles. Available in various forms including [stainless steel coils](/products/stainless-steel-coil) for manufacturing.
 

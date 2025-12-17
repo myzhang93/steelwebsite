@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import ProductHeroSection from "@/components/product-hero-section"
 import ProductWhySection from "@/components/product-why-section"
@@ -10,6 +11,11 @@ import ProductCommonProductsSection from "@/components/product-common-products-s
 import ProductCTABanner from "@/components/product-cta-banner"
 import ProductRelatedSection from "@/components/product-related-section"
 import Footer from "@/components/footer"
+
+export const metadata: Metadata = {
+  title: "200 Series Stainless Steel | Affordable Strength & Timeless Elegance",
+  description: "Explore 200 series stainless steel products including 201, 202, 201L, 204, and 209 grades. High strength, low nickel content, cost-effective solutions for kitchenware, automotive, and industrial applications.",
+}
 
 export default function Product200SeriesPage() {
   return (

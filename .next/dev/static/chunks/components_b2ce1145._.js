@@ -1894,7 +1894,7 @@ function HeroSection() {
                                         transform: isVisible ? 'translateY(0)' : 'translateY(30px)',
                                         transition: 'opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s'
                                     },
-                                    children: currentSlide.title
+                                    children: "Premium Stainless Steel Solutions"
                                 }, `title-${currentIndex}`, false, {
                                     fileName: "[project]/components/hero-section.tsx",
                                     lineNumber: 97,

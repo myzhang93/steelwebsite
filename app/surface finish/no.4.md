@@ -1,6 +1,6 @@
 # No.4 Finish Stainless Steel – The Most Popular Brushed Finish
 
-No.4 finish, also known as brushed or satin finish, is the most popular decorative stainless steel finish worldwide. Its fine linear grain pattern offers a modern, professional look while effectively hiding fingerprints and minor scratches.
+No.4 finish, also known as brushed or satin finish, is the most popular decorative stainless steel finish worldwide. Its fine linear grain pattern offers a modern, professional look while effectively hiding fingerprints and minor scratches, commonly used with [300 series](/products/300-series) stainless steel.
 
 ### What is No.4 Finish?
 No.4 finish is created by polishing stainless steel with 150–180 grit abrasive belts, resulting in a unidirectional, fine satin texture.
@@ -34,8 +34,8 @@ No.4 finish is created by polishing stainless steel with 150–180 grit abrasive
 - Kitchen countertops and splashbacks.
 - Commercial kitchen equipment.
 - Elevator interiors.
-- Restaurant and bar fittings.
-- Architectural cladding and trim.
+- Restaurant and bar [fittings](/products/stainless-steel-fittings).
+- Architectural cladding and trim using stainless steel sheets.
 - Furniture and fixtures.
 - Medical carts and cabinets.
 
@@ -44,4 +44,4 @@ No.4 finish is created by polishing stainless steel with 150–180 grit abrasive
 - Use mild detergent and soft cloth.
 - Stainless steel polish restores appearance.
 
-No.4 finish remains the industry standard for decorative stainless steel applications due to its perfect balance of aesthetics, durability, and cost.
+No.4 finish remains the industry standard for decorative stainless steel applications due to its perfect balance of aesthetics, durability, and cost. Widely used with [400 series](/products/400-series) stainless steel for various applications.

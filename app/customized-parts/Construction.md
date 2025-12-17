@@ -27,10 +27,10 @@ Stainless steel has revolutionized the construction industry, offering architect
 
 ### Common Grades Used in Construction
 
-- **304 / 304L**: General-purpose, cost-effective.
+- **[304 / 304L](/products/300-series)**: General-purpose, cost-effective.
 - **316 / 316L**: Coastal and aggressive environments.
 - **2205 / 2507 Duplex**: High-strength structural applications.
-- **430**: Decorative, non-structural elements.
+- **[430](/products/400-series)**: Decorative, non-structural elements.
 - **310S**: High-temperature applications (e.g., fire protection).
 
 ### Surface Finishes in Construction
@@ -46,13 +46,13 @@ Stainless steel has revolutionized the construction industry, offering architect
    Beams, columns, trusses, and reinforcement in bridges, stadiums, and high-rises.
 
 2. **Facade Cladding and Curtain Walls**  
-   Panels, cassettes, and rainscreen systems in 304 or 316.
+   Panels, cassettes, and rainscreen systems in 304 or 316, typically using [stainless steel sheets](/products/stainless-steel-sheet).
 
 3. **Handrails and Balustrades**  
    Tubular and cable systems for staircases, balconies, and atriums.
 
 4. **Roofing and Drainage Systems**  
-   Gutters, downspouts, and flashing in 316 for longevity.
+   Gutters, downspouts, and flashing in 316 for longevity, often fabricated from [stainless steel pipes](/products/stainless-steel-pipe-tube).
 
 5. **Elevators and Escalators**  
    Cabins, doors, and control panels in BA or HL finish.

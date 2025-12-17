@@ -21,7 +21,7 @@ Stainless steel is the material of choice in the food processing industry due to
 
 ### Common Grades
 
-- **304 / 304L**: General food contact.
+- **[304 / 304L](/products/300-series)**: General food contact.
 - **316 / 316L**: High-corrosion environments (e.g., salty products).
 - **430**: Non-contact parts.
 - **Duplex**: High-strength tanks.
@@ -35,10 +35,10 @@ Stainless steel is the material of choice in the food processing industry due to
 ### Key Applications
 
 1. **Processing Tanks and Vessels**  
-   Storage, mixing, and fermentation tanks.
+   Storage, mixing, and fermentation tanks, often fabricated from [stainless steel sheets](/products/stainless-steel-sheet).
 
 2. **Piping and Tubing**  
-   Sanitary piping systems with welded or clamp fittings.
+   Sanitary piping systems with welded or clamp [fittings](/products/stainless-steel-fittings). These systems typically use [stainless steel pipes](/products/stainless-steel-pipe-tube).
 
 3. **Conveyors and Belts**  
    Food-grade conveyor frames and belts.

@@ -103,7 +103,7 @@ export default function HeroSection() {
                 transition: 'opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s'
               }}
             >
-              {currentSlide.title}
+              Premium Stainless Steel Solutions
             </h1>
           </div>
           <p 

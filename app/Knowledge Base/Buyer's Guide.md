@@ -12,10 +12,10 @@ Purchasing stainless steel can be complex due to the variety of grades, finishes
 
 ### 2. Choose the Right Grade
 
-- **General Use**: 304.
+- **General Use**: 304, available in [300 series](/products/300-series) stainless steel.
 - **Marine/Coastal**: 316/316L.
 - **High-Temperature**: 310S, 321.
-- **Cost-Sensitive**: 430, 201.
+- **Cost-Sensitive**: 430, 201, found in [400 series](/products/400-series) stainless steel. For budget options, consider [200 series](/products/200-series) grades.
 - **High-Strength**: Duplex 2205, 630.
 
 ### 3. Select the Appropriate Surface Finish
@@ -27,7 +27,7 @@ Purchasing stainless steel can be complex due to the variety of grades, finishes
 
 ### 4. Specify the Form and Dimensions
 
-- Sheet, plate, coil, pipe, bar, tube, wire.
+- [Stainless steel sheets](/products/stainless-steel-sheet), plate, coil, pipe, bar, tube, wire.
 - Thickness, width, length tolerances.
 - Mill edge vs. trimmed edge.
 

@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Product400HeroSection from "@/components/product-400-hero-section"
 import Product400AdvantagesSection from "@/components/product-400-advantages-section"
@@ -9,6 +10,11 @@ import Product400InnovationSection from "@/components/product-400-innovation-sec
 import Product400TestimonialSection from "@/components/product-400-testimonial-section"
 import Product400RelatedSection from "@/components/product-400-related-section"
 import Footer from "@/components/footer"
+
+export const metadata: Metadata = {
+  title: "400 Series Stainless Steel Sheet | Martensitic Grades - High Strength",
+  description: "Discover 400 series stainless steel sheets with excellent strength, corrosion resistance, and heat resistance. Magnetic properties and superior machinability for industrial and commercial applications.",
+}
 
 export default function Product400SeriesPage() {
   return (

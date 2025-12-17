@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { getMarkdownByPath } from "@/lib/markdown"
@@ -6,6 +7,11 @@ import TableOfContents from "@/components/table-of-contents"
 import PageHeroSection from "@/components/page-hero-section"
 import { pageConfigs } from "@/lib/page-configs"
 import SidebarQuoteForm from "@/components/sidebar-quote-form"
+
+export const metadata: Metadata = {
+  title: "Stainless Steel Kitchen Equipment | Commercial & Residential Applications",
+  description: "Discover why stainless steel is the material of choice for kitchen equipment. Durability, hygiene, and design excellence for commercial kitchens, restaurants, and residential applications.",
+}
 
 export default function KitchenEquipmentPage() {
   let markdownContent = ""

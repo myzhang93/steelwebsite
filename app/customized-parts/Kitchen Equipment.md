@@ -27,7 +27,7 @@ Stainless steel has become the material of choice for kitchen equipment worldwid
 
 ### Common Stainless Steel Grades Used in Kitchen Equipment
 
-- **304 / 304L**: Most common – excellent corrosion resistance, good formability, food-grade.
+- **[304 / 304L](/products/300-series)**: Most common – excellent corrosion resistance, good formability, food-grade.
 - **316 / 316L**: Higher corrosion resistance (especially against chlorides) – used in coastal kitchens or where aggressive cleaning is required.
 - **430**: Lower cost, magnetic, good for non-food-contact parts (e.g., backsplashes, legs).
 - **201 / 202**: Cost-effective options for less demanding applications (e.g., low-end utensils).
@@ -45,7 +45,7 @@ Stainless steel has become the material of choice for kitchen equipment worldwid
 ### Major Kitchen Equipment Applications of Stainless Steel
 
 1. **Worktops and Countertops**  
-   Heavy-duty commercial and residential counters made from 1.2–2.0 mm 304 or 316 sheet with No.4 or HL finish. Seamless welded corners prevent contamination.
+   Heavy-duty commercial and residential counters made from 1.2–2.0 mm 304 or 316 [stainless steel sheet](/products/stainless-steel-sheet) with No.4 or HL finish. Seamless welded corners prevent contamination.
 
 2. **Sinks and Basins**  
    Deep-drawn or fabricated sinks in single, double, or multi-bowl designs. 316L preferred for high-chloride environments.
@@ -63,7 +63,7 @@ Stainless steel has become the material of choice for kitchen equipment worldwid
    Internal tanks and racks in 316L to resist detergents and high temperatures.
 
 7. **Storage and Shelving**  
-   Wall-mounted shelves, racks, and trolleys in 304 with No.4 finish.
+   Wall-mounted shelves, racks, and trolleys in 304 with No.4 finish, often using [stainless steel fittings](/products/stainless-steel-fittings).
 
 8. **Prep Tables and Cutting Boards**  
    Stainless steel tops with integrated cutting boards or removable polyethylene inserts.
@@ -96,5 +96,5 @@ Stainless steel has become the material of choice for kitchen equipment worldwid
 - Minimalist designs with seamless, invisible joints.
 - Increased use of 316L in home kitchens.
 
-Stainless steel continues to dominate kitchen equipment due to its unmatched combination of hygiene, durability, and design flexibility. From high-volume commercial kitchens to luxury residential spaces, it remains the material that delivers performance and longevity.
+Stainless steel continues to dominate kitchen equipment due to its unmatched combination of hygiene, durability, and design flexibility. From high-volume commercial kitchens to luxury residential spaces, it remains the material that delivers performance and longevity. Available in various forms including [stainless steel coils](/products/stainless-steel-coil) for custom fabrication.
 

@@ -45,7 +45,7 @@ export default function Product300HeroSection() {
             transition: 'opacity 0.8s ease-out 0.2s, transform 0.8s ease-out 0.2s'
           }}
         >
-          Are You Looking For Reliable Stainless Steel Sheet Manufacturer?
+          300 Series Stainless Steel Products
         </h1>
         <p 
           className="text-xl md:text-2xl mb-8 leading-relaxed"

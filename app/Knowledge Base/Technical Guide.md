@@ -1,6 +1,6 @@
 # Stainless Steel Technical Guide – Properties, Standards, and Best Practices
 
-This technical guide provides in-depth information on the physical, mechanical, and chemical properties of stainless steel, along with international standards, testing methods, and engineering best practices. It serves as a reference for designers, fabricators, and end-users to ensure proper specification and performance.
+This technical guide provides in-depth information on the physical, mechanical, and chemical properties of stainless steel, along with international standards, testing methods, and engineering best practices. It serves as a reference for designers, fabricators, and end-users to ensure proper specification and performance. Common forms include [stainless steel sheets](/products/stainless-steel-sheet) and pipes.
 
 ### Physical Properties of Stainless Steel
 
@@ -64,4 +64,4 @@ This technical guide provides in-depth information on the physical, mechanical, 
 - Apply passivation after fabrication.
 - Design for thermal expansion.
 
-This technical guide equips professionals with the knowledge to specify, fabricate, and maintain stainless steel components correctly and reliably.
+This technical guide equips professionals with the knowledge to specify, fabricate, and maintain stainless steel components correctly and reliably. For specific grade information, see [300 series](/products/300-series) stainless steel options.

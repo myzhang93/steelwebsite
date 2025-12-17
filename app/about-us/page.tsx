@@ -1,8 +1,14 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import PageHeroSection from "@/components/page-hero-section"
 import { Factory, Award, Users, Globe, Target, Shield, Zap, Heart } from "lucide-react"
 import Link from "next/link"
+
+export const metadata: Metadata = {
+  title: "About Us | Shanxi Steel - 40+ Years of Excellence in Stainless Steel Manufacturing",
+  description: "Learn about Shanxi Steel, a leading global supplier of premium stainless steel products with 40+ years of experience. ISO certified, serving 50+ countries with state-of-the-art facilities in Wuxi City, Jiangsu Province.",
+}
 
 export default function AboutUsPage() {
   return (

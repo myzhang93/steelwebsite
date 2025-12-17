@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Product600HeroSection from "@/components/product-600-hero-section"
 import Product600SpecsSection from "@/components/product-600-specs-section"
@@ -10,6 +11,11 @@ import Product600GradesSection from "@/components/product-600-grades-section"
 import Product600FAQSection from "@/components/product-600-faq-section"
 import Product600RelatedSection from "@/components/product-600-related-section"
 import Footer from "@/components/footer"
+
+export const metadata: Metadata = {
+  title: "600 Series Stainless Steel | Premium Precipitation-Hardening Grades",
+  description: "600 series stainless steel features exceptional strength, superior corrosion resistance, and outstanding high-temperature performance. Ideal for aerospace, medical devices, oil & gas, and power generation applications.",
+}
 
 export default function Product600SeriesPage() {
   return (

@@ -1,6 +1,6 @@
 # BA Finish Stainless Steel – Bright Annealed for Superior Appearance and Hygiene
 
-BA (Bright Annealed) finish is a premium, highly reflective stainless steel surface that offers a near-mirror appearance without the high cost of full polishing. It is widely used in applications where aesthetics, hygiene, and corrosion resistance are critical.
+BA (Bright Annealed) finish is a premium, highly reflective [stainless steel sheet](/products/stainless-steel-sheet) surface that offers a near-mirror appearance without the high cost of full polishing. It is widely used in applications where aesthetics, hygiene, and corrosion resistance are critical. This finish is particularly popular with [300 series](/products/300-series) stainless steel.
 
 ### What is BA Finish?
 BA is produced by annealing stainless steel in a protective, oxygen-free atmosphere and then giving it a light skin pass with highly polished rolls. The result is a smooth, bright, reflective surface with excellent flatness.
@@ -42,6 +42,7 @@ BA is produced by annealing stainless steel in a protective, oxygen-free atmosph
 - Kitchen appliances and backsplashes.
 - Decorative signage and displays.
 - High-end consumer products.
+- [Stainless steel fittings](/products/stainless-steel-fittings) for decorative applications
 
 ### Comparison with Other Finishes
 - BA vs. 2B: BA is bright and reflective; 2B is matte.
@@ -53,5 +54,5 @@ BA is produced by annealing stainless steel in a protective, oxygen-free atmosph
 - Stainless steel polish for fingerprint removal.
 - Avoid abrasive materials to prevent scratches.
 
-BA finish strikes an excellent balance between cost, appearance, and performance, making it a favorite for both decorative and hygienic applications in modern design.
+BA finish strikes an excellent balance between cost, appearance, and performance, making it a favorite for both decorative and hygienic applications in modern design. Commonly applied to [stainless steel coils](/products/stainless-steel-coil) for various industrial uses.
 

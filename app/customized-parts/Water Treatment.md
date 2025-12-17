@@ -18,7 +18,7 @@ Stainless steel is essential in water treatment systems due to its resistance to
 
 ### Common Grades
 
-- **316L / 316Ti**: Most common for potable and wastewater.
+- **316L / 316Ti**: Most common for potable and wastewater, part of [300 series](/products/300-series) stainless steel.
 - **Duplex 2205 / 2507**: High-chloride environments (e.g., desalination).
 - **904L**: Severe corrosion conditions.
 - **304**: Less aggressive water treatment.
@@ -31,7 +31,7 @@ Stainless steel is essential in water treatment systems due to its resistance to
 ### Key Applications
 
 1. **Piping and Fittings**  
-   Distribution networks and process piping.
+   Distribution networks and process piping, using [stainless steel pipes](/products/stainless-steel-pipe-tube). High-quality [fittings](/products/stainless-steel-fittings) ensure reliable connections.
 
 2. **Storage Tanks and Reservoirs**  
    Potable water and chemical storage.

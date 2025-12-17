@@ -1,12 +1,12 @@
 # Embossed Stainless Steel – Textured Finishes for Function and Style
 
-Embossed stainless steel finishes add raised or recessed patterns to the surface, combining visual interest with functional benefits such as improved grip, stiffness, and scratch resistance.
+Embossed [stainless steel sheet](/products/stainless-steel-sheet) finishes add raised or recessed patterns to the surface, combining visual interest with functional benefits such as improved grip, stiffness, and scratch resistance. Available in [200 series](/products/200-series) grades.
 
 ### What is Embossed Finish?
 Embossed finishes are created by pressing patterns into the stainless steel sheet using specialized embossing rollers. Common patterns include stucco, diamond, linen, wood grain, and custom designs.
 
 ### Detailed Production Process
-1. Start from 2B or BA base material.
+1. Start from 2B or BA base material, typically from stainless steel coils.
 2. Pass through embossing rollers under high pressure.
 3. Anneal and clean if necessary.
 4. Optional additional surface treatment (brush, polish, or color coating).
@@ -35,10 +35,11 @@ Embossed finishes are created by pressing patterns into the stainless steel shee
 - Truck and trailer interiors.
 - Furniture and decorative panels.
 - Anti-slip walkways and stairs.
+- [Stainless steel pipes and tubes](/products/stainless-steel-pipe-tube) with textured surfaces
 
 ### Maintenance and Cleaning
 - Use soft brushes for deep patterns.
 - Mild detergent and water are usually sufficient.
 
-Embossed finishes provide both aesthetic appeal and practical benefits, making them increasingly popular in modern design and functional applications.
+Embossed finishes provide both aesthetic appeal and practical benefits, making them increasingly popular in modern design and functional applications. Available in [stainless steel coils](/products/stainless-steel-coil) across all major series.
 

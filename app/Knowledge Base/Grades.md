@@ -26,17 +26,17 @@ The key to stainless steel’s corrosion resistance is the formation of a thin, 
 ### Detailed Guide to Common Grades
 
 #### 200 Series (Low-Nickel Austenitic)
-- **201**: 16–18% Cr, 3.5–5.5% Ni, 5.5–7.5% Mn. Cost-effective alternative to 304.
+- **201**: 16–18% Cr, 3.5–5.5% Ni, 5.5–7.5% Mn. Cost-effective alternative to 304. Learn more about [200 series](/products/200-series) stainless steel.
 - **202**: Slightly higher Ni and Mn than 201, better corrosion resistance.
 
 #### 300 Series (Standard Austenitic)
-- **304 / 304L**: 18% Cr, 8% Ni. Most common grade worldwide. Excellent general corrosion resistance.
+- **304 / 304L**: 18% Cr, 8% Ni. Most common grade worldwide. Excellent general corrosion resistance. Explore [300 series](/products/300-series) stainless steel products.
 - **316 / 316L**: 16–18% Cr, 10–14% Ni, 2–3% Mo. Superior pitting and crevice corrosion resistance.
 - **321**: 17–19% Cr, 9–12% Ni, Ti stabilized. Excellent high-temperature oxidation resistance.
 - **310 / 310S**: 24–26% Cr, 19–22% Ni. Outstanding high-temperature strength and oxidation resistance.
 
 #### 400 Series (Ferritic and Martensitic)
-- **409 / 439**: Low-cost ferritic grades for automotive exhaust systems.
+- **409 / 439**: Low-cost ferritic grades for automotive exhaust systems. Discover [400 series](/products/400-series) stainless steel options.
 - **430**: 16–18% Cr. Good corrosion resistance, used in decorative applications.
 - **410 / 420**: Martensitic, hardenable. Used for cutlery, surgical instruments, and wear-resistant parts.
 
@@ -45,7 +45,7 @@ The key to stainless steel’s corrosion resistance is the formation of a thin, 
 - **2507 (S32750)**: 25% Cr, 7% Ni, 4% Mo. Super duplex for extreme corrosion environments.
 
 #### Precipitation-Hardening Grades
-- **630 (17-4PH)**: 17% Cr, 4% Ni, 3–4% Cu. High strength and good corrosion resistance.
+- **630 (17-4PH)**: 17% Cr, 4% Ni, 3–4% Cu. High strength and good corrosion resistance. Available in [500 series](/products/500-series) and [600 series](/products/600-series) stainless steel.
 - **631 (17-7PH)**: Excellent fatigue resistance.
 
 ### Selection Criteria for Stainless Steel Grades

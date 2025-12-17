@@ -1,5 +1,27 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/applications/automotive/page": "app/applications/automotive/page.js",
+  "/applications/chemical/page": "app/applications/chemical/page.js",
+  "/applications/construction/page": "app/applications/construction/page.js",
+  "/applications/food-processing/page": "app/applications/food-processing/page.js",
   "/applications/kitchen-equipment/page": "app/applications/kitchen-equipment/page.js",
-  "/page": "app/page.js"
+  "/applications/water-treatment/page": "app/applications/water-treatment/page.js",
+  "/blog/comparison/page": "app/blog/comparison/page.js",
+  "/blog/trends/page": "app/blog/trends/page.js",
+  "/knowledge-base/grades/page": "app/knowledge-base/grades/page.js",
+  "/knowledge-base/manufacturing-process/page": "app/knowledge-base/manufacturing-process/page.js",
+  "/knowledge-base/technical-guide/page": "app/knowledge-base/technical-guide/page.js",
+  "/page": "app/page.js",
+  "/products/200-series/page": "app/products/200-series/page.js",
+  "/products/300-series/page": "app/products/300-series/page.js",
+  "/products/400-series/page": "app/products/400-series/page.js",
+  "/products/stainless-steel-coil/209/page": "app/products/stainless-steel-coil/209/page.js",
+  "/products/stainless-steel-coil/page": "app/products/stainless-steel-coil/page.js",
+  "/products/stainless-steel-fittings/page": "app/products/stainless-steel-fittings/page.js",
+  "/products/stainless-steel-sheet/page": "app/products/stainless-steel-sheet/page.js",
+  "/surface-finish/2b/page": "app/surface-finish/2b/page.js",
+  "/surface-finish/ba/page": "app/surface-finish/ba/page.js",
+  "/surface-finish/hl/page": "app/surface-finish/hl/page.js",
+  "/surface-finish/mirror/page": "app/surface-finish/mirror/page.js",
+  "/surface-finish/no4/page": "app/surface-finish/no4/page.js"
 }

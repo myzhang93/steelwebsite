@@ -45,21 +45,6 @@ export default function Footer() {
                   300 Series
                 </Link>
               </li>
-              <li>
-                <Link href="/industry/aerospace" className="text-gray-400 hover:text-white transition">
-                  Aerospace
-                </Link>
-              </li>
-              <li>
-                <Link href="/treatment/electropolishing" className="text-gray-400 hover:text-white transition">
-                  Polishing
-                </Link>
-              </li>
-              <li>
-                <Link href="/capabilities/cutting" className="text-gray-400 hover:text-white transition">
-                  Cutting
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -77,21 +62,9 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-wrap gap-4 items-center">
-            <Link href="/terms" className="text-gray-400 hover:text-white transition text-sm">
-              Terms of Service
-            </Link>
-            <span className="text-gray-400">|</span>
-            <Link href="/privacy" className="text-gray-400 hover:text-white transition text-sm">
-              Privacy Policy
-            </Link>
-            <span className="text-gray-400">|</span>
             <span className="text-gray-400 text-sm">
               Copyright © 2024 Shanxi Steel | All Rights Reserved.
             </span>
-            <span className="text-gray-400">|</span>
-            <Link href="/sitemap" className="text-gray-400 hover:text-white transition text-sm">
-              Sitemap
-            </Link>
           </div>
         </div>
       </div>

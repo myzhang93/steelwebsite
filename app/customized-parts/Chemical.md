@@ -18,7 +18,7 @@ Stainless steel is a cornerstone of the chemical processing industry, providing 
 
 ### Common Grades
 
-- **316L**: General chemical service.
+- **316L**: General chemical service, part of [300 series](/products/300-series) stainless steel.
 - **904L**: Severe acid environments.
 - **Alloy 20**: Sulfuric acid.
 - **Duplex 2205 / 2507**: High-chloride and stress corrosion cracking resistance.
@@ -32,13 +32,13 @@ Stainless steel is a cornerstone of the chemical processing industry, providing 
 ### Key Applications
 
 1. **Reactors and Pressure Vessels**  
-   Batch and continuous reactors.
+   Batch and continuous reactors, often fabricated from [stainless steel sheets](/products/stainless-steel-sheet).
 
 2. **Storage Tanks**  
    Acid, alkali, and solvent storage.
 
 3. **Piping and Piping Systems**  
-   Process and transfer lines.
+   Process and transfer lines, typically using [stainless steel pipes](/products/stainless-steel-pipe-tube).
 
 4. **Heat Exchangers**  
    Shell-and-tube and plate exchangers.

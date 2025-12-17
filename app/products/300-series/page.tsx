@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Header from "@/components/header"
 import Product300HeroSection from "@/components/product-300-hero-section"
 import Product300MaterialProperties from "@/components/product-300-material-properties"
@@ -7,6 +8,11 @@ import Product300CustomerServiceSection from "@/components/product-300-customer-
 import Product300ApplicationsSection from "@/components/product-300-applications-section"
 import Product300RelatedSection from "@/components/product-300-related-section"
 import Footer from "@/components/footer"
+
+export const metadata: Metadata = {
+  title: "300 Series Stainless Steel | 304, 316, 321 Grades - Premium Quality",
+  description: "Explore our comprehensive range of 300 series stainless steel products including 304, 316, 321 grades. Available in coils, sheets, plates, pipes, tubes, and fittings. Excellent corrosion resistance and versatility.",
+}
 
 export default function Product300SeriesPage() {
   return (
