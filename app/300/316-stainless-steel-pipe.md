@@ -2,7 +2,7 @@
 
 For more than six decades, **316 Stainless Steel Pipe** has reigned as the undisputed champion of marine and chemical piping. The strategic addition of **2.0–3.0 % molybdenum** transforms standard 18/8 stainless into a pitting- and crevice-corrosion-resistant powerhouse, outperforming 304 in chloride-rich seawater, aggressive chemical brines, and coastal atmospheres. Whether you are building a desalination plant, fabricating yacht exhaust systems, or installing pharmaceutical WFI lines, **316 Stainless Steel Pipe** delivers the cleanliness, pressure integrity, and lifetime value that premium projects demand.
 
-![316 Stainless Steel Pipe](https://www.trupply.com/cdn/shop/products/IMG-PP-SS_Pipe.jpg?v=1749666067)
+![316 Stainless Steel Pipe](/300/316/316pipe1.webp)
 
 3 Inch 316 Stainless Steel Pipe Schedule 40 – Always in Stock, Ready for Immediate Delivery
 
@@ -81,7 +81,7 @@ Specialty products include **316 stainless steel exhaust pipe** for marine and a
 - Architecture: coastal curtain walls, swimming-pool canopies
 - High-end exhaust: **316 stainless steel exhaust pipe** for luxury yachts
 
-![316 Stainless Steel Tube](https://pipedreamfittings.com/wp-content/uploads/1970/01/Stainless-Steel-Tube-2.jpg)
+![316 Stainless Steel Tube](/300/316/316pipe2.webp)
 
 Marine-Grade 316 Stainless Steel Exhaust Pipe – Superior Corrosion Resistance in Saltwater Environments
 
@@ -95,7 +95,7 @@ Marine-Grade 316 Stainless Steel Exhaust Pipe – Superior Corrosion Resistance 
 - Real-time **316 stainless steel pipe price list** portal – updated daily at 08:00 CST
 - Global export to 80+ countries – fumigation-free crates, vessel booking, insurance
 
-![316 Stainless Steel Round Pipe](https://static.grainger.com/rp/s/is/image/Grainger/15A826-R3020-1_v1)
+![316 Stainless Steel Round Pipe](/300/316/316pipe3.webp)
 
 Complete Range of 316 Stainless Steel Round Pipe – Mill-Direct Pricing & Full Traceability
 

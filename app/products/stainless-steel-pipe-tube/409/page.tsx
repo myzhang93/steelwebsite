@@ -2,26 +2,41 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { getMarkdownByPath } from "@/lib/markdown"
 import MarkdownContent from "@/components/markdown-content"
-import ArticleNavigationGeneric from "@/components/article-navigation-generic"
+import Link from "next/link"
 
 export default function StainlessSteel409PipePage() {
-  const { frontMatter: pipeFrontMatter, content: pipeContent } = getMarkdownByPath('app/400/409-stainless-steel-pipe.md')
-  const { frontMatter: tubeFrontMatter, content: tubeContent } = getMarkdownByPath('app/400/409-stainless-steel-tube.md')
+  const { frontMatter, content } = getMarkdownByPath('app/400/409-stainless-steel-pipe.md')
   
   return (
     <>
       <Header />
-      <ArticleNavigationGeneric
-        firstContent={<MarkdownContent key="pipe-content" content={pipeContent} />}
-        secondContent={<MarkdownContent key="tube-content" content={tubeContent} />}
-        firstSectionId="pipe-section"
-        secondSectionId="tube-section"
-        firstSectionName="Pipe Information"
-        secondSectionName="Tube Information"
-        separatorText="Tube Information"
-        firstButtonText="View Tube Information"
-        secondButtonText="Back to Pipe Information"
-      />
+      <div className="min-h-screen bg-white">
+        {/* Navigation Bar */}
+        <div className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex gap-4 py-3">
+              <Link
+                href="/products/stainless-steel-pipe-tube/409"
+                className="px-4 py-2 rounded-md font-semibold transition bg-blue-600 text-white"
+              >
+                Pipe Information
+              </Link>
+              <Link
+                href="/products/stainless-steel-pipe-tube/409/tube"
+                className="px-4 py-2 rounded-md font-semibold transition bg-gray-100 text-gray-700 hover:bg-gray-200"
+              >
+                Tube Information
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <article className="prose prose-lg max-w-none">
+            <MarkdownContent key="pipe-content" content={content} />
+          </article>
+        </div>
+      </div>
       <Footer />
     </>
   )

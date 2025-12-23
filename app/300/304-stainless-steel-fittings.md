@@ -2,7 +2,7 @@
 
 For more than 70 years, **304 Stainless Steel Fittings** have set the global benchmark for corrosion-resistant, food-safe, and cost-effective piping assemblies. The balanced 18 % chromium / 8 % nickel chemistry delivers excellent resistance to atmospheric and mild chemical attack, while the austenitic structure provides outstanding formability and weldability without post-weld annealing. From brewery CIP lines and dairy pasteurizers to petrochemical cooling-water loops and architectural handrails, **304 Stainless Steel Fittings** offer the lowest life-cycle cost of any stainless grade in general-service applications—making them the first choice for engineers, contractors, and stockists worldwide.
 
-![304 Stainless Steel Fittings](https://steeltubes.co.in/wp-content/uploads/2017/08/Stainless-Steel-Pipe-Fittings-Manufacturers-Suppliers-Elbow-Tee-Reducer.jpg)
+![304 Stainless Steel Fittings](/300/304/304fittings1.jpg)
 
 304 Stainless Steel Ball Valves Sanitary Fittings – 3A & FDA Compliant, Mirror Polished Ra≤0.4μm
 
@@ -59,7 +59,7 @@ As one of the largest manufacturers and stocking distributors (with Houston, USA
 
 Specialty products include complete **stainless steel 304 tube fittings** – compression, push-in, and weld-in configurations manufactured under DIN 2353 and ISO 8434-1.
 
-![304 Stainless Steel Buttweld Fittings](https://www.navstarsteel.com/images/stainless-steel-304-buttweld-fittings.jpg)
+![304 Stainless Steel Buttweld Fittings](/300/304/304fittings2.jpg)
 
 **304 Stainless Steel Fittings Houston** – Same-Day Shipping from USA Local Stock for NPT & Compression Range
 
@@ -74,7 +74,7 @@ Specialty products include complete **stainless steel 304 tube fittings** – co
 - Marine: handrails, bollards, coastal canopies
 - Architectural: polished handrails, elevator sills, column covers
 
-![304 Socket Weld Fittings](https://www.dmmetals.com/uploads/media/60f1987936225-socket-weld-fitting.jpg)
+![304 Socket Weld Fittings](/300/304/304fittings3.jpg)
 
 Complete Range: **304 Stainless Steel Threaded Fittings**, **Compression Fittings** & **Stainless Steel 304 Tube Fittings**
 

@@ -2,7 +2,7 @@
 
 For more than six decades, **316 Stainless Steel Fittings** have reigned as the undisputed champion of marine and chemical piping assemblies. The strategic addition of **2.0–3.0 % molybdenum** transforms standard 18/8 stainless into a pitting- and crevice-corrosion-resistant powerhouse, outperforming 304 in chloride-rich seawater, aggressive chemical brines, and coastal atmospheres. Whether you are building a desalination plant, fabricating yacht exhaust systems, or installing pharmaceutical WFI lines, **316 Stainless Steel Fittings** deliver the cleanliness, pressure integrity, and lifetime value that premium projects demand.
 
-![316 Stainless Steel Fittings](https://nerop-nero-gob2b.b-cdn.net/imagecache/01027109-b33b-4ea8-8947-a93801084309/Stainless-Steel-Fittings_600x425.jpg)
+![316 Stainless Steel Fittings](/300/316/316fittings1.webp)
 
 316 Stainless Steel Fittings – Superior Corrosion Resistance in Marine and Chemical Environments
 
@@ -60,7 +60,7 @@ As one of the largest manufacturers and stocking distributors, we operate a 250-
 
 Specialty products include complete **stainless steel 316 tube fittings** – compression, push-in, and weld-in configurations manufactured under DIN 2353 and ISO 8434-1.
 
-![316 Stainless Steel Fittings](https://www.polyconn.com/includes/work/image_cache/webp/75c4c256e3b1b0fc6d634495928923ec.thumb.webp)
+![316 Stainless Steel Fittings](/300/316/316fittings2.webp)
 
 316 Stainless Steel Fittings – Premium Quality for Marine and Chemical Applications
 
@@ -75,7 +75,7 @@ Specialty products include complete **stainless steel 316 tube fittings** – co
 - Heat exchangers: shell-and-tube, plate-frame gaskets
 - Architecture: coastal curtain walls, swimming-pool canopies
 
-![316 Buttweld Fittings](https://www.rextonsteelalloys.com/img/buttweld-fittings.jpg)
+![316 Buttweld Fittings](/300/316/316fittings3.jpg)
 
 Complete Range: **316 Stainless Steel Threaded Fittings**, **Compression Fittings** & **Buttweld Fittings**
 

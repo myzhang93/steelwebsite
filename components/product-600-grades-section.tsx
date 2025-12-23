@@ -33,38 +33,50 @@ export default function Product600GradesSection() {
           600 Series Grades
         </h2>
         <div className="space-y-8">
-          {grades.map((grade, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="relative h-64 md:h-full">
-                  <Image
-                    src={grade.image}
-                    alt={grade.grade}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{grade.grade}</h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">{grade.description}</p>
-                  <div className="flex gap-4">
-                    <button
-                      onClick={() => setIsQuoteModalOpen(true)}
-                      className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition"
-                    >
-                      Get a Quote
-                    </button>
-                    <Link
-                      href="/products/stainless-steel-sheet#600-series-grades"
-                      className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center"
-                    >
-                      Learn More
-                    </Link>
+          {grades.map((grade, index) => {
+            const href = grade.grade === "630 Stainless Steel" ? "/products/600-series/630" :
+                        grade.grade === "631 Stainless Steel" ? "/products/600-series/631" :
+                        grade.grade === "640 Stainless Steel" ? "/products/600-series/640" :
+                        "/products/stainless-steel-sheet#600-series-grades"
+            
+            return (
+              <Link 
+                key={index} 
+                href={href}
+                className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="relative h-64 md:h-full">
+                    <Image
+                      src={grade.image}
+                      alt={grade.grade}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-8 flex flex-col justify-center">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{grade.grade}</h3>
+                    <p className="text-gray-600 leading-relaxed mb-6">{grade.description}</p>
+                    <div className="flex gap-4">
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault()
+                          e.stopPropagation()
+                          setIsQuoteModalOpen(true)
+                        }}
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition"
+                      >
+                        Get a Quote
+                      </button>
+                      <div className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center">
+                        Learn More
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              </Link>
+            )
+          })}
         </div>
       </div>
       <QuoteModal 

@@ -83,13 +83,14 @@ export default function Header() {
               onMouseEnter={() => setIsProductsDropdownOpen(true)}
               onMouseLeave={() => setIsProductsDropdownOpen(false)}
             >
-              <button 
+              <Link
+                href="/products"
                 className="text-blue-800 hover:text-blue-900 transition-colors flex items-center gap-1"
                 style={{ fontFamily: 'var(--font-merriweather-sans), Merriweather Sans, sans-serif' }}
               >
-                Products
+                Stainless Steel
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isProductsDropdownOpen ? 'rotate-180' : ''}`} />
-              </button>
+              </Link>
               {isProductsDropdownOpen && (
                 <div className="absolute -left-[64px] top-full bg-white border border-gray-200 rounded shadow-lg py-4 z-50 min-w-[600px]">
                   {/* Invisible bridge to prevent gap */}

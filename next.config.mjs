@@ -63,11 +63,6 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'www.jigneshsteel.in',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
         hostname: 'www.navstarsteel.com',
         pathname: '/**',
       },
@@ -228,16 +223,6 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'www.panchdeepmetal.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.sangeetametal.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
         hostname: 'www.smithsadvanced.com',
         pathname: '/**',
       },
@@ -254,6 +239,21 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'www.boatfittings.co.uk',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'stainlesssupply.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'm.media-amazon.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.onlinemetals.com',
         pathname: '/**',
       },
     ],

@@ -2,7 +2,7 @@
 
 When your application battles chlorides, salt spray, or aggressive chemicals, **316 Stainless Steel Sheet** is the premium upgrade you can’t afford to skip. Compared with the widely used 304 grade, 316 contains 2–3 % molybdenum, a strategic alloying addition that shuts down pitting and crevice corrosion in marine atmospheres and acidic brines. The result is a longer service life, lower maintenance budgets, and compliance with stringent FDA, USP, and offshore specifications—all in one versatile, fully austenitic material. From yacht decks and coastal cladding to pharmaceutical autoclaves and food-processing lines, specifying **316 Stainless Steel Sheet** today prevents costly field failures tomorrow.
 
-![Premium 316 Stainless Steel Sheet – Mirror-like 2B finish, 4'×8' standard size](https://londonmetalstore.co.uk/cdn/shop/products/stainless-steel-sheet-304-grade-dull-polished_5d5b832c-069b-462a-840f-234cf376923c.png?v=1623449025)
+![Premium 316 Stainless Steel Sheet – Mirror-like 2B finish, 4'×8' standard size](/300/316/316sheet1.jpg)
 
 ---
 
@@ -83,7 +83,7 @@ When your application battles chlorides, salt spray, or aggressive chemicals, **
 - **Oil & Gas**: offshore helideck drip-pans, subsea instrument enclosures, flare tips  
 - **Pulp & Paper**: bleach washer drums, digester screens, white-liquor piping  
 
-![Proven superior corrosion resistance in marine and chloride environments](https://stainlesssupply.com/order-metal-online/products_pictures/SS-304-3-18Glg.jpg)
+![Proven superior corrosion resistance in marine and chloride environments](/300/316/316sheet2.jpg)
 
 ---
 
@@ -95,7 +95,7 @@ When your application battles chlorides, salt spray, or aggressive chemicals, **
 - **Competitive 316 stainless steel sheet price list** – live alloy surcharge, no hidden fees  
 - **Global logistics** – export crating, fumigation-free pallets, vessel booking to any port  
 
-![Large inventory – multiple gauges in stock with same-day cutting service](https://5.imimg.com/data5/SELLER/Default/2023/8/335201421/ZJ/MC/YK/23368291/13-500x500.jpg)
+![Large inventory – multiple gauges in stock with same-day cutting service](/300/316/316sheet3.webp)
 
 ---
 

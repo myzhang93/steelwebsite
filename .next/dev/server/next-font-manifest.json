@@ -1,6 +1,103 @@
 {
-  "app": {},
-  "appUsingSizeAdjust": false,
+  "app": {
+    "[project]/app/applications/kitchen-equipment/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/200-series/201/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/200-series/204/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/200-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/300-series/321/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/300-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/400-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/500-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/600-series/631/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/600-series/640/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/600-series/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-coil/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-fittings/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-pipe-tube/204/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-pipe-tube/631/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-pipe-tube/631/tube/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-pipe-tube/640/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-pipe-tube/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/201/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/201/plate/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/310/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/310/plate/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/409/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/409/plate/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/420/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/420/plate/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/446/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/446/plate/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/products/stainless-steel-sheet/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ],
+    "[project]/app/surface-finish/2b/page": [
+      "static/media/3dcdbee195bcd02e-s.p.9ed611dc.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
   "pages": {},
   "pagesUsingSizeAdjust": false
 }

@@ -11,7 +11,7 @@ When your project demands a material that combines **superior corrosion resistan
 - **Zero maintenance**—no painting, plating, or protective coatings required  
 - **100 % recyclable**—supports LEED credits and sustainability targets  
 
-![Close-up of 304 stainless steel sheet surface showing its polished finish](https://stainlesssupply.com/order-metal-online/products_pictures/SS-304-3-18Glg.jpg)
+![Close-up of 304 stainless steel sheet surface showing its polished finish](/300/304/304sheet1.webp)
 
 ---
 
@@ -48,7 +48,7 @@ When your project demands a material that combines **superior corrosion resistan
 | Modulus of Elasticity | 200 GPa (29 ksi) |
 | Density | 8.0 g/cm³ (0.289 lb/in³) |
 
-![Excerpt from 304 stainless steel data sheet showing certified test values](https://m.media-amazon.com/images/I/61N1-oBIj1L.jpg)
+![Excerpt from 304 stainless steel data sheet showing certified test values](/300/304/304sheet2.jpg)
 
 ---
 
@@ -73,7 +73,7 @@ When your project demands a material that combines **superior corrosion resistan
 - **Medical & Pharmaceutical** – Sterilization trays, instrument trays, surgical-tool cabinets.
 - **OEM & Fabrication** – Enclosures, guards, shims, gaskets, flanges.
 
-![304 stainless steel 4x8 sheet installed as a commercial kitchen backsplash](https://www.onlinemetals.com/medias/515Wx515H-2022-01-12-stainless-sheet-304-annealed-2b-3-1000-min.jpg?context=bWFzdGVyfGltYWdlc3wxMzYyNnxpbWFnZS9qcGVnfGFEWmlMMmhsTXk4NU5UazVPVEEzTWprNU16VTRMelV4TlZkNE5URTFTRjh5TURJeUxUQXhMVEV5TFhOMFlXbHViR1Z6Y3kxemFHVmxkQzB6TURRdFlXNXVaV0ZzWldRdE1tSXRNeTB4TURBd0xXMXBiaTVxY0djfDk2MjY5YmNhNzA5NTZlNzA4MGMzMWNhYjMwNjZiNjYzNjEzM2QzYTdhMDdkZTdkYzJhZGY1NWM3MDdjMzM3ZTA)
+![304 stainless steel 4x8 sheet installed as a commercial kitchen backsplash](/300/304/304sheet3.webp)
 
 ---
 

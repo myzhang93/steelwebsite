@@ -80,11 +80,34 @@ function WufooForm({ onSuccess }: WufooFormProps) {
       }
     }
 
+    // Function to hide honeypot field
+    const hideHoneypotField = () => {
+      const form = document.getElementById("form4") as HTMLFormElement
+      if (form) {
+        // Find all labels and check for "Do Not Fill This Out" text
+        const labels = form.querySelectorAll('label.desc')
+        labels.forEach((label) => {
+          const labelText = label.textContent || label.innerText
+          if (labelText && labelText.toLowerCase().includes('do not fill this out')) {
+            const listItem = label.closest('li')
+            if (listItem) {
+              listItem.style.display = 'none'
+              listItem.style.visibility = 'hidden'
+              listItem.style.height = '0'
+              listItem.style.overflow = 'hidden'
+            }
+          }
+        })
+      }
+    }
+
     let handleFormSubmit: ((e: Event) => void) | null = null
     let form: HTMLFormElement | null = null
     const setupFormListener = () => {
       form = document.getElementById("form4") as HTMLFormElement
       if (form) {
+        // Hide honeypot field
+        hideHoneypotField()
         handleFormSubmit = (e: Event) => {
           setIsSubmitting(true)
           setSubmitError(null)
@@ -138,7 +161,11 @@ function WufooForm({ onSuccess }: WufooFormProps) {
       }
     }
     
-    const setupTimer = setTimeout(setupFormListener, 100)
+    const setupTimer = setTimeout(() => {
+      setupFormListener()
+      // Also try to hide honeypot field after a delay in case it loads later
+      setTimeout(hideHoneypotField, 500)
+    }, 100)
 
     return () => {
       clearTimeout(setupTimer)
@@ -225,12 +252,12 @@ function WufooForm({ onSuccess }: WufooFormProps) {
           background-color: #f5f5f5 !important;
           border: 1px solid #999 !important;
           border-radius: 4px !important;
-          padding: 6px 16px !important;
-          font-size: 13px !important;
+          padding: 6px 32px !important;
+          font-size: 16px !important;
           color: #333 !important;
           cursor: pointer !important;
           width: auto !important;
-          min-width: 100px !important;
+          min-width: 180px !important;
           height: auto !important;
           line-height: 1.5 !important;
         }
@@ -240,6 +267,23 @@ function WufooForm({ onSuccess }: WufooFormProps) {
         .wufoo-form-wrapper .wufoo .buttons input[type="submit"]:disabled {
           opacity: 0.6 !important;
           cursor: not-allowed !important;
+        }
+        .wufoo-form-wrapper .wufoo li.buttons {
+          text-align: center !important;
+        }
+        .wufoo-form-wrapper .wufoo li.buttons > div {
+          text-align: center !important;
+          display: flex !important;
+          justify-content: center !important;
+        }
+        /* Hide honeypot field "Do Not Fill This Out" */
+        .wufoo-form-wrapper .wufoo li.honeypot,
+        .wufoo-form-wrapper .wufoo li[style*="position: absolute"],
+        .wufoo-form-wrapper .wufoo li[style*="left: -9999px"] {
+          display: none !important;
+          visibility: hidden !important;
+          height: 0 !important;
+          overflow: hidden !important;
         }
       `}} />
       <div className="wufoo-form-wrapper">
@@ -390,59 +434,9 @@ function WufooForm({ onSuccess }: WufooFormProps) {
                 </div>
               )}
             </li>
-
-            <li className="hide">
-              <label htmlFor="comment">Do Not Fill This Out</label>
-              <textarea name="comment" id="comment" rows={1} cols={1}></textarea>
-              <input type="hidden" id="idstamp" name="idstamp" value="IFNU2ntw1gizBlK2KHs8iRMdJ+L685Jht1v3R63x17g=" />
-              <input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" />
-            </li>
           </ul>
         </form>
         </div>
-        
-        <a 
-          className="powertiny" 
-          href="http://www.wufoo.com/" 
-          title="Powered by Wufoo"
-          style={{
-            display: 'block !important',
-            visibility: 'visible !important',
-            textIndent: '0 !important',
-            position: 'relative !important',
-            height: 'auto !important',
-            width: '95px !important',
-            overflow: 'visible !important',
-            textDecoration: 'none',
-            cursor: 'pointer !important',
-            margin: '0 auto !important'
-          }}
-        >
-          <span style={{
-            background: 'url(./images/powerlogo.png) no-repeat center 7px',
-            margin: '0 auto',
-            display: 'inline-block !important',
-            visibility: 'visible !important',
-            textIndent: '-9000px !important',
-            position: 'static !important',
-            overflow: 'auto !important',
-            width: '62px !important',
-            height: '30px !important'
-          }}>Wufoo</span>
-          <b style={{
-            display: 'block !important',
-            visibility: 'visible !important',
-            textIndent: '0 !important',
-            position: 'static !important',
-            height: 'auto !important',
-            width: 'auto !important',
-            overflow: 'auto !important',
-            fontWeight: 'normal',
-            fontSize: '9px',
-            color: '#777',
-            padding: '0 0 0 3px'
-          }}>Designed</b>
-        </a>
       </div>
 
       <Script src="/scripts/wufoo.js" strategy="afterInteractive" />

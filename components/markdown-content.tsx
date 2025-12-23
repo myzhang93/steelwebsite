@@ -54,20 +54,51 @@ export default function MarkdownContent({ content }: { content: string }) {
             </p>
           )
         },
-        ul: ({ node, children, ...props }: any) => (
-          <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700" {...props}>
-            {children}
-          </ul>
-        ),
-        ol: ({ node, children, ...props }: any) => (
-          <ol className="list-decimal list-inside mb-4 space-y-2 text-gray-700" {...props}>
-            {children}
-          </ol>
-        ),
-        li: ({ node, children, ...props }: any) => {
-          // react-markdown 会自动处理 key，我们只需要确保正确传递 children
+        ul: ({ node, children, ...props }: any) => {
+          // 使用 node 的位置信息生成稳定的 key
+          const nodeKey = node?.position ? `ul-${node.position.start.line}-${node.position.start.column}` : `ul-${node?.data?.hProperties?.id || Math.random()}`
+          // 确保每个子元素都有 key
+          const childrenWithKeys = React.Children.toArray(children).map((child: any, index: number) => {
+            if (React.isValidElement(child)) {
+              return React.cloneElement(child, { 
+                key: child.key || `ul-item-${nodeKey}-${index}`,
+                ...child.props
+              })
+            }
+            return <React.Fragment key={`ul-fragment-${nodeKey}-${index}`}>{child}</React.Fragment>
+          })
           return (
-            <li className="text-gray-700" {...props}>
+            <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700" key={nodeKey} {...props}>
+              {childrenWithKeys}
+            </ul>
+          )
+        },
+        ol: ({ node, children, ...props }: any) => {
+          // 使用 node 的位置信息生成稳定的 key
+          const nodeKey = node?.position ? `ol-${node.position.start.line}-${node.position.start.column}` : `ol-${node?.data?.hProperties?.id || Math.random()}`
+          // 确保每个子元素都有 key
+          const childrenWithKeys = React.Children.toArray(children).map((child: any, index: number) => {
+            if (React.isValidElement(child)) {
+              return React.cloneElement(child, { 
+                key: child.key || `ol-item-${nodeKey}-${index}`,
+                ...child.props
+              })
+            }
+            return <React.Fragment key={`ol-fragment-${nodeKey}-${index}`}>{child}</React.Fragment>
+          })
+          return (
+            <ol className="list-decimal list-inside mb-4 space-y-2 text-gray-700" key={nodeKey} {...props}>
+              {childrenWithKeys}
+            </ol>
+          )
+        },
+        li: ({ node, children, ...props }: any) => {
+          // 使用 node 的位置信息生成稳定的 key
+          const nodeKey = node?.position 
+            ? `li-${node.position.start.line}-${node.position.start.column}` 
+            : `li-${node?.data?.hProperties?.id || Math.random()}`
+          return (
+            <li key={nodeKey} className="text-gray-700" {...props}>
               {children}
             </li>
           )

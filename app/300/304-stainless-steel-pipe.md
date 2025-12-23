@@ -2,7 +2,7 @@
 
 For more than 70 years, **304 Stainless Steel Pipe** has set the global benchmark for corrosion-resistant, food-safe, and cost-effective piping. Its balanced 18 % chromium / 8 % nickel chemistry delivers excellent resistance to atmospheric and mild chemical attack, while the austenitic structure provides outstanding formability and weldability without post-weld annealing. From dairy processing and pharmaceutical cleanrooms to petrochemical cooling-water lines and architectural handrails, **304 Stainless Steel Pipe** offers the lowest life-cycle cost of any piping material in general-service applications—making it the first choice for engineers, contractors, and stockists worldwide.
 
-[Image 1: Polished sanitary 304 seamless stainless steel pipes stacked in bundles with mill markings]  
+![304 Seamless Stainless Steel Pipe](/300/304/304pipe1.jpg)  
 Caption: 304 Seamless Stainless Steel Pipe – ASTM A312 TP304/304L, Mirror-Polished Surface for Food & Pharmaceutical Grade
 
 ---
@@ -75,7 +75,7 @@ As one of the largest **304 stainless steel pipe manufacturer** and **304 stainl
 - Automotive: exhaust flex joints, catalytic converter shells
 - Decorative: polished handrails, elevator sills, column covers
 
-[Image 2: Worker inspecting large-diameter 3 inch 304 stainless steel pipe in modern factory]  
+![304 Stainless Steel Pipe](/300/304/304pipe2.webp)  
 Caption: 3 Inch 304 Stainless Steel Pipe – Always in Stock, Sch 10S/40S/80S, Ready for Immediate Export
 
 ---
@@ -88,7 +88,7 @@ Caption: 3 Inch 304 Stainless Steel Pipe – Always in Stock, Sch 10S/40S/80S, R
 - Real-time **304 stainless steel pipe** stock portal – 24/7 visibility
 - Global export experience to 80+ countries – fumigation-free crates, vessel booking, insurance
 
-[Image 3: Container being loaded with hundreds of 304 stainless steel pipes for global shipment]  
+![304 Stainless Steel Pipe](/300/304/304pipe3.webp)  
 Caption: Trusted 304 Stainless Steel Pipe Exporters – Mill-Direct Supply to 80+ Countries with Full Certification
 
 ---

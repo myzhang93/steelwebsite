@@ -2,7 +2,7 @@
 
 When your piping system faces chlorides, seawater, or aggressive chemicals, **316 Stainless Steel Tube** is the only logical choice. The deliberate addition of 2–3 % molybdenum transforms standard 18/8 stainless into a pitting- and crevice-corrosion-resistant alloy, outperforming 304 in marine, pharmaceutical, and food-processing environments. Whether you need seamless hydraulic lines for an offshore platform, sanitary dairy tubing, or architectural handrails on a coastal promenade, **316 stainless steel tube** delivers the hygiene, pressure integrity, and lifetime value that global industries demand.
 
-![316 Stainless Steel Tube](https://www.trupply.com/cdn/shop/products/Product_Stainless_Steel_Tubing_316_Welded.png?v=1749665634)
+![316 Stainless Steel Tube](/300/316/316tube1.webp)
 Caption: **316 Stainless Steel Tube** – Seamless & Welded, Ready Stock from World-Class **316 Stainless Steel Tube Manufacturers**
 
 ---
@@ -70,7 +70,7 @@ As one of the world’s largest **316 stainless steel tube manufacturers** and m
 
 Specialty products include complete **316 stainless steel square tube sizes** – 20×20 mm to 300×300 mm, wall 1.5–20 mm, manufactured under ASTM A554.
 
-![316 Stainless Steel Tube](https://www.dciron.co.uk/cdn/shop/products/ssbt26348-01.jpg?v=1662568959)
+![316 Stainless Steel Tube](/300/316/316tube2.jpg)
 Caption: Complete Range of **316 Stainless Steel Square Tube Sizes** – Full **316 Stainless Steel Tube Pressure Rating** Data Provided
 
 ---
@@ -87,7 +87,7 @@ Caption: Complete Range of **316 Stainless Steel Square Tube Sizes** – Full **
 - Medical equipment – sterilisation baskets, instrument housings
 - **316 stainless steel tube for sale** – global export to 80+ countries
 
-![316 Stainless Steel Tube](https://www.boatfittings.co.uk/cdn/shop/files/sm-1052.jpg?v=1718880017)
+![316 Stainless Steel Tube](/300/316/316tube3.webp)
 Caption: UK & Global Supply – Trusted **316 Stainless Steel Tube Suppliers** & **316 Stainless Steel Tube Suppliers UK**
 
 ---

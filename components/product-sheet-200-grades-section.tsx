@@ -26,35 +26,35 @@ function GradeCard({ grade, image, description, properties, applications }: Grad
         <h3 className="text-2xl font-bold text-gray-900 mb-3">{grade}</h3>
         <p className="text-gray-600 mb-4 leading-relaxed flex-grow">{description}</p>
         
-        {grade === "201 Stainless Steel" ? (
+        {grade === "201 Stainless Steel Sheet & Plate" ? (
           <Link
             href="/products/stainless-steel-sheet/201"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
           >
             Learn More
           </Link>
-        ) : grade === "202 Stainless Steel" ? (
+        ) : grade === "202 Stainless Steel Sheet & Plate" ? (
           <Link
             href="/products/stainless-steel-sheet/202"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
           >
             Learn More
           </Link>
-        ) : grade === "201L Stainless Steel" ? (
+        ) : grade === "201L Stainless Steel Sheet & Plate" ? (
           <Link
             href="/products/stainless-steel-sheet/201L"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
           >
             Learn More
           </Link>
-        ) : grade === "204 Stainless Steel" ? (
+        ) : grade === "204 Stainless Steel Sheet & Plate" ? (
           <Link
             href="/products/stainless-steel-sheet/204"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
           >
             Learn More
           </Link>
-        ) : grade === "209 Stainless Steel" ? (
+        ) : grade === "209 Stainless Steel Sheet & Plate" ? (
           <Link
             href="/products/stainless-steel-sheet/209"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition text-center w-full mt-auto"
@@ -76,7 +76,7 @@ function GradeCard({ grade, image, description, properties, applications }: Grad
 
 const grades = [
   {
-    grade: "201 Stainless Steel",
+    grade: "201 Stainless Steel Sheet & Plate",
     image: "/stainless-steel-sheet.png",
     description: "201 stainless steel is a cost-effective alternative to 304, offering good corrosion resistance and excellent formability. It's widely used in decorative applications, cookware, and food processing equipment. The alloy maintains strength at high temperatures and provides good weldability.",
     properties: [
@@ -95,7 +95,7 @@ const grades = [
     ]
   },
   {
-    grade: "202 Stainless Steel",
+    grade: "202 Stainless Steel Sheet & Plate",
     image: "/stainless-steel-sheet.png",
     description: "202 stainless steel offers improved corrosion resistance compared to 201, with better performance in mildly corrosive environments. It's ideal for applications requiring durability and aesthetic appeal, such as architectural panels, automotive trim, and household appliances.",
     properties: [
@@ -114,7 +114,7 @@ const grades = [
     ]
   },
   {
-    grade: "201L Stainless Steel",
+    grade: "201L Stainless Steel Sheet & Plate",
     image: "/stainless-steel-sheet.png",
     description: "201L is the low-carbon version of 201 stainless steel, offering enhanced weldability and reduced susceptibility to intergranular corrosion. This grade is perfect for welded structures and applications requiring better corrosion resistance in welded areas.",
     properties: [
@@ -133,7 +133,7 @@ const grades = [
     ]
   },
   {
-    grade: "204 Stainless Steel",
+    grade: "204 Stainless Steel Sheet & Plate",
     image: "/stainless-steel-sheet.png",
     description: "204 stainless steel provides enhanced corrosion resistance and strength compared to standard 200 series alloys. It's designed for applications that require better performance in corrosive environments while maintaining cost-effectiveness. Ideal for chemical processing, marine applications, and industrial equipment.",
     properties: [
@@ -152,7 +152,7 @@ const grades = [
     ]
   },
   {
-    grade: "209 Stainless Steel",
+    grade: "209 Stainless Steel Sheet & Plate",
     image: "/stainless-steel-sheet.png",
     description: "209 stainless steel offers superior corrosion resistance and strength characteristics within the 200 series. This premium grade is designed for demanding applications where enhanced performance is required, such as high-temperature environments, aggressive chemical exposure, and critical industrial applications.",
     properties: [

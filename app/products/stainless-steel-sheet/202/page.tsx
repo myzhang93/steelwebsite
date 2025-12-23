@@ -2,19 +2,41 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { getMarkdownByPath } from "@/lib/markdown"
 import MarkdownContent from "@/components/markdown-content"
-import ArticleNavigation from "@/components/article-navigation"
+import Link from "next/link"
 
-export default function StainlessSteel202Page() {
-  const { frontMatter: sheetFrontMatter, content: sheetContent } = getMarkdownByPath('app/200/202-stainless-steel-sheet.md')
-  const { frontMatter: plateFrontMatter, content: plateContent } = getMarkdownByPath('app/200/202-stainless-steel-plate.md')
+export default function StainlessSteel202SheetPage() {
+  const { frontMatter, content } = getMarkdownByPath('app/200/202-stainless-steel-sheet.md')
   
   return (
     <>
       <Header />
-      <ArticleNavigation 
-        sheetContent={<MarkdownContent content={sheetContent} />}
-        plateContent={<MarkdownContent content={plateContent} />}
-      />
+      <div className="min-h-screen bg-white">
+        {/* Navigation Bar */}
+        <div className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex gap-4 py-3">
+              <Link
+                href="/products/stainless-steel-sheet/202"
+                className="px-4 py-2 rounded-md font-semibold transition bg-blue-600 text-white"
+              >
+                Sheet Information
+              </Link>
+              <Link
+                href="/products/stainless-steel-sheet/202/plate"
+                className="px-4 py-2 rounded-md font-semibold transition bg-gray-100 text-gray-700 hover:bg-gray-200"
+              >
+                Plate Information
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <article className="prose prose-lg max-w-none">
+            <MarkdownContent key="sheet-content" content={content} />
+          </article>
+        </div>
+      </div>
       <Footer />
     </>
   )

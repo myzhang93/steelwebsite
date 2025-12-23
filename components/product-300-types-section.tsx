@@ -53,38 +53,52 @@ export default function Product300TypesSection() {
           300 Stainless Steel Types
         </h2>
         <div className="space-y-8">
-          {steelTypes.map((type) => (
-            <div key={type.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="relative h-64 md:h-full">
-                  <Image
-                    src={type.image}
-                    alt={type.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{type.title}</h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">{type.description}</p>
-                  <div className="flex gap-4">
-                    <button
-                      onClick={() => setIsQuoteModalOpen(true)}
-                      className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition"
-                    >
-                      Get a Quote
-                    </button>
-                    <Link
-                      href="/products/stainless-steel-sheet#300-series-grades"
-                      className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center"
-                    >
-                      Learn More
-                    </Link>
+          {steelTypes.map((type) => {
+            const href = type.title === "304 Stainless Steel" ? "/products/300-series/304" :
+                        type.title === "316 Stainless Steel" ? "/products/300-series/316" :
+                        type.title === "321 Stainless Steel" ? "/products/300-series/321" :
+                        type.title === "303 Stainless Steel" ? "/products/300-series/303" :
+                        type.title === "310 Stainless Steel" ? "/products/300-series/310" :
+                        "/products/stainless-steel-sheet#300-series-grades"
+            
+            return (
+              <Link 
+                key={type.id} 
+                href={href}
+                className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="relative h-64 md:h-full">
+                    <Image
+                      src={type.image}
+                      alt={type.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-8 flex flex-col justify-center">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{type.title}</h3>
+                    <p className="text-gray-600 leading-relaxed mb-6">{type.description}</p>
+                    <div className="flex gap-4">
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault()
+                          e.stopPropagation()
+                          setIsQuoteModalOpen(true)
+                        }}
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-semibold transition"
+                      >
+                        Get a Quote
+                      </button>
+                      <div className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 rounded font-semibold transition text-center">
+                        Learn More
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              </Link>
+            )
+          })}
         </div>
       </div>
       <QuoteModal 

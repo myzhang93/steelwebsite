@@ -13693,11 +13693,6 @@ const configEnv = ("TURBOPACK compile-time value", {
         }),
         ("TURBOPACK compile-time value", {
             "protocol": ("TURBOPACK compile-time value", "https"),
-            "hostname": ("TURBOPACK compile-time value", "www.jigneshsteel.in"),
-            "pathname": ("TURBOPACK compile-time value", "/**")
-        }),
-        ("TURBOPACK compile-time value", {
-            "protocol": ("TURBOPACK compile-time value", "https"),
             "hostname": ("TURBOPACK compile-time value", "www.navstarsteel.com"),
             "pathname": ("TURBOPACK compile-time value", "/**")
         }),
@@ -13858,16 +13853,6 @@ const configEnv = ("TURBOPACK compile-time value", {
         }),
         ("TURBOPACK compile-time value", {
             "protocol": ("TURBOPACK compile-time value", "https"),
-            "hostname": ("TURBOPACK compile-time value", "www.panchdeepmetal.com"),
-            "pathname": ("TURBOPACK compile-time value", "/**")
-        }),
-        ("TURBOPACK compile-time value", {
-            "protocol": ("TURBOPACK compile-time value", "https"),
-            "hostname": ("TURBOPACK compile-time value", "www.sangeetametal.com"),
-            "pathname": ("TURBOPACK compile-time value", "/**")
-        }),
-        ("TURBOPACK compile-time value", {
-            "protocol": ("TURBOPACK compile-time value", "https"),
             "hostname": ("TURBOPACK compile-time value", "www.smithsadvanced.com"),
             "pathname": ("TURBOPACK compile-time value", "/**")
         }),
@@ -13884,6 +13869,21 @@ const configEnv = ("TURBOPACK compile-time value", {
         ("TURBOPACK compile-time value", {
             "protocol": ("TURBOPACK compile-time value", "https"),
             "hostname": ("TURBOPACK compile-time value", "www.boatfittings.co.uk"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "stainlesssupply.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "m.media-amazon.com"),
+            "pathname": ("TURBOPACK compile-time value", "/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "protocol": ("TURBOPACK compile-time value", "https"),
+            "hostname": ("TURBOPACK compile-time value", "www.onlinemetals.com"),
             "pathname": ("TURBOPACK compile-time value", "/**")
         })
     ]),
@@ -14297,11 +14297,6 @@ function getImageProps(imgProps) {
                 }),
                 ("TURBOPACK compile-time value", {
                     "protocol": ("TURBOPACK compile-time value", "https"),
-                    "hostname": ("TURBOPACK compile-time value", "www.jigneshsteel.in"),
-                    "pathname": ("TURBOPACK compile-time value", "/**")
-                }),
-                ("TURBOPACK compile-time value", {
-                    "protocol": ("TURBOPACK compile-time value", "https"),
                     "hostname": ("TURBOPACK compile-time value", "www.navstarsteel.com"),
                     "pathname": ("TURBOPACK compile-time value", "/**")
                 }),
@@ -14462,16 +14457,6 @@ function getImageProps(imgProps) {
                 }),
                 ("TURBOPACK compile-time value", {
                     "protocol": ("TURBOPACK compile-time value", "https"),
-                    "hostname": ("TURBOPACK compile-time value", "www.panchdeepmetal.com"),
-                    "pathname": ("TURBOPACK compile-time value", "/**")
-                }),
-                ("TURBOPACK compile-time value", {
-                    "protocol": ("TURBOPACK compile-time value", "https"),
-                    "hostname": ("TURBOPACK compile-time value", "www.sangeetametal.com"),
-                    "pathname": ("TURBOPACK compile-time value", "/**")
-                }),
-                ("TURBOPACK compile-time value", {
-                    "protocol": ("TURBOPACK compile-time value", "https"),
                     "hostname": ("TURBOPACK compile-time value", "www.smithsadvanced.com"),
                     "pathname": ("TURBOPACK compile-time value", "/**")
                 }),
@@ -14488,6 +14473,21 @@ function getImageProps(imgProps) {
                 ("TURBOPACK compile-time value", {
                     "protocol": ("TURBOPACK compile-time value", "https"),
                     "hostname": ("TURBOPACK compile-time value", "www.boatfittings.co.uk"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "stainlesssupply.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "m.media-amazon.com"),
+                    "pathname": ("TURBOPACK compile-time value", "/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "protocol": ("TURBOPACK compile-time value", "https"),
+                    "hostname": ("TURBOPACK compile-time value", "www.onlinemetals.com"),
                     "pathname": ("TURBOPACK compile-time value", "/**")
                 })
             ]),
